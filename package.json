@@ -13,6 +13,7 @@
     "import:qtown-assets": "tsx scripts/import_qtown_assets.ts",
     "validate:qtown-assets": "tsx scripts/validate_qtown_assets.ts",
     "sync:qtown-runtime": "tsx scripts/sync_qtown_runtime_assets.ts",
+    "update:qtown-bounds": "tsx scripts/update_asset_bounds.ts",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck"
   },

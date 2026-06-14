@@ -4,60 +4,77 @@
   "style": "q-low-poly-cartoon",
   "camera": {
     "type": "orthographic",
-    "angle": {
-      "x": 60,
-      "y": 0,
-      "z": 45
-    },
+    "angle": { "x": 60, "y": 0, "z": 45 },
     "zoom": 1
   },
-  "size": {
-    "width": 64,
-    "depth": 64
-  },
-  "spawn": {
-    "player": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    }
-  },
+  "size": { "width": 64, "depth": 64 },
+  "spawn": { "player": { "x": 0, "y": 0, "z": 0 } },
   "buildings": [
-    { "id": "b_townhall", "assetId": "building_townhall_001", "position": { "x": 0, "y": 0, "z": -10 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "b_shop", "assetId": "building_shop_001", "position": { "x": -10, "y": 0, "z": -5 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
-    { "id": "b_workshop", "assetId": "building_workshop_001", "position": { "x": 10, "y": 0, "z": -5 }, "rotation": { "x": 0, "y": -1.57, "z": 0 } },
-    { "id": "b_warehouse", "assetId": "building_warehouse_001", "position": { "x": -10, "y": 0, "z": 5 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
-    { "id": "b_house1", "assetId": "building_house_wood_001", "position": { "x": 10, "y": 0, "z": 5 }, "rotation": { "x": 0, "y": -1.57, "z": 0 } },
-    { "id": "b_house2", "assetId": "building_house_wood_002", "position": { "x": -5, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } },
-    { "id": "b_house3", "assetId": "building_house_wood_003", "position": { "x": 5, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } },
-    { "id": "b_house4", "assetId": "building_house_wood_004", "position": { "x": -15, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } }
+    { "id": "b_townhall", "assetId": "building_townhall_001", "position": { "x": 0, "y": 0, "z": -12 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "b_shop", "assetId": "building_shop_001", "position": { "x": -12, "y": 0, "z": -2 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "b_workshop", "assetId": "building_workshop_001", "position": { "x": 12, "y": 0, "z": -2 }, "rotation": { "x": 0, "y": -1.57, "z": 0 } },
+    { "id": "b_warehouse", "assetId": "building_warehouse_001", "position": { "x": -12, "y": 0, "z": 9 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "b_house1", "assetId": "building_house_wood_001", "position": { "x": 6, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "b_house2", "assetId": "building_house_wood_002", "position": { "x": 12, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "b_house3", "assetId": "building_house_wood_003", "position": { "x": -4, "y": 0, "z": 13 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } },
+    { "id": "b_house4", "assetId": "building_house_wood_004", "position": { "x": 2, "y": 0, "z": 14 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } }
   ],
   "roads": [
-    { "id": "r_plaza1", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "r_plaza2", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "r_plaza3", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "r_plaza4", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": -2 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "r_plaza5", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 2 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+    { "id": "r_p1", "assetId": "road_plaza_tile_001", "position": { "x": -4, "y": 0, "z": -4 } },
+    { "id": "r_p2", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": -4 } },
+    { "id": "r_p3", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": -4 } },
+    { "id": "r_p4", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": -4 } },
+    { "id": "r_p5", "assetId": "road_plaza_tile_001", "position": { "x": 4, "y": 0, "z": -4 } },
+    { "id": "r_p6", "assetId": "road_plaza_tile_001", "position": { "x": -4, "y": 0, "z": -2 } },
+    { "id": "r_p7", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": -2 } },
+    { "id": "r_p8", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": -2 } },
+    { "id": "r_p9", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": -2 } },
+    { "id": "r_p10", "assetId": "road_plaza_tile_001", "position": { "x": 4, "y": 0, "z": -2 } },
+    { "id": "r_p11", "assetId": "road_plaza_tile_001", "position": { "x": -4, "y": 0, "z": 0 } },
+    { "id": "r_p12", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": 0 } },
+    { "id": "r_p13", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "r_p14", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": 0 } },
+    { "id": "r_p15", "assetId": "road_plaza_tile_001", "position": { "x": 4, "y": 0, "z": 0 } },
+    { "id": "r_p16", "assetId": "road_plaza_tile_001", "position": { "x": -4, "y": 0, "z": 2 } },
+    { "id": "r_p17", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": 2 } },
+    { "id": "r_p18", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 2 } },
+    { "id": "r_p19", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": 2 } },
+    { "id": "r_p20", "assetId": "road_plaza_tile_001", "position": { "x": 4, "y": 0, "z": 2 } },
+    { "id": "r_p21", "assetId": "road_plaza_tile_001", "position": { "x": -4, "y": 0, "z": 4 } },
+    { "id": "r_p22", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": 4 } },
+    { "id": "r_p23", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 4 } },
+    { "id": "r_p24", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": 4 } },
+    { "id": "r_p25", "assetId": "road_plaza_tile_001", "position": { "x": 4, "y": 0, "z": 4 } },
+    
+    { "id": "r_n1", "assetId": "road_straight_001", "position": { "x": 0, "y": 0, "z": -8 } },
+    { "id": "r_n2", "assetId": "road_straight_001", "position": { "x": 0, "y": 0, "z": -10 } },
+    { "id": "r_s1", "assetId": "road_straight_001", "position": { "x": 0, "y": 0, "z": 8 } },
+    { "id": "r_s2", "assetId": "road_straight_001", "position": { "x": 0, "y": 0, "z": 10 } },
+    { "id": "r_w1", "assetId": "road_straight_001", "position": { "x": -8, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "r_w2", "assetId": "road_straight_001", "position": { "x": -10, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "r_e1", "assetId": "road_straight_001", "position": { "x": 8, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "r_e2", "assetId": "road_straight_001", "position": { "x": 10, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } }
   ],
   "props": [
-    { "id": "p_barrel1", "assetId": "prop_barrel_001", "position": { "x": -8, "y": 0, "z": -3 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "p_crate1", "assetId": "prop_crate_001", "position": { "x": -8, "y": 0, "z": -4 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "p_table1", "assetId": "prop_table_001", "position": { "x": -7, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "p_chair1", "assetId": "prop_chair_001", "position": { "x": -6, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+    { "id": "p_b1", "assetId": "prop_barrel_001", "position": { "x": -10, "y": 0, "z": -4 } },
+    { "id": "p_c1", "assetId": "prop_crate_001", "position": { "x": -10, "y": 0, "z": -5 } },
+    { "id": "p_t1", "assetId": "prop_table_001", "position": { "x": -12, "y": 0, "z": -5 } },
+    { "id": "p_s1", "assetId": "prop_chair_001", "position": { "x": -13, "y": 0, "z": -5 } }
   ],
   "nature": [
-    { "id": "n_tree1", "assetId": "nature_tree_round_001", "position": { "x": -15, "y": 0, "z": -15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "n_tree2", "assetId": "nature_tree_round_002", "position": { "x": 15, "y": 0, "z": -15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "n_tree3", "assetId": "nature_tree_pine_001", "position": { "x": -15, "y": 0, "z": 15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "n_tree4", "assetId": "nature_tree_pine_002", "position": { "x": 15, "y": 0, "z": 15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "n_rock1", "assetId": "nature_rock_small_001", "position": { "x": -12, "y": 0, "z": -12 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "n_bush1", "assetId": "nature_bush_001", "position": { "x": 12, "y": 0, "z": -12 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+    { "id": "n_t1", "assetId": "nature_tree_round_001", "position": { "x": -20, "y": 0, "z": -20 } },
+    { "id": "n_t2", "assetId": "nature_tree_round_002", "position": { "x": 20, "y": 0, "z": -20 } },
+    { "id": "n_t3", "assetId": "nature_tree_round_003", "position": { "x": -20, "y": 0, "z": 20 } },
+    { "id": "n_t4", "assetId": "nature_tree_pine_001", "position": { "x": 20, "y": 0, "z": 20 } },
+    { "id": "n_t5", "assetId": "nature_tree_pine_002", "position": { "x": 0, "y": 0, "z": -25 } },
+    { "id": "n_r1", "assetId": "nature_rock_small_001", "position": { "x": -18, "y": 0, "z": -15 } },
+    { "id": "n_b1", "assetId": "nature_bush_001", "position": { "x": 18, "y": 0, "z": -15 } }
   ],
   "resourceNodes": [],
   "npcSpawns": [
     { "id": "spawn_player", "assetId": "npc_player_001", "position": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "spawn_npc1", "assetId": "npc_base_001", "position": { "x": -5, "y": 0, "z": 0 } },
-    { "id": "spawn_npc2", "assetId": "npc_base_002", "position": { "x": 5, "y": 0, "z": 0 } },
-    { "id": "spawn_npc3", "assetId": "npc_base_003", "position": { "x": 0, "y": 0, "z": 5 } }
+    { "id": "spawn_npc1", "assetId": "npc_base_001", "position": { "x": -2, "y": 0, "z": -2 } },
+    { "id": "spawn_npc2", "assetId": "npc_base_002", "position": { "x": 2, "y": 0, "z": 2 } },
+    { "id": "spawn_npc3", "assetId": "npc_base_003", "position": { "x": -3, "y": 0, "z": 3 } }
   ]
 }

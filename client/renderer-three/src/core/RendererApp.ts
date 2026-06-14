@@ -31,7 +31,6 @@ export class RendererApp {
         this.controls.enableDamping = true;
 
         this.setupLights();
-        this.setupGrid();
 
         window.addEventListener('resize', this.onWindowResize.bind(this));
         
@@ -45,13 +44,6 @@ export class RendererApp {
         const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
         dirLight.position.set(20, 40, 20);
         this.scene.add(dirLight);
-    }
-
-    private setupGrid() {
-        const gridHelper = new THREE.GridHelper(64, 64, 0x000000, 0x000000);
-        gridHelper.material.opacity = 0.2;
-        gridHelper.material.transparent = true;
-        this.scene.add(gridHelper);
     }
 
     private onWindowResize() {

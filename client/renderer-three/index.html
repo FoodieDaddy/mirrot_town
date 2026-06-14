@@ -1,1 +1,35 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Q Town 3D Viewer</title><style>body { margin: 0; overflow: hidden; background-color: #8cae88; }</style></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q Town 3D Viewer</title>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #8cae88; font-family: monospace; }
+      #debug-overlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #0f0;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        pointer-events: none;
+      }
+      .warning { color: yellow; }
+      .error { color: red; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div id="debug-overlay">
+      <div>QTown Renderer Three</div>
+      <div id="debug-map">map: loading...</div>
+      <div id="debug-assets">assets: loading...</div>
+      <div id="debug-placeholders">placeholders: 0</div>
+      <div>grid: press 'G' to toggle</div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

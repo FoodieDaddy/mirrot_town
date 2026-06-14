@@ -12,9 +12,9 @@
         "q-style"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -26,7 +26,18 @@
         "hideable": true,
         "roofNodeName": "Roof"
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_house_wood_002",
@@ -38,9 +49,9 @@
         "q-style"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -52,7 +63,18 @@
         "hideable": true,
         "roofNodeName": "Roof"
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_house_wood_003",
@@ -64,9 +86,9 @@
         "q-style"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -78,7 +100,18 @@
         "hideable": true,
         "roofNodeName": "Roof"
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_house_wood_004",
@@ -90,9 +123,9 @@
         "q-style"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -104,7 +137,18 @@
         "hideable": true,
         "roofNodeName": "Roof"
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_shop_001",
@@ -116,9 +160,9 @@
         "q-style"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -126,7 +170,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_workshop_001",
@@ -137,9 +192,9 @@
         "production"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -147,7 +202,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_warehouse_001",
@@ -158,9 +224,9 @@
         "storage"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -168,7 +234,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "building_townhall_001",
@@ -179,9 +256,9 @@
         "public"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 4,
+        "height": 4,
+        "depth": 4
       },
       "collision": {
         "type": "box",
@@ -189,7 +266,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "normalizedSize": {
+        "width": 4,
+        "height": 4,
+        "depth": 4
+      },
+      "recommendedScale": 1
     },
     {
       "id": "road_straight_001",
@@ -201,7 +289,7 @@
       ],
       "size": {
         "width": 2,
-        "height": 2,
+        "height": 0.1,
         "depth": 2
       },
       "collision": {
@@ -210,7 +298,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "normalizedSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "recommendedScale": 1
     },
     {
       "id": "road_corner_001",
@@ -222,7 +321,7 @@
       ],
       "size": {
         "width": 2,
-        "height": 2,
+        "height": 0.1,
         "depth": 2
       },
       "collision": {
@@ -231,7 +330,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "normalizedSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "recommendedScale": 1
     },
     {
       "id": "road_t_001",
@@ -243,7 +353,7 @@
       ],
       "size": {
         "width": 2,
-        "height": 2,
+        "height": 0.1,
         "depth": 2
       },
       "collision": {
@@ -252,7 +362,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "normalizedSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "recommendedScale": 1
     },
     {
       "id": "road_plaza_tile_001",
@@ -264,7 +385,7 @@
       ],
       "size": {
         "width": 2,
-        "height": 2,
+        "height": 0.1,
         "depth": 2
       },
       "collision": {
@@ -273,7 +394,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "normalizedSize": {
+        "width": 2,
+        "height": 0.1,
+        "depth": 2
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_tree_round_001",
@@ -285,9 +417,9 @@
         "round"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -295,7 +427,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_tree_round_002",
@@ -307,9 +450,9 @@
         "round"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -317,7 +460,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_tree_round_003",
@@ -329,9 +483,9 @@
         "round"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -339,7 +493,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_tree_pine_001",
@@ -351,9 +516,9 @@
         "pine"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -361,7 +526,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_tree_pine_002",
@@ -373,9 +549,9 @@
         "pine"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -383,7 +559,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_bush_001",
@@ -394,9 +581,9 @@
         "bush"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -404,7 +591,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_bush_002",
@@ -415,9 +613,9 @@
         "bush"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -425,7 +623,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_rock_small_001",
@@ -436,9 +645,9 @@
         "rock"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -446,7 +655,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_rock_small_002",
@@ -457,9 +677,9 @@
         "rock"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -467,7 +687,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "nature_rock_small_003",
@@ -478,9 +709,9 @@
         "rock"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 3,
+        "height": 5,
+        "depth": 3
       },
       "collision": {
         "type": "box",
@@ -488,7 +719,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "normalizedSize": {
+        "width": 3,
+        "height": 5,
+        "depth": 3
+      },
+      "recommendedScale": 1
     },
     {
       "id": "npc_player_001",
@@ -499,9 +741,9 @@
         "player"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -509,7 +751,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "npc_base_001",
@@ -520,9 +773,9 @@
         "npc"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -530,7 +783,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "npc_base_002",
@@ -541,9 +805,9 @@
         "npc"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -551,7 +815,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "npc_base_003",
@@ -562,9 +837,9 @@
         "npc"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -572,7 +847,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "KayKit"
+      "source": "KayKit",
+      "rawSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1.8,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "prop_table_001",
@@ -583,9 +869,9 @@
         "furniture"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -593,7 +879,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "prop_chair_001",
@@ -604,9 +901,9 @@
         "furniture"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -614,7 +911,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "prop_barrel_001",
@@ -625,9 +933,9 @@
         "container"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -635,7 +943,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "prop_crate_001",
@@ -646,9 +965,9 @@
         "container"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -656,7 +975,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "recommendedScale": 1
     },
     {
       "id": "prop_bed_001",
@@ -667,9 +997,9 @@
         "furniture"
       ],
       "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
+        "width": 1,
+        "height": 1,
+        "depth": 1
       },
       "collision": {
         "type": "box",
@@ -677,7 +1007,18 @@
         "height": 2,
         "depth": 2
       },
-      "source": "Quaternius"
+      "source": "Quaternius",
+      "rawSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "normalizedSize": {
+        "width": 1,
+        "height": 1,
+        "depth": 1
+      },
+      "recommendedScale": 1
     }
   ]
 }

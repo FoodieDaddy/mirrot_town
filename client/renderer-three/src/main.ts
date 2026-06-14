@@ -4,10 +4,13 @@ import { EntityFactory } from './core/EntityFactory.js';
 import { MapLoader } from './core/MapLoader.js';
 import { RoofVisibilitySystem } from './systems/RoofVisibilitySystem.js';
 import { NpcRenderSystem } from './systems/NpcRenderSystem.js';
+import { GroundSystem } from './systems/GroundSystem.js';
 import { WorldStateStore } from '@jingzhong-biancheng/client-core';
 
 async function bootstrap() {
     const app = new RendererApp('app');
+    new GroundSystem(app.scene);
+
     const registry = new AssetRegistry();
     const factory = new EntityFactory(registry);
     const mapLoader = new MapLoader(factory, app.scene);
@@ -16,8 +19,25 @@ async function bootstrap() {
     await registry.loadManifest('/assets/manifest/asset-manifest.json');
     await registry.preloadAssets();
 
+    const assetsEl = document.getElementById('debug-assets');
+    if (assetsEl) {
+        assetsEl.innerHTML = `assets: ${registry.manifest.assets.length} loaded`;
+        if (registry.failedAssets.length > 0) {
+            assetsEl.innerHTML += ` / <span class="error">${registry.failedAssets.length} failed</span>`;
+        }
+    }
+
     // 2. Load and build map
-    await mapLoader.load('/maps/qtown_v0_1.json');
+    const mapData = await mapLoader.load('/maps/qtown_v0_1.json');
+    const mapEl = document.getElementById('debug-map');
+    if (mapEl) {
+        mapEl.innerHTML = `map: ${mapData.id}`;
+    }
+
+    const placeholderEl = document.getElementById('debug-placeholders');
+    if (placeholderEl && factory.placeholderCount > 0) {
+        placeholderEl.innerHTML = `<span class="warning">placeholders: ${factory.placeholderCount}</span>`;
+    }
 
     // 3. Initialize systems
     new RoofVisibilitySystem(app.scene, app.camera, registry);
