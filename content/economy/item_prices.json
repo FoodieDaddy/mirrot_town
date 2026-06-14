@@ -34,10 +34,10 @@
   {
     "itemCode": "hay",
     "name": "干草",
-    "category": "animal_product",
-    "buyPrice": 2,
-    "sellPrice": 1,
-    "description": "干草，可喂马。"
+    "category": "feed",
+    "buyPrice": 1,
+    "sellPrice": 0,
+    "description": "喂马用的干草。"
   },
   {
     "itemCode": "crop",
@@ -65,19 +65,19 @@
   },
   {
     "itemCode": "fishing_rod",
-    "name": "鱼竿",
+    "name": "钓竿",
     "category": "tool",
-    "buyPrice": 10,
-    "sellPrice": 4,
+    "buyPrice": 18,
+    "sellPrice": 8,
     "description": "钓鱼工具。"
   },
   {
     "itemCode": "simple_bed",
-    "name": "简易床",
+    "name": "简易木床",
     "category": "furniture",
-    "buyPrice": 15,
-    "sellPrice": 5,
-    "description": "简易木床，可放在家里。"
+    "buyPrice": 25,
+    "sellPrice": 10,
+    "description": "简易木床，改善睡眠。"
   },
   {
     "itemCode": "flower_pot",
