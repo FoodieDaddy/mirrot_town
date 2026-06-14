@@ -107,53 +107,71 @@ async function main() {
     ],
     roads: [] as any[],
     props: [
-      // Plaza Landmark (Center Market Combo)
-      { id: "p_landmark_stall", assetId: "prop_stall_001", position: { x: 0, y: 0, z: 0 } },
-      { id: "p_landmark_barrel1", assetId: "prop_barrel_001", position: { x: 1.5, y: 0, z: 0 } },
-      { id: "p_landmark_crate1", assetId: "prop_crate_001", position: { x: 1.5, y: 0, z: 1 } },
-      { id: "p_plaza_bench1", assetId: "prop_bench_001", position: { x: 0, y: 0, z: 4 }, rotation: { x: 0, y: 3.14, z: 0 } },
+      // Plaza Landmark (Center Market Combo - table + crates + barrel)
+      { id: "p_landmark_table", assetId: "prop_table_001", position: { x: 0, y: 0, z: 0 } },
+      { id: "p_landmark_crate1", assetId: "prop_crate_001", position: { x: -1.2, y: 0, z: 0.5 } },
+      { id: "p_landmark_barrel1", assetId: "prop_barrel_001", position: { x: 1.2, y: 0, z: 0.5 } },
+      { id: "p_plaza_bench1", assetId: "prop_bench_001", position: { x: -3, y: 0, z: 3 }, rotation: { x: 0, y: 0.78, z: 0 } },
       { id: "p_plaza_bench2", assetId: "prop_bench_001", position: { x: 0, y: 0, z: -4 } },
 
-      // Shop Entrance
+      // Shop Entrance (crates, barrel, shelf)
       { id: "p_shop_crate1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: -4 } },
       { id: "p_shop_crate2", assetId: "prop_crate_001", position: { x: -9.2, y: 0, z: -4 } },
       { id: "p_shop_barrel1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 0 } },
       { id: "p_shop_table", assetId: "prop_table_001", position: { x: -13, y: 0, z: -5 } },
+      { id: "p_shop_shelf", assetId: "prop_crate_001", position: { x: -13.5, y: 0, z: -2 } },
 
-      // Workshop Entrance
+      // Workshop Entrance (table, barrel, wood stack, crate)
       { id: "p_ws_table", assetId: "prop_table_001", position: { x: 10, y: 0, z: -4 } },
       { id: "p_ws_barrel1", assetId: "prop_barrel_001", position: { x: 10, y: 0, z: 0 } },
+      { id: "p_ws_woodstack", assetId: "prop_wood_stack_001", position: { x: 13.5, y: 0, z: 0 } },
+      { id: "p_ws_crate1", assetId: "prop_crate_001", position: { x: 13.5, y: 0, z: -1 } },
 
-      // Warehouse Entrance
+      // Warehouse Entrance (crate group + barrels)
       { id: "p_wh_c1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: 8 } },
       { id: "p_wh_c2", assetId: "prop_crate_001", position: { x: -9.2, y: 0, z: 8 } },
       { id: "p_wh_c3", assetId: "prop_crate_001", position: { x: -10, y: 0.6, z: 8 } },
       { id: "p_wh_b1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 11 } },
+      { id: "p_wh_b2", assetId: "prop_barrel_001", position: { x: -9, y: 0, z: 10.5 } },
+      { id: "p_wh_c4", assetId: "prop_crate_001", position: { x: -10.5, y: 0.6, z: 10 } },
 
-      // Residential
+      // Residential (chairs, barrel, flower crate near doors)
       { id: "p_h1_chair", assetId: "prop_chair_001", position: { x: 5, y: 0, z: 8 } },
-      { id: "p_h2_barrel", assetId: "prop_barrel_001", position: { x: 11, y: 0, z: 8 } }
+      { id: "p_h2_barrel", assetId: "prop_barrel_001", position: { x: 11, y: 0, z: 8 } },
+      { id: "p_h3_flower", assetId: "prop_crate_001", position: { x: -3, y: 0, z: 11 } },
+      { id: "p_h4_chair", assetId: "prop_chair_001", position: { x: 1, y: 0, z: 12.5 } },
+
+      // Plaza extra barrel
+      { id: "p_plaza_barrel2", assetId: "prop_barrel_001", position: { x: 3.5, y: 0, z: -3 } }
     ],
     nature: [
-      // Cluster NW
+      // Cluster NW (3 trees + bush + rock)
       { id: "n_nw1", assetId: "nature_tree_round_001", position: { x: -22, y: 0, z: -22 } },
       { id: "n_nw2", assetId: "nature_tree_round_002", position: { x: -20, y: 0, z: -25 } },
-      { id: "n_nw_b", assetId: "nature_bush_001", position: { x: -24, y: 0, z: -24 } },
+      { id: "n_nw3", assetId: "nature_tree_pine_001", position: { x: -25, y: 0, z: -20 } },
+      { id: "n_nw_b", assetId: "nature_bush_001", position: { x: -23, y: 0, z: -24 } },
+      { id: "n_nw_r", assetId: "nature_rock_small_001", position: { x: -21, y: 0, z: -19 } },
 
-      // Cluster NE
+      // Cluster NE (3 trees + bush + rock)
       { id: "n_ne1", assetId: "nature_tree_pine_001", position: { x: 22, y: 0, z: -22 } },
       { id: "n_ne2", assetId: "nature_tree_pine_002", position: { x: 25, y: 0, z: -20 } },
+      { id: "n_ne3", assetId: "nature_tree_round_003", position: { x: 20, y: 0, z: -25 } },
       { id: "n_ne_r", assetId: "nature_rock_small_001", position: { x: 23, y: 0, z: -23 } },
+      { id: "n_ne_b", assetId: "nature_bush_002", position: { x: 24, y: 0, z: -21 } },
 
-      // Cluster SW
-      { id: "n_sw1", assetId: "nature_tree_round_003", position: { x: -22, y: 0, z: 22 } },
+      // Cluster SW (3 trees + bush + rock)
+      { id: "n_sw1", assetId: "nature_tree_round_001", position: { x: -22, y: 0, z: 22 } },
       { id: "n_sw2", assetId: "nature_tree_pine_001", position: { x: -25, y: 0, z: 25 } },
-      { id: "n_sw_b", assetId: "nature_bush_002", position: { x: -20, y: 0, z: 20 } },
+      { id: "n_sw3", assetId: "nature_tree_round_002", position: { x: -20, y: 0, z: 26 } },
+      { id: "n_sw_b", assetId: "nature_bush_001", position: { x: -23, y: 0, z: 21 } },
+      { id: "n_sw_r", assetId: "nature_rock_small_002", position: { x: -21, y: 0, z: 25 } },
 
-      // Cluster SE
+      // Cluster SE (3 trees + bush + rock)
       { id: "n_se1", assetId: "nature_tree_pine_002", position: { x: 22, y: 0, z: 22 } },
       { id: "n_se2", assetId: "nature_tree_round_001", position: { x: 25, y: 0, z: 25 } },
-      { id: "n_se_r", assetId: "nature_rock_small_002", position: { x: 23, y: 0, z: 23 } }
+      { id: "n_se3", assetId: "nature_tree_round_003", position: { x: 26, y: 0, z: 20 } },
+      { id: "n_se_r", assetId: "nature_rock_small_003", position: { x: 23, y: 0, z: 23 } },
+      { id: "n_se_b", assetId: "nature_bush_002", position: { x: 21, y: 0, z: 24 } }
     ],
     resourceNodes: [],
     npcSpawns: [

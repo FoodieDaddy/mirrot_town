@@ -36,19 +36,21 @@ export class NpcRenderSystem {
             instance.userData.anims = anims;
         }
 
-        // Add Label
+        // Add Label - smaller, more transparent, better positioned
         const name = instance.userData.name || instance.userData.displayName || id;
         const div = document.createElement('div');
         div.className = 'npc-label';
         div.textContent = name;
-        div.style.fontSize = '12px'; // Smaller font
-        div.style.padding = '1px 6px';
-        div.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'; // More transparent
+        div.style.fontSize = '11px'; 
+        div.style.padding = '2px 6px';
+        div.style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
+        div.style.borderRadius = '3px';
+        div.style.whiteSpace = 'nowrap';
         
         const label = new CSS2DObject(div);
         const box = new THREE.Box3().setFromObject(instance);
         const height = box.max.y - box.min.y;
-        label.position.set(0, height + 0.3, 0); // Higher offset
+        label.position.set(0, height + 0.35, 0);
         instance.add(label);
         instance.userData.label = label;
     }
@@ -61,10 +63,39 @@ export class NpcRenderSystem {
     }
 
     private preventLabelOverlaps() {
-        // Very basic screen-space overlap reduction logic
-        // This is a placeholder for a more robust collision detection system
-        // For now, we just ensure they have a unique Y offset if they are very close
-        // In a real app, you'd project to screen coordinates.
+        // Collect all label positions in screen space
+        const labels: { element: HTMLElement; screenPos: THREE.Vector2; offset: number }[] = [];
+        
+        this.instances.forEach((instance) => {
+            const label = instance.userData.label;
+            if (!label) return;
+            
+            const element = label.element as HTMLElement;
+            if (!element) return;
+
+            // Get world position of label
+            const worldPos = new THREE.Vector3();
+            label.getWorldPosition(worldPos);
+            
+            // Simple distance-based offset for close NPCs
+            labels.push({ 
+                element, 
+                screenPos: new THREE.Vector2(instance.position.x, instance.position.z),
+                offset: 0 
+            });
+        });
+
+        // Apply staggered Y offsets for NPCs that are too close (< 3 units)
+        for (let i = 0; i < labels.length; i++) {
+            for (let j = i + 1; j < labels.length; j++) {
+                const dist = labels[i].screenPos.distanceTo(labels[j].screenPos);
+                if (dist < 3.0) {
+                    labels[j].offset += 0.25;
+                    labels[i].element.style.transform = `translateY(${-labels[i].offset * 20}px)`;
+                    labels[j].element.style.transform = `translateY(${-labels[j].offset * 20}px)`;
+                }
+            }
+        }
     }
 
     public sync(state: WorldState) {

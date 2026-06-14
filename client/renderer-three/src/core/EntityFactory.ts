@@ -62,7 +62,14 @@ export class EntityFactory {
             }
 
         } else {
-            console.warn(`[EntityFactory] Placeholder created for entity: ${entityData.id}, assetId: ${assetId}, type: ${type}. Reason: Asset not found in registry.`);
+            const def = this.registry.getDefinition(assetId);
+            console.warn(`[EntityFactory] Placeholder created for entity: ${entityData.id}, assetId: ${assetId}, type: ${type}. Reason: Asset not found in registry.`, {
+                entityId: entityData.id,
+                assetId,
+                type,
+                definition: def,
+                path: def?.path || 'unknown'
+            });
             this.placeholderCount++;
             if (type === 'character') {
                 const geom = new THREE.CapsuleGeometry(0.3, 1, 4, 8);
