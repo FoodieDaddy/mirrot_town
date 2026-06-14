@@ -6,6 +6,8 @@ import { MapLoader } from './core/MapLoader.js';
 import { NpcRenderSystem } from './systems/NpcRenderSystem.js';
 import { GroundSystem } from './systems/GroundSystem.js';
 import { SelectionSystem } from './systems/SelectionSystem.js';
+import { ActionStatusSystem } from './systems/ActionStatusSystem.js';
+import { ActionIconSystem } from './systems/ActionIconSystem.js';
 import { WorldConnection } from './protocol/WorldConnection.js';
 import { adaptSnapshot } from './protocol/WorldSnapshotAdapter.js';
 import { WorldCommandAdapter } from './protocol/WorldCommandAdapter.js';
@@ -31,7 +33,7 @@ async function bootstrap() {
   }
 
   // 2. Load and build map (static layout: buildings, roads, nature, props)
-  const mapData = await mapLoader.load('/maps/qtown_v0_1.json');
+  const mapData = await mapLoader.load('/maps/qtown_v0_2.json');
   const mapEl = document.getElementById('debug-map');
   if (mapEl) {
     mapEl.innerHTML = `map: ${mapData.id}`;
@@ -47,9 +49,19 @@ async function bootstrap() {
   new SelectionSystem(app.scene, app.camera, registry, commandAdapter);
 
   const npcSystem = new NpcRenderSystem(app.scene, factory);
+  const actionStatusSystem = new ActionStatusSystem(app.scene, app.camera, app.renderer.domElement);
+  const actionIconSystem = new ActionIconSystem(app.scene);
+
+  // Store NPC states for action status updates
+  let lastSnapshotNpcs: Map<string, { position: { x: number; y: number; z: number }; currentAction?: string }> = new Map();
 
   app.addUpdatable((delta) => {
     npcSystem.update(delta);
+
+    // Update action status displays from stored NPC states
+    for (const [npcId, npcState] of lastSnapshotNpcs) {
+      actionStatusSystem.updateNpcAction(npcId, npcState.currentAction, npcState.position, 0);
+    }
   });
 
   // 4. Connect to backend world server
@@ -61,9 +73,26 @@ async function bootstrap() {
     updateDebugOverlay(state, npcSystem.npcCount);
   });
 
-  // Forward world events to NpcRenderSystem
+  // Forward world events to NpcRenderSystem, ActionStatusSystem, and ActionIconSystem
   connection.eventAdapter.onEvent((event: WorldEvent) => {
     npcSystem.handleEvent(event);
+
+    // Update action status on action change events
+    if (event.type === 'npc_action_changed') {
+      const npcState = lastSnapshotNpcs.get(event.npcId);
+      if (npcState) {
+        npcState.currentAction = event.currentAction;
+        actionStatusSystem.updateNpcAction(event.npcId, event.currentAction, npcState.position, 0);
+      }
+
+      // Update action icon above NPC
+      const npcObject = app.scene.children.find(
+        c => c.userData.type === 'character' && c.userData.id === event.npcId
+      );
+      if (npcObject) {
+        actionIconSystem.updateIcon(event.npcId, event.currentAction || null, npcObject);
+      }
+    }
   });
 
   // Forward commands to console (and eventually to server)
@@ -79,6 +108,15 @@ async function bootstrap() {
     // Apply snapshot NPC positions (override map-spawned NPCs)
     const entityState = adaptSnapshot(snapshot);
     npcSystem.applySnapshotNpcs(entityState.npcs);
+
+    // Update action status system
+    lastSnapshotNpcs.clear();
+    for (const npc of entityState.npcs) {
+      lastSnapshotNpcs.set(npc.id, {
+        position: npc.position,
+        currentAction: npc.currentAction,
+      });
+    }
 
     const snapshotEl = document.getElementById('debug-snapshot');
     if (snapshotEl) {
