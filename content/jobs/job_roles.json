@@ -1,0 +1,52 @@
+[
+  {
+    "roleCode": "farmer",
+    "name": "农夫",
+    "workplaceRegionId": "farm",
+    "employerType": "business",
+    "employerId": "spring_farm",
+    "baseWagePerDay": 8,
+    "wageType": "per_task",
+    "enabled": true
+  },
+  {
+    "roleCode": "stable_hand",
+    "name": "马夫",
+    "workplaceRegionId": "stable",
+    "employerType": "business",
+    "employerId": "south_stable",
+    "baseWagePerDay": 6,
+    "wageType": "per_task",
+    "enabled": true
+  },
+  {
+    "roleCode": "fisher",
+    "name": "渔夫",
+    "workplaceRegionId": "riverside",
+    "employerType": "business",
+    "employerId": "river_shop",
+    "baseWagePerDay": 7,
+    "wageType": "per_task",
+    "enabled": true
+  },
+  {
+    "roleCode": "carpenter",
+    "name": "木工",
+    "workplaceRegionId": "workshop",
+    "employerType": "business",
+    "employerId": "woodshed",
+    "baseWagePerDay": 10,
+    "wageType": "per_task",
+    "enabled": true
+  },
+  {
+    "roleCode": "tavern_worker",
+    "name": "食肆帮工",
+    "workplaceRegionId": "tavern",
+    "employerType": "business",
+    "employerId": "eatery",
+    "baseWagePerDay": 5,
+    "wageType": "per_task",
+    "enabled": true
+  }
+]
