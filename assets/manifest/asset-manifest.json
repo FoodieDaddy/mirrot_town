@@ -234,27 +234,6 @@
       "source": "KayKit"
     },
     {
-      "id": "road_cross_001",
-      "type": "road",
-      "path": "/assets/glb/roads/road_cross_001.glb",
-      "tags": [
-        "road",
-        "cross"
-      ],
-      "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "collision": {
-        "type": "box",
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "source": "Kenney"
-    },
-    {
       "id": "road_t_001",
       "type": "road",
       "path": "/assets/glb/roads/road_t_001.glb",
@@ -447,27 +426,6 @@
         "depth": 2
       },
       "source": "Quaternius"
-    },
-    {
-      "id": "nature_bush_003",
-      "type": "nature",
-      "path": "/assets/glb/nature/nature_bush_003.glb",
-      "tags": [
-        "nature",
-        "bush"
-      ],
-      "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "collision": {
-        "type": "box",
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "source": "Kenney"
     },
     {
       "id": "nature_rock_small_001",
@@ -707,27 +665,6 @@
       "tags": [
         "prop",
         "furniture"
-      ],
-      "size": {
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "collision": {
-        "type": "box",
-        "width": 2,
-        "height": 2,
-        "depth": 2
-      },
-      "source": "Quaternius"
-    },
-    {
-      "id": "prop_wood_stack_001",
-      "type": "prop",
-      "path": "/assets/glb/props/prop_wood_stack_001.glb",
-      "tags": [
-        "prop",
-        "resource"
       ],
       "size": {
         "width": 2,

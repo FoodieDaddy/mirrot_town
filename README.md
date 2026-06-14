@@ -2,46 +2,51 @@
 
 AI 驱动的常驻江南小镇模拟器。
 
-## WorldX 资源接入 (2.5D Demo)
+## 当前展示端：Three.js QTown (v0.1)
 
-当前第一版网页 Demo 使用了来自 WorldX 的 2.5D 地图与角色资源。
+目前项目的主前端展示层是基于 Three.js 的 3D Q版小镇 (`client/renderer-three`)。我们采用正交斜俯视 2.5D 视角，不包含第一人称或自由 3D 视角。前端仅负责纯粹的展示与输入转发，不包含任何世界模拟逻辑。
 
-### 资源来源
-* **WorldX**: [https://github.com/YGYOOO/WorldX](https://github.com/YGYOOO/WorldX)
-* **Imported World**: `library/worlds/world_2026-04-19T08-31-24`
-* **License**: MIT
+### 核心资源文件
 
-### 导入步骤
-1. 确保 `assets/vendor/worldx/world_2026-04-19T08-31-24/` 目录下已拉取原始资源。
-2. 运行导入工具：
+- **展示端目录**: `client/renderer-three`
+- **当前地图配置**: `maps/qtown_v0_1.json`
+- **运行资产清单**: `assets/manifest/asset-manifest.json` 和 `license-manifest.json`
+- **GLB 运行资产**: 存放在 `assets/glb/` 目录下（开发服务器运行时会同步到 public 目录）
+
+### 资产获取与导入
+
+由于项目仅使用开源免费/CC0低模资产，我们需要通过管线脚本自动提取和验证素材：
+
+1. **导入与转换素材**:
    ```bash
-   cd tools/worldx-importer
-   pnpm install
-   pnpm run import
+   pnpm import:qtown-assets
    ```
-   这会生成 `content/maps/worldx_bianjing_night_market_v0/`。
+   这会从 `assets/source/` 中扫描符合条件的原始素材，执行 `.gltf` 到 `.glb` 的自动转换，并生成正式的运行素材至 `assets/glb/` 目录。
 
-### 运行步骤
-1. 启动后端：
+2. **验证素材**:
    ```bash
-   cd server
-   pnpm dev
+   pnpm validate:qtown-assets
    ```
-   后端会默认加载 `content/maps/worldx_bianjing_night_market_v0/world_seed.json`。
-2. 启动前端：
+   校验 Manifest 的合法性、GLB 二进制格式的正确性以及地图配置是否存在断链。
+
+3. **同步运行时资源**:
    ```bash
-   cd client/web-shell
-   pnpm dev
+   pnpm sync:qtown-runtime
    ```
-3. 访问 [http://localhost:5173](http://localhost:5173) 即可看到 2.5D 地图 Demo。
+   将所有合规的资源和清单复制到 `client/renderer-three/public/` 目录下供前端读取。
+
+### 运行开发服务器
+
+在完成上述资产导入管线后，启动后端模拟器与前端展示层：
+
+```bash
+pnpm dev:renderer-three
+# (或者使用 pnpm dev 同时启动所有后台服务)
+```
+
+访问终端提示的本地端口（如 `http://localhost:5180`），即可观测 3D QTown 运行状态。
 
 ### 当前限制
-1. **地图风格**：当前地图是 WorldX 的汴京夜市，作为技术占位，非最终三国江南风格。
-2. **屋顶隐藏**：暂不支持，因为当前地图是单层 2.5D 背景图。
-3. **人物动画**：当前仅显示 spritesheet 静态帧或整图缩放，尚未接入精细动画切片。
-4. **交互性**：当前仅作为观察器，不支持多人联机操作。
-
-### 后续工作
-1. 接入正式的三国江南小村落 2.5D 资源（分层渲染）。
-2. 校准并接入人物动画状态机。
-3. 完善 nav_grid 寻路逻辑。
+1. 仅限使用指定来源的低模卡通资源。
+2. 前端仅提供基础的渲染、点击选取建筑和控制屋顶隐藏功能。
+3. 暂时不含深度的联机状态交互逻辑。

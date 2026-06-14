@@ -1,0 +1,683 @@
+{
+  "version": "0.1",
+  "mapId": "qtown_v0_1",
+  "assets": [
+    {
+      "id": "building_house_wood_001",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_house_wood_001.glb",
+      "tags": [
+        "house",
+        "residential",
+        "q-style"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "roof": {
+        "hideable": true,
+        "roofNodeName": "Roof"
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_house_wood_002",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_house_wood_002.glb",
+      "tags": [
+        "house",
+        "residential",
+        "q-style"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "roof": {
+        "hideable": true,
+        "roofNodeName": "Roof"
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_house_wood_003",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_house_wood_003.glb",
+      "tags": [
+        "house",
+        "residential",
+        "q-style"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "roof": {
+        "hideable": true,
+        "roofNodeName": "Roof"
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_house_wood_004",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_house_wood_004.glb",
+      "tags": [
+        "house",
+        "residential",
+        "q-style"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "roof": {
+        "hideable": true,
+        "roofNodeName": "Roof"
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_shop_001",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_shop_001.glb",
+      "tags": [
+        "shop",
+        "commercial",
+        "q-style"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_workshop_001",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_workshop_001.glb",
+      "tags": [
+        "workshop",
+        "production"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_warehouse_001",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_warehouse_001.glb",
+      "tags": [
+        "warehouse",
+        "storage"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "building_townhall_001",
+      "type": "building",
+      "path": "/assets/glb/buildings/building_townhall_001.glb",
+      "tags": [
+        "townhall",
+        "public"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "road_straight_001",
+      "type": "road",
+      "path": "/assets/glb/roads/road_straight_001.glb",
+      "tags": [
+        "road",
+        "straight"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "road_corner_001",
+      "type": "road",
+      "path": "/assets/glb/roads/road_corner_001.glb",
+      "tags": [
+        "road",
+        "corner"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "road_t_001",
+      "type": "road",
+      "path": "/assets/glb/roads/road_t_001.glb",
+      "tags": [
+        "road",
+        "t-junction"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "road_plaza_tile_001",
+      "type": "road",
+      "path": "/assets/glb/roads/road_plaza_tile_001.glb",
+      "tags": [
+        "road",
+        "plaza"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "nature_tree_round_001",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_tree_round_001.glb",
+      "tags": [
+        "nature",
+        "tree",
+        "round"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_tree_round_002",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_tree_round_002.glb",
+      "tags": [
+        "nature",
+        "tree",
+        "round"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_tree_round_003",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_tree_round_003.glb",
+      "tags": [
+        "nature",
+        "tree",
+        "round"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_tree_pine_001",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_tree_pine_001.glb",
+      "tags": [
+        "nature",
+        "tree",
+        "pine"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_tree_pine_002",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_tree_pine_002.glb",
+      "tags": [
+        "nature",
+        "tree",
+        "pine"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_bush_001",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_bush_001.glb",
+      "tags": [
+        "nature",
+        "bush"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_bush_002",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_bush_002.glb",
+      "tags": [
+        "nature",
+        "bush"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_rock_small_001",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_rock_small_001.glb",
+      "tags": [
+        "nature",
+        "rock"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_rock_small_002",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_rock_small_002.glb",
+      "tags": [
+        "nature",
+        "rock"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "nature_rock_small_003",
+      "type": "nature",
+      "path": "/assets/glb/nature/nature_rock_small_003.glb",
+      "tags": [
+        "nature",
+        "rock"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "npc_player_001",
+      "type": "character",
+      "path": "/assets/glb/characters/npc_player_001.glb",
+      "tags": [
+        "character",
+        "player"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "npc_base_001",
+      "type": "character",
+      "path": "/assets/glb/characters/npc_base_001.glb",
+      "tags": [
+        "character",
+        "npc"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "npc_base_002",
+      "type": "character",
+      "path": "/assets/glb/characters/npc_base_002.glb",
+      "tags": [
+        "character",
+        "npc"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "npc_base_003",
+      "type": "character",
+      "path": "/assets/glb/characters/npc_base_003.glb",
+      "tags": [
+        "character",
+        "npc"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "KayKit"
+    },
+    {
+      "id": "prop_table_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_table_001.glb",
+      "tags": [
+        "prop",
+        "furniture"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "prop_chair_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_chair_001.glb",
+      "tags": [
+        "prop",
+        "furniture"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "prop_barrel_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_barrel_001.glb",
+      "tags": [
+        "prop",
+        "container"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "prop_crate_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_crate_001.glb",
+      "tags": [
+        "prop",
+        "container"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    },
+    {
+      "id": "prop_bed_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_bed_001.glb",
+      "tags": [
+        "prop",
+        "furniture"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "source": "Quaternius"
+    }
+  ]
+}

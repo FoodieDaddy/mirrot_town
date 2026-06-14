@@ -1,0 +1,284 @@
+{
+  "version": "0.1",
+  "assets": [
+    {
+      "assetId": "building_house_wood_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_D.gltf",
+      "convertedFile": "/assets/glb/buildings/building_house_wood_001.glb"
+    },
+    {
+      "assetId": "building_house_wood_002",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_C.gltf",
+      "convertedFile": "/assets/glb/buildings/building_house_wood_002.glb"
+    },
+    {
+      "assetId": "building_house_wood_003",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_B.gltf",
+      "convertedFile": "/assets/glb/buildings/building_house_wood_003.glb"
+    },
+    {
+      "assetId": "building_house_wood_004",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_A.gltf",
+      "convertedFile": "/assets/glb/buildings/building_house_wood_004.glb"
+    },
+    {
+      "assetId": "building_shop_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_E.gltf",
+      "convertedFile": "/assets/glb/buildings/building_shop_001.glb"
+    },
+    {
+      "assetId": "building_workshop_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_F.gltf",
+      "convertedFile": "/assets/glb/buildings/building_workshop_001.glb"
+    },
+    {
+      "assetId": "building_warehouse_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_G.gltf",
+      "convertedFile": "/assets/glb/buildings/building_warehouse_001.glb"
+    },
+    {
+      "assetId": "building_townhall_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/building_H.gltf",
+      "convertedFile": "/assets/glb/buildings/building_townhall_001.glb"
+    },
+    {
+      "assetId": "road_straight_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/road_straight_crossing.gltf",
+      "convertedFile": "/assets/glb/roads/road_straight_001.glb"
+    },
+    {
+      "assetId": "road_corner_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/road_corner_curved.gltf",
+      "convertedFile": "/assets/glb/roads/road_corner_001.glb"
+    },
+    {
+      "assetId": "road_t_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/city-builder-bits/KayKit_City_Builder_Bits_1.0_FREE/Assets/gltf/road_tsplit.gltf",
+      "convertedFile": "/assets/glb/roads/road_t_001.glb"
+    },
+    {
+      "assetId": "road_plaza_tile_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/gltf/tileSmall_teamYellow.gltf.glb",
+      "convertedFile": "/assets/glb/roads/road_plaza_tile_001.glb"
+    },
+    {
+      "assetId": "nature_tree_round_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/TwistedTree_5.gltf",
+      "convertedFile": "/assets/glb/nature/nature_tree_round_001.glb"
+    },
+    {
+      "assetId": "nature_tree_round_002",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/TwistedTree_4.gltf",
+      "convertedFile": "/assets/glb/nature/nature_tree_round_002.glb"
+    },
+    {
+      "assetId": "nature_tree_round_003",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/TwistedTree_3.gltf",
+      "convertedFile": "/assets/glb/nature/nature_tree_round_003.glb"
+    },
+    {
+      "assetId": "nature_tree_pine_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/Pine_5.gltf",
+      "convertedFile": "/assets/glb/nature/nature_tree_pine_001.glb"
+    },
+    {
+      "assetId": "nature_tree_pine_002",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/Pine_4.gltf",
+      "convertedFile": "/assets/glb/nature/nature_tree_pine_002.glb"
+    },
+    {
+      "assetId": "nature_bush_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/Bush_Common.gltf",
+      "convertedFile": "/assets/glb/nature/nature_bush_001.glb"
+    },
+    {
+      "assetId": "nature_bush_002",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/Bush_Common_Flowers.gltf",
+      "convertedFile": "/assets/glb/nature/nature_bush_002.glb"
+    },
+    {
+      "assetId": "nature_rock_small_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/RockPath_Square_Small_3.gltf",
+      "convertedFile": "/assets/glb/nature/nature_rock_small_001.glb"
+    },
+    {
+      "assetId": "nature_rock_small_002",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/RockPath_Square_Small_2.gltf",
+      "convertedFile": "/assets/glb/nature/nature_rock_small_002.glb"
+    },
+    {
+      "assetId": "nature_rock_small_003",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/stylized-nature/glTF/RockPath_Square_Small_1.gltf",
+      "convertedFile": "/assets/glb/nature/nature_rock_small_003.glb"
+    },
+    {
+      "assetId": "npc_player_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Dog/gltf/character_dog.gltf",
+      "convertedFile": "/assets/glb/characters/npc_player_001.glb"
+    },
+    {
+      "assetId": "npc_base_001",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Duck/gltf/character_duck.gltf",
+      "convertedFile": "/assets/glb/characters/npc_base_001.glb"
+    },
+    {
+      "assetId": "npc_base_002",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Bear/gltf/character_bear.gltf",
+      "convertedFile": "/assets/glb/characters/npc_base_002.glb"
+    },
+    {
+      "assetId": "npc_base_003",
+      "source": "KayKit",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/gltf/character_bear.gltf.glb",
+      "convertedFile": "/assets/glb/characters/npc_base_003.glb"
+    },
+    {
+      "assetId": "prop_table_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Table_Spoon.gltf",
+      "convertedFile": "/assets/glb/props/prop_table_001.glb"
+    },
+    {
+      "assetId": "prop_chair_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Stool.gltf",
+      "convertedFile": "/assets/glb/props/prop_chair_001.glb"
+    },
+    {
+      "assetId": "prop_barrel_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Barrel_Holder.gltf",
+      "convertedFile": "/assets/glb/props/prop_barrel_001.glb"
+    },
+    {
+      "assetId": "prop_crate_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/FarmCrate_Empty.gltf",
+      "convertedFile": "/assets/glb/props/prop_crate_001.glb"
+    },
+    {
+      "assetId": "prop_bed_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Bed_Twin2.gltf",
+      "convertedFile": "/assets/glb/props/prop_bed_001.glb"
+    }
+  ]
+}

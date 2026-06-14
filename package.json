@@ -12,6 +12,7 @@
     "dev:renderer-three": "pnpm --filter @jingzhong-biancheng/renderer-three dev",
     "import:qtown-assets": "tsx scripts/import_qtown_assets.ts",
     "validate:qtown-assets": "tsx scripts/validate_qtown_assets.ts",
+    "sync:qtown-runtime": "tsx scripts/sync_qtown_runtime_assets.ts",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck"
   },
@@ -19,6 +20,7 @@
     "node": ">=22"
   },
   "devDependencies": {
+    "@gltf-transform/cli": "^4.4.0",
     "glob": "^13.0.6",
     "tsx": "^4.22.4"
   }

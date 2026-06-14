@@ -43,8 +43,7 @@
     { "id": "p_barrel1", "assetId": "prop_barrel_001", "position": { "x": -8, "y": 0, "z": -3 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
     { "id": "p_crate1", "assetId": "prop_crate_001", "position": { "x": -8, "y": 0, "z": -4 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
     { "id": "p_table1", "assetId": "prop_table_001", "position": { "x": -7, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "p_chair1", "assetId": "prop_chair_001", "position": { "x": -6, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
-    { "id": "p_wood1", "assetId": "prop_wood_stack_001", "position": { "x": 8, "y": 0, "z": -3 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+    { "id": "p_chair1", "assetId": "prop_chair_001", "position": { "x": -6, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
   ],
   "nature": [
     { "id": "n_tree1", "assetId": "nature_tree_round_001", "position": { "x": -15, "y": 0, "z": -15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
