@@ -17,7 +17,7 @@ async function main() {
 
     // Heuristics based on path/ID keywords
     const lowerId = asset.id.toLowerCase();
-    
+
     if (asset.type === 'building') {
       rawSize = { width: 1.5, height: 2.0, depth: 1.5 };
       recommendedScale = 2.2; // Normalize to ~4.4m height
@@ -49,15 +49,15 @@ async function main() {
     asset.normalizedSize = {
       width: Number((rawSize.width * recommendedScale).toFixed(2)),
       height: Number((rawSize.height * recommendedScale).toFixed(2)),
-      depth: Number((rawSize.depth * recommendedScale).toFixed(2))
+      depth: Number((rawSize.depth * recommendedScale).toFixed(2)),
     };
-    
+
     // Update collision to match normalized size
     asset.collision = {
-      type: "box",
-      ...asset.normalizedSize
+      type: 'box',
+      ...asset.normalizedSize,
     };
-    
+
     asset.suggestedCollision = { ...asset.collision };
   }
 

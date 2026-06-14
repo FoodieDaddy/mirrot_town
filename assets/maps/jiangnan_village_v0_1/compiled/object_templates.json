@@ -3,23 +3,13 @@
     "id": "simple_wooden_bed",
     "name": "木床",
     "category": "furniture",
-    "tags": [
-      "bed",
-      "sleep",
-      "comfort"
-    ],
+    "tags": ["bed", "sleep", "comfort"],
     "size": {
       "w": 2,
       "h": 3
     },
-    "allowed_slot_types": [
-      "bed_slot"
-    ],
-    "interactions": [
-      "sleep",
-      "sit",
-      "rest"
-    ],
+    "allowed_slot_types": ["bed_slot"],
+    "interactions": ["sleep", "sit", "rest"],
     "asset": {
       "tile": "bed"
     }
@@ -28,23 +18,13 @@
     "id": "straw_mat",
     "name": "草席",
     "category": "furniture",
-    "tags": [
-      "mat",
-      "sleep",
-      "cheap"
-    ],
+    "tags": ["mat", "sleep", "cheap"],
     "size": {
       "w": 2,
       "h": 2
     },
-    "allowed_slot_types": [
-      "bed_slot",
-      "floor_slot"
-    ],
-    "interactions": [
-      "sleep",
-      "rest"
-    ],
+    "allowed_slot_types": ["bed_slot", "floor_slot"],
+    "interactions": ["sleep", "rest"],
     "asset": {
       "tile": "mat"
     }
@@ -53,21 +33,13 @@
     "id": "wooden_chest",
     "name": "木箱",
     "category": "storage",
-    "tags": [
-      "chest",
-      "storage"
-    ],
+    "tags": ["chest", "storage"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "storage_slot"
-    ],
-    "interactions": [
-      "store_item",
-      "take_item"
-    ],
+    "allowed_slot_types": ["storage_slot"],
+    "interactions": ["store_item", "take_item"],
     "asset": {
       "tile": "chest"
     }
@@ -76,23 +48,13 @@
     "id": "low_table",
     "name": "木几",
     "category": "furniture",
-    "tags": [
-      "table",
-      "dining",
-      "work_surface"
-    ],
+    "tags": ["table", "dining", "work_surface"],
     "size": {
       "w": 2,
       "h": 1
     },
-    "allowed_slot_types": [
-      "table_slot"
-    ],
-    "interactions": [
-      "eat",
-      "write",
-      "talk"
-    ],
+    "allowed_slot_types": ["table_slot"],
+    "interactions": ["eat", "write", "talk"],
     "asset": {
       "tile": "table"
     }
@@ -101,23 +63,13 @@
     "id": "flower_pot",
     "name": "陶盆花草",
     "category": "decor",
-    "tags": [
-      "flower",
-      "decor",
-      "plant",
-      "beauty"
-    ],
+    "tags": ["flower", "decor", "plant", "beauty"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "decor_slot"
-    ],
-    "interactions": [
-      "water_plant",
-      "observe"
-    ],
+    "allowed_slot_types": ["decor_slot"],
+    "interactions": ["water_plant", "observe"],
     "asset": {
       "tile": "flower"
     }
@@ -126,23 +78,13 @@
     "id": "water_jar",
     "name": "水缸",
     "category": "utility",
-    "tags": [
-      "water_jar",
-      "water",
-      "storage"
-    ],
+    "tags": ["water_jar", "water", "storage"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "decor_slot",
-      "water_slot"
-    ],
-    "interactions": [
-      "fetch_water",
-      "store_water"
-    ],
+    "allowed_slot_types": ["decor_slot", "water_slot"],
+    "interactions": ["fetch_water", "store_water"],
     "asset": {
       "tile": "water_jar"
     }
@@ -151,27 +93,14 @@
     "id": "rice_crop",
     "name": "稻作",
     "category": "crop",
-    "tags": [
-      "crop",
-      "rice",
-      "food"
-    ],
+    "tags": ["crop", "rice", "food"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "crop_slot"
-    ],
-    "interactions": [
-      "water_crop",
-      "harvest_crop"
-    ],
-    "growth_states": [
-      "seedling",
-      "growing",
-      "mature"
-    ],
+    "allowed_slot_types": ["crop_slot"],
+    "interactions": ["water_crop", "harvest_crop"],
+    "growth_states": ["seedling", "growing", "mature"],
     "asset": {
       "tile": "crop_seedling"
     }
@@ -180,27 +109,14 @@
     "id": "vegetable_crop",
     "name": "菜蔬",
     "category": "crop",
-    "tags": [
-      "crop",
-      "vegetable",
-      "food"
-    ],
+    "tags": ["crop", "vegetable", "food"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "crop_slot"
-    ],
-    "interactions": [
-      "water_crop",
-      "harvest_crop"
-    ],
-    "growth_states": [
-      "seedling",
-      "growing",
-      "mature"
-    ],
+    "allowed_slot_types": ["crop_slot"],
+    "interactions": ["water_crop", "harvest_crop"],
+    "growth_states": ["seedling", "growing", "mature"],
     "asset": {
       "tile": "crop_seedling"
     }
@@ -209,21 +125,13 @@
     "id": "feed_trough",
     "name": "马槽",
     "category": "animal_facility",
-    "tags": [
-      "trough",
-      "horse_feed"
-    ],
+    "tags": ["trough", "horse_feed"],
     "size": {
       "w": 2,
       "h": 1
     },
-    "allowed_slot_types": [
-      "feed_trough_slot"
-    ],
-    "interactions": [
-      "fill_feed_trough",
-      "feed_horse"
-    ],
+    "allowed_slot_types": ["feed_trough_slot"],
+    "interactions": ["fill_feed_trough", "feed_horse"],
     "asset": {
       "tile": "feed_trough"
     }
@@ -232,21 +140,13 @@
     "id": "water_trough",
     "name": "水槽",
     "category": "animal_facility",
-    "tags": [
-      "trough",
-      "horse_water"
-    ],
+    "tags": ["trough", "horse_water"],
     "size": {
       "w": 2,
       "h": 1
     },
-    "allowed_slot_types": [
-      "water_trough_slot"
-    ],
-    "interactions": [
-      "fill_water_trough",
-      "water_horse"
-    ],
+    "allowed_slot_types": ["water_trough_slot"],
+    "interactions": ["fill_water_trough", "water_horse"],
     "asset": {
       "tile": "water_trough"
     }
@@ -255,23 +155,13 @@
     "id": "workbench",
     "name": "木工台",
     "category": "workstation",
-    "tags": [
-      "workbench",
-      "wood",
-      "craft"
-    ],
+    "tags": ["workbench", "wood", "craft"],
     "size": {
       "w": 3,
       "h": 2
     },
-    "allowed_slot_types": [
-      "workbench_slot"
-    ],
-    "interactions": [
-      "craft",
-      "repair",
-      "make_plank"
-    ],
+    "allowed_slot_types": ["workbench_slot"],
+    "interactions": ["craft", "repair", "make_plank"],
     "asset": {
       "tile": "workbench"
     }
@@ -280,22 +170,13 @@
     "id": "notice_board",
     "name": "告示牌",
     "category": "public",
-    "tags": [
-      "notice",
-      "public",
-      "job_board"
-    ],
+    "tags": ["notice", "public", "job_board"],
     "size": {
       "w": 1,
       "h": 1
     },
-    "allowed_slot_types": [
-      "notice_slot"
-    ],
-    "interactions": [
-      "read_notice",
-      "post_task"
-    ],
+    "allowed_slot_types": ["notice_slot"],
+    "interactions": ["read_notice", "post_task"],
     "asset": {
       "tile": "notice_board"
     }
@@ -304,22 +185,13 @@
     "id": "market_stall",
     "name": "小摊",
     "category": "trade",
-    "tags": [
-      "market",
-      "trade"
-    ],
+    "tags": ["market", "trade"],
     "size": {
       "w": 2,
       "h": 2
     },
-    "allowed_slot_types": [
-      "market_slot"
-    ],
-    "interactions": [
-      "buy",
-      "sell",
-      "trade"
-    ],
+    "allowed_slot_types": ["market_slot"],
+    "interactions": ["buy", "sell", "trade"],
     "asset": {
       "tile": "market_stall"
     }

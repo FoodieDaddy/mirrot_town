@@ -16,7 +16,9 @@
     "sync:qtown-runtime": "tsx scripts/sync_qtown_runtime_assets.ts",
     "update:qtown-bounds": "tsx scripts/update_asset_bounds.ts",
     "test": "pnpm -r test",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\""
   },
   "engines": {
     "node": ">=22"
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@gltf-transform/cli": "^4.4.0",
     "glob": "^13.0.6",
+    "prettier": "^3.8.4",
     "tsx": "^4.22.4"
   }
 }

@@ -4,8 +4,8 @@ import type {
   PublicWorldEvent,
   WorldDelta,
   WorldObject,
-  WorldSnapshot
-} from "@jingzhong-biancheng/shared";
+  WorldSnapshot,
+} from '@jingzhong-biancheng/shared';
 
 export interface SequenceGap {
   expectedSeq: number | null;
@@ -27,9 +27,9 @@ export interface WorldState {
 }
 
 export type DeltaApplyResult =
-  | { status: "applied"; receivedSeq: number }
-  | { status: "duplicate"; receivedSeq: number }
-  | { status: "gap"; expectedSeq: number | null; receivedSeq: number };
+  | { status: 'applied'; receivedSeq: number }
+  | { status: 'duplicate'; receivedSeq: number }
+  | { status: 'gap'; expectedSeq: number | null; receivedSeq: number };
 
 export type WorldStateListener = (state: WorldState) => void;
 
@@ -43,7 +43,7 @@ const emptyState = (): WorldState => ({
   objects: new Map(),
   publicEvents: [],
   lastSeq: null,
-  sequenceGap: null
+  sequenceGap: null,
 });
 
 export class WorldStateStore {
@@ -67,12 +67,10 @@ export class WorldStateStore {
       characters: new Map(
         snapshot.characters.map((character) => [character.characterId, character])
       ),
-      objects: new Map(
-        snapshot.objects.map((object) => [object.objectId, object])
-      ),
+      objects: new Map(snapshot.objects.map((object) => [object.objectId, object])),
       publicEvents: snapshot.publicEvents ?? [],
       lastSeq: snapshot.seq,
-      sequenceGap: null
+      sequenceGap: null,
     };
     this.notify();
   }
@@ -86,25 +84,25 @@ export class WorldStateStore {
 
     if (this.state.sequenceGap !== null) {
       return {
-        status: "gap",
+        status: 'gap',
         expectedSeq: this.state.sequenceGap.expectedSeq,
-        receivedSeq: delta.seq
+        receivedSeq: delta.seq,
       };
     }
 
     const lastSeq = this.state.lastSeq;
     if (lastSeq !== null && delta.seq <= lastSeq) {
-      return { status: "duplicate", receivedSeq: delta.seq };
+      return { status: 'duplicate', receivedSeq: delta.seq };
     }
 
     const expectedSeq = lastSeq === null ? null : lastSeq + 1;
     if (expectedSeq === null || delta.seq !== expectedSeq) {
       this.state = {
         ...this.state,
-        sequenceGap: { expectedSeq, receivedSeq: delta.seq }
+        sequenceGap: { expectedSeq, receivedSeq: delta.seq },
       };
       this.notify();
-      return { status: "gap", expectedSeq, receivedSeq: delta.seq };
+      return { status: 'gap', expectedSeq, receivedSeq: delta.seq };
     }
 
     let characters = new Map(this.state.characters);
@@ -113,17 +111,17 @@ export class WorldStateStore {
 
     for (const change of delta.changes) {
       switch (change.type) {
-        case "character_moved": {
+        case 'character_moved': {
           const character = characters.get(change.characterId);
           if (character) {
             characters.set(change.characterId, {
               ...character,
-              transform: change.to
+              transform: change.to,
             });
           }
           break;
         }
-        case "character_action_started": {
+        case 'character_action_started': {
           const character = characters.get(change.characterId);
           if (character) {
             characters.set(change.characterId, {
@@ -131,9 +129,7 @@ export class WorldStateStore {
               currentAction: {
                 actionCode: change.actionCode,
                 startedAt: delta.serverTime,
-                ...(change.durationMs === undefined
-                  ? {}
-                  : { durationMs: change.durationMs }),
+                ...(change.durationMs === undefined ? {} : { durationMs: change.durationMs }),
                 ...(change.targetObjectId === undefined
                   ? {}
                   : { targetObjectId: change.targetObjectId }),
@@ -143,34 +139,34 @@ export class WorldStateStore {
                 ...(change.targetRegionId === undefined
                   ? {}
                   : { targetRegionId: change.targetRegionId }),
-                ...(change.phases === undefined ? {} : { phases: change.phases })
-              }
+                ...(change.phases === undefined ? {} : { phases: change.phases }),
+              },
             });
           }
           break;
         }
-        case "object_added": {
+        case 'object_added': {
           objects.set(change.objectId, {
             objectId: change.objectId,
             templateId: change.templateId,
             regionId: change.regionId,
             transform: change.position,
             state: change.state,
-            ...(change.enabled === undefined ? {} : { enabled: change.enabled })
+            ...(change.enabled === undefined ? {} : { enabled: change.enabled }),
           });
           break;
         }
-        case "object_state_changed": {
+        case 'object_state_changed': {
           const object = objects.get(change.objectId);
           if (object) {
             objects.set(change.objectId, {
               ...object,
-              state: { ...object.state, ...change.patch }
+              state: { ...object.state, ...change.patch },
             });
           }
           break;
         }
-        case "event_created":
+        case 'event_created':
           publicEvents = [...publicEvents, change.event];
           break;
       }
@@ -184,11 +180,11 @@ export class WorldStateStore {
       characters,
       objects,
       publicEvents,
-      lastSeq: delta.seq
+      lastSeq: delta.seq,
     };
     this.notify();
 
-    return { status: "applied", receivedSeq: delta.seq };
+    return { status: 'applied', receivedSeq: delta.seq };
   }
 
   subscribe(listener: WorldStateListener): () => void {

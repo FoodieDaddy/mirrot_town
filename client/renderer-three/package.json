@@ -1,1 +1,22 @@
-{"name":"@jingzhong-biancheng/renderer-three","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"vite","build":"tsc && vite build","preview":"vite preview"},"dependencies":{"@jingzhong-biancheng/client-core":"workspace:*","@jingzhong-biancheng/shared":"workspace:*","three":"^0.160.0","three-css2drender":"^1.0.0"},"devDependencies":{"@types/three":"^0.160.0","typescript":"^5.2.2","vite":"^5.0.0"}}
+{
+  "name": "@jingzhong-biancheng/renderer-three",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@jingzhong-biancheng/client-core": "workspace:*",
+    "@jingzhong-biancheng/shared": "workspace:*",
+    "three": "^0.160.0",
+    "three-css2drender": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.160.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}

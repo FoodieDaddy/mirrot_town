@@ -1,10 +1,6 @@
 import { WorldStateStore, type WorldState } from '@jingzhong-biancheng/client-core';
 
-import {
-  loadActiveMapPackage,
-  type LoadedMapPackage,
-  type MapHouse,
-} from './MapPackage.js';
+import { loadActiveMapPackage, type LoadedMapPackage, type MapHouse } from './MapPackage.js';
 import { RoofVisibilityState } from './RoofVisibilityState.js';
 import './style.css';
 
@@ -250,7 +246,7 @@ class BrowserWorldClient {
 
     const clientId = getClientId();
     const socket = new WebSocket(
-      `${webSocketBaseUrl()}/ws/worlds/${WORLD_ID}?clientId=${encodeURIComponent(clientId)}`,
+      `${webSocketBaseUrl()}/ws/worlds/${WORLD_ID}?clientId=${encodeURIComponent(clientId)}`
     );
     this.socket = socket;
 
@@ -322,9 +318,7 @@ class BrowserWorldClient {
           seq: message.seq,
           serverTime: message.serverTime,
           changes: message.payload.changes,
-          ...(message.payload.gameTime === undefined
-            ? {}
-            : { gameTime: message.payload.gameTime }),
+          ...(message.payload.gameTime === undefined ? {} : { gameTime: message.payload.gameTime }),
         };
         const result = this.store.applyDelta(delta);
         if (result.status === 'gap') {
@@ -383,7 +377,7 @@ function createDemoCharacter(
   x: number,
   y: number,
   actionCode: string,
-  mood: string,
+  mood: string
 ): CharacterViewState {
   return {
     characterId,
@@ -406,15 +400,12 @@ function normalizeSnapshot(value: unknown): WorldSnapshot {
     ? value.characters.map((character, index) => normalizeCharacter(character, index))
     : [];
 
-  const objects = Array.isArray(value.objects)
-    ? value.objects.filter(isWorldObject)
-    : [];
+  const objects = Array.isArray(value.objects) ? value.objects.filter(isWorldObject) : [];
 
   return {
     type: 'world_snapshot',
     worldId: typeof value.worldId === 'string' ? value.worldId : WORLD_ID,
-    snapshotVersion:
-      typeof value.snapshotVersion === 'number' ? value.snapshotVersion : 0,
+    snapshotVersion: typeof value.snapshotVersion === 'number' ? value.snapshotVersion : 0,
     seq:
       typeof value.seq === 'number'
         ? value.seq
@@ -461,12 +452,8 @@ function normalizeCharacter(value: unknown, index: number): CharacterViewState {
       : fallback?.name === undefined
         ? {}
         : { name: fallback.name }),
-    ...(typeof character.regionId === 'string'
-      ? { regionId: character.regionId }
-      : {}),
-    ...(typeof character.direction === 'string'
-      ? { direction: character.direction }
-      : {}),
+    ...(typeof character.regionId === 'string' ? { regionId: character.regionId } : {}),
+    ...(typeof character.direction === 'string' ? { direction: character.direction } : {}),
     ...(currentAction === undefined ? {} : { currentAction }),
     ...(isRecord(character.state)
       ? { state: character.state }
@@ -478,18 +465,12 @@ function normalizeCharacter(value: unknown, index: number): CharacterViewState {
 
 function isCharacterAction(value: unknown): value is CharacterAction {
   return (
-    isRecord(value) &&
-    typeof value.actionCode === 'string' &&
-    typeof value.startedAt === 'number'
+    isRecord(value) && typeof value.actionCode === 'string' && typeof value.startedAt === 'number'
   );
 }
 
 function isPublicWorldEvent(value: unknown): value is PublicWorldEvent {
-  return (
-    isRecord(value) &&
-    typeof value.eventCode === 'string' &&
-    typeof value.text === 'string'
-  );
+  return isRecord(value) && typeof value.eventCode === 'string' && typeof value.text === 'string';
 }
 
 function isWorldObject(value: unknown): value is WorldObject {
@@ -504,11 +485,7 @@ function isWorldObject(value: unknown): value is WorldObject {
 }
 
 function isTransform(value: unknown): value is { x: number; y: number } {
-  return (
-    isRecord(value) &&
-    typeof value.x === 'number' &&
-    typeof value.y === 'number'
-  );
+  return isRecord(value) && typeof value.x === 'number' && typeof value.y === 'number';
 }
 
 function isGameTime(value: unknown): value is GameTime {
@@ -565,12 +542,7 @@ function moodLabel(character: CharacterViewState): string {
   return typeof mood === 'string' ? mood : '平常';
 }
 
-function mapPointStyle(
-  x: number,
-  y: number,
-  sourceWidth: number,
-  sourceHeight: number,
-): string {
+function mapPointStyle(x: number, y: number, sourceWidth: number, sourceHeight: number): string {
   const left = (clamp(x, 0, sourceWidth) / sourceWidth) * 100;
   const top = (clamp(y, 0, sourceHeight) / sourceHeight) * 100;
   return `left:${left.toFixed(3)}%;top:${top.toFixed(3)}%`;
@@ -595,14 +567,14 @@ function roofClipStyle(house: MapHouse, map: LoadedMapPackage): string {
   const bottom = ((map.height - house.y - house.height) / map.height) * 100;
   const left = (house.x / map.width) * 100;
   return `clip-path:inset(${top.toFixed(3)}% ${right.toFixed(3)}% ${bottom.toFixed(
-    3,
+    3
   )}% ${left.toFixed(3)}%)`;
 }
 
 function mapDimension(
   map: Readonly<Record<string, unknown>> | null,
   key: 'width' | 'height',
-  fallback: number,
+  fallback: number
 ): number {
   const value = map?.[key];
   return typeof value === 'number' && value > 0 ? value : fallback;
@@ -644,7 +616,7 @@ function getSpriteStyle(character: CharacterViewState, asset: any): string {
 
   const direction = (character.state as any)?.direction || 'down';
   const isMoving = (character.state as any)?.isMoving;
-  
+
   let animName = isMoving ? `walk-${direction}` : `idle-front`;
   if (direction === 'right' && isMoving) animName = 'walk-left';
   if (direction === 'right' && !isMoving) animName = 'idle-left';
@@ -667,7 +639,7 @@ function getSpriteStyle(character: CharacterViewState, asset: any): string {
   const y = -(row * asset.frameHeight);
 
   let style = `width: ${asset.frameWidth}px; height: ${asset.frameHeight}px; background-image: url(${asset.spritesheet}); background-position: ${x}px ${y}px;`;
-  
+
   // Scale down to fit better (e.g., 64px height)
   const scale = 64 / asset.frameHeight;
   style += ` transform: scale(${scale}) translateY(-50%); transform-origin: top center;`;
@@ -688,25 +660,24 @@ function render(state: WorldState, status: ViewerStatus): void {
   const mapPackage = activeMapPackage;
   const renderMode = (state.map as any)?.renderMode || 'tilemap';
   const is25D = renderMode === 'background_2_5d';
-  
+
   const characters = [...state.characters.values()].slice(0, 10);
   const objects =
     state.objects.size > 0
       ? [...state.objects.values()].slice(0, 6)
       : (mapPackage?.initialObjects.slice(0, 6) ?? fallbackObjects);
   const gameTime = state.gameTime ?? status.gameTime ?? demoSnapshot.gameTime;
-  const latestEvent =
-    state.publicEvents.at(-1)?.text ?? '晨雾渐散，村中各家已陆续生火。';
+  const latestEvent = state.publicEvents.at(-1)?.text ?? '晨雾渐散，村中各家已陆续生火。';
   const connectionLabel = {
     connected: '已连接',
     connecting: '连接中',
     disconnected: '离线样景',
   }[status.connection];
   const roofState = roofVisibility.getState();
-  
+
   const sourceMapWidth = (state.map as any)?.gridWidth || mapDimension(state.map, 'width', 40);
   const sourceMapHeight = (state.map as any)?.gridHeight || mapDimension(state.map, 'height', 40);
-  
+
   const mapHouses = mapPackage?.houses ?? [];
   const mapAssets = (state as any).assets?.mapAssets;
   const backgroundUrl = mapAssets?.map?.background;
@@ -740,7 +711,10 @@ function render(state: WorldState, status: ViewerStatus): void {
             <h2>${escapeHtml((state.map as any)?.mapId === 'worldx_bianjing_night_market_v0' ? '汴京夜市' : (mapPackage?.title ?? '临水人家'))}</h2>
             <p>这里只观看，不惊扰镇中人的日常。</p>
           </div>
-          ${is25D ? '' : `
+          ${
+            is25D
+              ? ''
+              : `
           <div class="roof-controls" aria-label="房屋屋顶显示">
             <span>屋顶</span>
             <button
@@ -754,21 +728,20 @@ function render(state: WorldState, status: ViewerStatus): void {
               id="show-all-roofs"
               type="button"
               ${
-                roofState.mode === 'NORMAL' && roofState.hiddenHouseIds.size === 0
-                  ? 'disabled'
-                  : ''
+                roofState.mode === 'NORMAL' && roofState.hiddenHouseIds.size === 0 ? 'disabled' : ''
               }
             >
               全部显示屋顶
             </button>
           </div>
-          `}
+          `
+          }
           <div class="town map-town ${is25D ? 'mode-25d' : ''}">
             ${
-              is25D 
+              is25D
                 ? `<img class="map-image" src="${backgroundUrl}" alt="" draggable="false" style="object-fit: contain; background: #000;" />`
-                : (mapPackage
-                ? `
+                : mapPackage
+                  ? `
                   <img
                     class="map-image"
                     src="${mapPackage.previewUrl}"
@@ -786,7 +759,7 @@ function render(state: WorldState, status: ViewerStatus): void {
                           draggable="false"
                           style="${roofClipStyle(house, mapPackage)}"
                         />
-                      `,
+                      `
                     )
                     .join('')}
                   ${mapHouses
@@ -794,9 +767,7 @@ function render(state: WorldState, status: ViewerStatus): void {
                       (house) => `
                         <button
                           class="map-house-hit${
-                            roofVisibility.isRoofHidden(house.houseId)
-                              ? ' roof-hidden'
-                              : ''
+                            roofVisibility.isRoofHidden(house.houseId) ? ' roof-hidden' : ''
                           }"
                           style="${mapRectangleStyle(house, mapPackage)}"
                           type="button"
@@ -813,39 +784,39 @@ function render(state: WorldState, status: ViewerStatus): void {
                               : `title="点击切换${escapeHtml(house.name)}屋顶"`
                           }
                         ></button>
-                      `,
+                      `
                     )
                     .join('')}
                 `
-                : '<div class="map-loading">正在展开江南舆图...</div>')
+                  : '<div class="map-loading">正在展开江南舆图...</div>'
             }
             ${characters
-              .map(
-                (character, index) => {
-                  const asset = charAssets.find((a: any) => a.characterId === character.characterId);
-                  const spritesheet = asset?.spritesheet;
-                  const statusIcon = (character.state as any)?.statusIcon;
-                  return `
+              .map((character, index) => {
+                const asset = charAssets.find((a: any) => a.characterId === character.characterId);
+                const spritesheet = asset?.spritesheet;
+                const statusIcon = (character.state as any)?.statusIcon;
+                return `
                   <div class="npc map-npc" style="${mapPointStyle(
                     character.transform.x,
                     character.transform.y,
                     sourceMapWidth,
-                    sourceMapHeight,
+                    sourceMapHeight
                   )}; z-index: ${100 + Math.floor(character.transform.y)};">
                     ${statusIcon ? `<div class="npc-status-icon">${statusIcon}</div>` : ''}
-                    ${asset 
-                      ? `<div class="npc-sprite" style="${getSpriteStyle(character, asset)}"></div>`
-                      : `<i class="npc-figure" style="--npc-color:${
-                      ['#667462', '#7b665c', '#6d716d', '#657476', '#8a7859'][index % 5]
-                    }"></i>`}
+                    ${
+                      asset
+                        ? `<div class="npc-sprite" style="${getSpriteStyle(character, asset)}"></div>`
+                        : `<i class="npc-figure" style="--npc-color:${
+                            ['#667462', '#7b665c', '#6d716d', '#657476', '#8a7859'][index % 5]
+                          }"></i>`
+                    }
                     <span class="npc-label">
                       <strong>${escapeHtml(character.name ?? character.characterId)}</strong>
                       <span>${escapeHtml(actionLabel(character))}</span>
                     </span>
                   </div>
                 `;
-                },
-              )
+              })
               .join('')}
           </div>
         </section>
@@ -855,7 +826,7 @@ function render(state: WorldState, status: ViewerStatus): void {
             <div>
               <div class="day">第 ${gameTime.day} 日</div>
               <div class="clock">${String(gameTime.hour).padStart(2, '0')}:${String(
-                gameTime.minute,
+                gameTime.minute
               ).padStart(2, '0')}</div>
             </div>
             <div class="season-stamp" title="${escapeHtml(gameTime.season ?? '')}">
@@ -876,13 +847,13 @@ function render(state: WorldState, status: ViewerStatus): void {
                       <span class="person-index">${String(index + 1).padStart(2, '0')}</span>
                       <div>
                         <div class="person-name">${escapeHtml(
-                          character.name ?? character.characterId,
+                          character.name ?? character.characterId
                         )}</div>
                         <div class="person-action">${escapeHtml(actionLabel(character))}</div>
                       </div>
                       <span class="person-mood">${escapeHtml(moodLabel(character))}</span>
                     </div>
-                  `,
+                  `
                 )
                 .join('')}
             </div>
@@ -904,7 +875,7 @@ function render(state: WorldState, status: ViewerStatus): void {
                       </div>
                       <span class="person-mood">${object.enabled === false ? '停用' : '在用'}</span>
                     </div>
-                  `,
+                  `
                 )
                 .join('')}
             </div>
@@ -935,29 +906,29 @@ function render(state: WorldState, status: ViewerStatus): void {
     const rect = town.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * sourceMapWidth;
     const y = ((e.clientY - rect.top) / rect.height) * sourceMapHeight;
-    
+
     const gridX = Math.floor(x);
     const gridY = Math.floor(y);
-    
+
     const navGrid = (state.map as any)?.navGrid;
     if (navGrid && navGrid.walkable) {
       const isWalkable = navGrid.walkable[gridY]?.[gridX] === 1;
       console.log(`Clicked grid (${gridX}, ${gridY}), walkable: ${isWalkable}`);
       if (!isWalkable) {
-          // Show a temporary red dot or alert
-          const dot = document.createElement('div');
-          dot.style.position = 'absolute';
-          dot.style.left = `${(e.clientX - rect.left)}px`;
-          dot.style.top = `${(e.clientY - rect.top)}px`;
-          dot.style.width = '10px';
-          dot.style.height = '10px';
-          dot.style.background = 'red';
-          dot.style.borderRadius = '50%';
-          dot.style.transform = 'translate(-50%, -50%)';
-          dot.style.zIndex = '1000';
-          dot.style.pointerEvents = 'none';
-          town.appendChild(dot);
-          setTimeout(() => dot.remove(), 500);
+        // Show a temporary red dot or alert
+        const dot = document.createElement('div');
+        dot.style.position = 'absolute';
+        dot.style.left = `${e.clientX - rect.left}px`;
+        dot.style.top = `${e.clientY - rect.top}px`;
+        dot.style.width = '10px';
+        dot.style.height = '10px';
+        dot.style.background = 'red';
+        dot.style.borderRadius = '50%';
+        dot.style.transform = 'translate(-50%, -50%)';
+        dot.style.zIndex = '1000';
+        dot.style.pointerEvents = 'none';
+        town.appendChild(dot);
+        setTimeout(() => dot.remove(), 500);
       }
     }
   });

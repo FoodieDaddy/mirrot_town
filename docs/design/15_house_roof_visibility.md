@@ -15,7 +15,7 @@
 所有房屋默认显示完整屋顶。
 
 ```ts
-type RoofVisibilityMode = "NORMAL" | "ALL_HIDDEN";
+type RoofVisibilityMode = 'NORMAL' | 'ALL_HIDDEN';
 
 type HouseRoofState = {
   mode: RoofVisibilityMode;

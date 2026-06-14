@@ -20,15 +20,19 @@ AI 驱动的常驻江南小镇模拟器。
 > **注意：** 请先人工将下载的素材压缩包（如 `.zip`）解压到 `assets/source/` 对应的来源目录下（例如 `assets/source/kaykit/...`）。目前的 import 脚本不会自动解压 zip 文件。
 
 1. **导入与转换素材**:
+
    ```bash
    pnpm import:qtown-assets
    ```
+
    这会从 `assets/source/` 中扫描符合条件的原始素材，执行 `.gltf` 到 `.glb` 的自动转换，并生成正式的运行素材至 `assets/glb/` 目录。
 
 2. **验证素材**:
+
    ```bash
    pnpm validate:qtown-assets
    ```
+
    校验 Manifest 的合法性、GLB 二进制格式的正确性以及地图配置是否存在断链。
 
 3. **同步运行时资源**:
@@ -49,6 +53,7 @@ pnpm dev:renderer-three
 访问终端提示的本地端口（如 `http://localhost:5180`），即可观测 3D QTown 运行状态。
 
 ### 当前限制
+
 1. 仅限使用指定来源的低模卡通资源。
 2. 前端仅提供基础的渲染、点击选取建筑和控制屋顶隐藏功能。
 3. 暂时不含深度的联机状态交互逻辑。

@@ -3,582 +3,222 @@
     "id": "house_liu_001",
     "name": "刘生家",
     "type": "home",
-    "tags": [
-      "private",
-      "indoor",
-      "home"
-    ],
+    "tags": ["private", "indoor", "home"],
     "polygon": [
-      [
-        82,
-        27
-      ],
-      [
-        106,
-        27
-      ],
-      [
-        106,
-        45
-      ],
-      [
-        82,
-        45
-      ]
+      [82, 27],
+      [106, 27],
+      [106, 45],
+      [82, 45]
     ],
     "interior_bounds": [
-      [
-        87,
-        31
-      ],
-      [
-        99,
-        31
-      ],
-      [
-        99,
-        40
-      ],
-      [
-        87,
-        40
-      ]
+      [87, 31],
+      [99, 31],
+      [99, 40],
+      [87, 40]
     ],
     "owner_id": "char_liu",
     "roof_group_id": "roof_house_liu_001",
-    "allowed_actions": [
-      "sleep",
-      "sit",
-      "rest",
-      "talk",
-      "place_object"
-    ]
+    "allowed_actions": ["sleep", "sit", "rest", "talk", "place_object"]
   },
   {
     "id": "house_miao_001",
     "name": "苗娘家",
     "type": "home",
-    "tags": [
-      "private",
-      "indoor",
-      "home"
-    ],
+    "tags": ["private", "indoor", "home"],
     "polygon": [
-      [
-        91,
-        50
-      ],
-      [
-        117,
-        50
-      ],
-      [
-        117,
-        68
-      ],
-      [
-        91,
-        68
-      ]
+      [91, 50],
+      [117, 50],
+      [117, 68],
+      [91, 68]
     ],
     "interior_bounds": [
-      [
-        96,
-        54
-      ],
-      [
-        108,
-        54
-      ],
-      [
-        108,
-        63
-      ],
-      [
-        96,
-        63
-      ]
+      [96, 54],
+      [108, 54],
+      [108, 63],
+      [96, 63]
     ],
     "owner_id": "char_miao",
     "roof_group_id": "roof_house_miao_001",
-    "allowed_actions": [
-      "sleep",
-      "sit",
-      "rest",
-      "talk",
-      "place_object"
-    ]
+    "allowed_actions": ["sleep", "sit", "rest", "talk", "place_object"]
   },
   {
     "id": "house_chen_001",
     "name": "陈木匠家",
     "type": "home",
-    "tags": [
-      "private",
-      "indoor",
-      "home"
-    ],
+    "tags": ["private", "indoor", "home"],
     "polygon": [
-      [
-        43,
-        18
-      ],
-      [
-        65,
-        18
-      ],
-      [
-        65,
-        35
-      ],
-      [
-        43,
-        35
-      ]
+      [43, 18],
+      [65, 18],
+      [65, 35],
+      [43, 35]
     ],
     "interior_bounds": [
-      [
-        48,
-        22
-      ],
-      [
-        59,
-        22
-      ],
-      [
-        59,
-        30
-      ],
-      [
-        48,
-        30
-      ]
+      [48, 22],
+      [59, 22],
+      [59, 30],
+      [48, 30]
     ],
     "owner_id": "char_chen",
     "roof_group_id": "roof_house_chen_001",
-    "allowed_actions": [
-      "sleep",
-      "sit",
-      "rest",
-      "talk",
-      "place_object"
-    ]
+    "allowed_actions": ["sleep", "sit", "rest", "talk", "place_object"]
   },
   {
     "id": "house_wu_001",
     "name": "吴渔夫家",
     "type": "home",
-    "tags": [
-      "private",
-      "indoor",
-      "home"
-    ],
+    "tags": ["private", "indoor", "home"],
     "polygon": [
-      [
-        29,
-        49
-      ],
-      [
-        49,
-        49
-      ],
-      [
-        49,
-        64
-      ],
-      [
-        29,
-        64
-      ]
+      [29, 49],
+      [49, 49],
+      [49, 64],
+      [29, 64]
     ],
     "interior_bounds": [
-      [
-        33,
-        52
-      ],
-      [
-        43,
-        52
-      ],
-      [
-        43,
-        59
-      ],
-      [
-        33,
-        59
-      ]
+      [33, 52],
+      [43, 52],
+      [43, 59],
+      [33, 59]
     ],
     "owner_id": "char_wu",
     "roof_group_id": "roof_house_wu_001",
-    "allowed_actions": [
-      "sleep",
-      "sit",
-      "rest",
-      "talk",
-      "place_object"
-    ]
+    "allowed_actions": ["sleep", "sit", "rest", "talk", "place_object"]
   },
   {
     "id": "tavern_small_001",
     "name": "村口食肆",
     "type": "business",
-    "tags": [
-      "public",
-      "food",
-      "social"
-    ],
+    "tags": ["public", "food", "social"],
     "polygon": [
-      [
-        55,
-        56
-      ],
-      [
-        77,
-        56
-      ],
-      [
-        77,
-        69
-      ],
-      [
-        55,
-        69
-      ]
+      [55, 56],
+      [77, 56],
+      [77, 69],
+      [55, 69]
     ],
     "interior_bounds": [
-      [
-        59,
-        59
-      ],
-      [
-        71,
-        59
-      ],
-      [
-        71,
-        66
-      ],
-      [
-        59,
-        66
-      ]
+      [59, 59],
+      [71, 59],
+      [71, 66],
+      [59, 66]
     ],
     "owner_id": "business_tavern",
     "roof_group_id": "roof_tavern_small_001",
-    "allowed_actions": [
-      "sleep",
-      "sit",
-      "rest",
-      "talk",
-      "place_object"
-    ]
+    "allowed_actions": ["sleep", "sit", "rest", "talk", "place_object"]
   },
   {
     "id": "workshop_001",
     "name": "木工棚",
     "type": "workshop",
-    "tags": [
-      "work",
-      "wood",
-      "public_work"
-    ],
+    "tags": ["work", "wood", "public_work"],
     "polygon": [
-      [
-        22,
-        36
-      ],
-      [
-        45,
-        36
-      ],
-      [
-        45,
-        53
-      ],
-      [
-        22,
-        53
-      ]
+      [22, 36],
+      [45, 36],
+      [45, 53],
+      [22, 53]
     ],
-    "allowed_actions": [
-      "craft",
-      "repair",
-      "make_plank",
-      "work"
-    ]
+    "allowed_actions": ["craft", "repair", "make_plank", "work"]
   },
   {
     "id": "stable_001",
     "name": "南马棚",
     "type": "stable",
-    "tags": [
-      "animal",
-      "horse",
-      "work"
-    ],
+    "tags": ["animal", "horse", "work"],
     "polygon": [
-      [
-        88,
-        71
-      ],
-      [
-        119,
-        71
-      ],
-      [
-        119,
-        92
-      ],
-      [
-        88,
-        92
-      ]
+      [88, 71],
+      [119, 71],
+      [119, 92],
+      [88, 92]
     ],
-    "allowed_actions": [
-      "feed_horse",
-      "water_horse",
-      "groom_horse",
-      "clean_stall"
-    ]
+    "allowed_actions": ["feed_horse", "water_horse", "groom_horse", "clean_stall"]
   },
   {
     "id": "plaza_001",
     "name": "老树广场",
     "type": "plaza",
-    "tags": [
-      "public",
-      "social",
-      "notice",
-      "market"
-    ],
+    "tags": ["public", "social", "notice", "market"],
     "polygon": [
-      [
-        52,
-        39
-      ],
-      [
-        78,
-        39
-      ],
-      [
-        78,
-        56
-      ],
-      [
-        52,
-        56
-      ]
+      [52, 39],
+      [78, 39],
+      [78, 56],
+      [52, 56]
     ],
-    "allowed_actions": [
-      "talk",
-      "gather",
-      "read_notice",
-      "trade",
-      "sit"
-    ]
+    "allowed_actions": ["talk", "gather", "read_notice", "trade", "sit"]
   },
   {
     "id": "riverbank_west_001",
     "name": "西河岸",
     "type": "riverbank",
-    "tags": [
-      "public",
-      "water",
-      "fishing",
-      "wash"
-    ],
+    "tags": ["public", "water", "fishing", "wash"],
     "polygon": [
-      [
-        5,
-        20
-      ],
-      [
-        28,
-        20
-      ],
-      [
-        28,
-        66
-      ],
-      [
-        5,
-        66
-      ]
+      [5, 20],
+      [28, 20],
+      [28, 66],
+      [5, 66]
     ],
-    "allowed_actions": [
-      "fish",
-      "fetch_water",
-      "wash",
-      "sit",
-      "talk"
-    ]
+    "allowed_actions": ["fish", "fetch_water", "wash", "sit", "talk"]
   },
   {
     "id": "bamboo_grove_001",
     "name": "北竹林",
     "type": "grove",
-    "tags": [
-      "gather",
-      "wood",
-      "quiet"
-    ],
+    "tags": ["gather", "wood", "quiet"],
     "polygon": [
-      [
-        18,
-        6
-      ],
-      [
-        50,
-        6
-      ],
-      [
-        50,
-        27
-      ],
-      [
-        18,
-        27
-      ]
+      [18, 6],
+      [50, 6],
+      [50, 27],
+      [18, 27]
     ],
-    "allowed_actions": [
-      "gather_bamboo",
-      "forage",
-      "observe"
-    ]
+    "allowed_actions": ["gather_bamboo", "forage", "observe"]
   },
   {
     "id": "village_gate_001",
     "name": "南村口",
     "type": "gate",
-    "tags": [
-      "public",
-      "entrance",
-      "future_defense"
-    ],
+    "tags": ["public", "entrance", "future_defense"],
     "polygon": [
-      [
-        54,
-        86
-      ],
-      [
-        74,
-        86
-      ],
-      [
-        74,
-        95
-      ],
-      [
-        54,
-        95
-      ]
+      [54, 86],
+      [74, 86],
+      [74, 95],
+      [54, 95]
     ],
-    "allowed_actions": [
-      "enter",
-      "leave",
-      "guard_future"
-    ]
+    "allowed_actions": ["enter", "leave", "guard_future"]
   },
   {
     "id": "rice_field_south_001",
     "name": "南稻田",
     "type": "farm",
-    "tags": [
-      "crop",
-      "rice",
-      "work",
-      "outdoor"
-    ],
+    "tags": ["crop", "rice", "work", "outdoor"],
     "polygon": [
-      [
-        38,
-        65
-      ],
-      [
-        80,
-        65
-      ],
-      [
-        80,
-        89
-      ],
-      [
-        38,
-        89
-      ]
+      [38, 65],
+      [80, 65],
+      [80, 89],
+      [38, 89]
     ],
-    "allowed_actions": [
-      "hoe_soil",
-      "plant_seed",
-      "water_crop",
-      "harvest_crop"
-    ]
+    "allowed_actions": ["hoe_soil", "plant_seed", "water_crop", "harvest_crop"]
   },
   {
     "id": "herb_garden_west_001",
     "name": "西菜圃",
     "type": "farm",
-    "tags": [
-      "crop",
-      "vegetable",
-      "work",
-      "outdoor"
-    ],
+    "tags": ["crop", "vegetable", "work", "outdoor"],
     "polygon": [
-      [
-        18,
-        67
-      ],
-      [
-        38,
-        67
-      ],
-      [
-        38,
-        86
-      ],
-      [
-        18,
-        86
-      ]
+      [18, 67],
+      [38, 67],
+      [38, 86],
+      [18, 86]
     ],
-    "allowed_actions": [
-      "plant_seed",
-      "water_crop",
-      "harvest_crop"
-    ]
+    "allowed_actions": ["plant_seed", "water_crop", "harvest_crop"]
   },
   {
     "id": "pond_small_001",
     "name": "小荷塘",
     "type": "pond",
-    "tags": [
-      "water",
-      "quiet",
-      "decor"
-    ],
+    "tags": ["water", "quiet", "decor"],
     "polygon": [
-      [
-        73,
-        55
-      ],
-      [
-        83,
-        55
-      ],
-      [
-        83,
-        63
-      ],
-      [
-        73,
-        63
-      ]
+      [73, 55],
+      [83, 55],
+      [83, 63],
+      [73, 63]
     ],
-    "allowed_actions": [
-      "observe",
-      "fetch_water"
-    ]
+    "allowed_actions": ["observe", "fetch_water"]
   }
 ]

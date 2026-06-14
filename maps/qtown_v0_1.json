@@ -2751,6 +2751,143 @@
         "y": 0,
         "z": -3
       }
+    },
+    {
+      "id": "p_plaza_stall1_table",
+      "assetId": "prop_table_001",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": -4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.78,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_stall1_crate",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -3.2
+      }
+    },
+    {
+      "id": "p_plaza_stall2_table",
+      "assetId": "prop_table_001",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 2.36,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_stall2_barrel",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 3.2
+      }
+    },
+    {
+      "id": "p_plaza_stall3_table",
+      "assetId": "prop_table_001",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": -4
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.78,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_stall3_crate",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": 3.3,
+        "y": 0,
+        "z": -4.5
+      }
+    },
+    {
+      "id": "p_plaza_stall4_table",
+      "assetId": "prop_table_001",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": -2.36,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_stall4_barrel",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": -3.3,
+        "y": 0,
+        "z": 4.5
+      }
+    },
+    {
+      "id": "p_plaza_crate_stack",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": -4
+      }
+    },
+    {
+      "id": "p_plaza_crate_top",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": -2,
+        "y": 0.6,
+        "z": -4
+      }
+    },
+    {
+      "id": "p_plaza_bench3",
+      "assetId": "prop_bench_001",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 4
+      }
+    },
+    {
+      "id": "p_townhall_barrel1",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": -9
+      }
+    },
+    {
+      "id": "p_townhall_barrel2",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": -9
+      }
     }
   ],
   "nature": [
@@ -2933,6 +3070,78 @@
         "y": 0,
         "z": 24
       }
+    },
+    {
+      "id": "n_mid_bush1",
+      "assetId": "nature_bush_001",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": -6
+      }
+    },
+    {
+      "id": "n_mid_bush2",
+      "assetId": "nature_bush_002",
+      "position": {
+        "x": 8,
+        "y": 0,
+        "z": -6
+      }
+    },
+    {
+      "id": "n_mid_rock1",
+      "assetId": "nature_rock_small_001",
+      "position": {
+        "x": -6,
+        "y": 0,
+        "z": 6
+      }
+    },
+    {
+      "id": "n_mid_rock2",
+      "assetId": "nature_rock_small_002",
+      "position": {
+        "x": 7,
+        "y": 0,
+        "z": 5
+      }
+    },
+    {
+      "id": "n_path_rock1",
+      "assetId": "nature_rock_small_003",
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": -2.5
+      }
+    },
+    {
+      "id": "n_path_bush1",
+      "assetId": "nature_bush_002",
+      "position": {
+        "x": 7,
+        "y": 0,
+        "z": -2.5
+      }
+    },
+    {
+      "id": "n_path_rock2",
+      "assetId": "nature_rock_small_001",
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": 9
+      }
+    },
+    {
+      "id": "n_path_bush2",
+      "assetId": "nature_bush_001",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 7
+      }
     }
   ],
   "resourceNodes": [],
@@ -2943,49 +3152,59 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 2
+        "z": 3
       },
-      "name": "玩家"
+      "name": "玩家",
+      "displayName": "玩家",
+      "role": "player"
     },
     {
       "id": "spawn_npc_ammu",
       "assetId": "npc_base_001",
       "position": {
-        "x": -2,
+        "x": -2.5,
         "y": 0,
-        "z": -1
+        "z": -1.5
       },
-      "name": "阿木"
+      "name": "阿木",
+      "displayName": "阿木",
+      "role": "resident"
     },
     {
       "id": "spawn_npc_laozhou",
       "assetId": "npc_base_003",
       "position": {
-        "x": -3,
+        "x": -3.5,
         "y": 0,
         "z": 2
       },
-      "name": "老周"
+      "name": "老周",
+      "displayName": "老周",
+      "role": "resident"
     },
     {
       "id": "spawn_npc_xiaohe",
       "assetId": "npc_base_002",
       "position": {
-        "x": 2,
+        "x": 2.5,
         "y": 0,
         "z": 2
       },
-      "name": "小禾"
+      "name": "小禾",
+      "displayName": "小禾",
+      "role": "resident"
     },
     {
       "id": "spawn_npc_aqing",
       "assetId": "npc_base_001",
       "position": {
-        "x": 3,
+        "x": 3.5,
         "y": 0,
-        "z": -1
+        "z": -1.5
       },
-      "name": "阿青"
+      "name": "阿青",
+      "displayName": "阿青",
+      "role": "resident"
     }
   ]
 }

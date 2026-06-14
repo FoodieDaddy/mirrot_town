@@ -95,17 +95,17 @@ item_price_definitions
 
 第一批价格建议：
 
-| item_code | base_price | 说明 |
-|---|---:|---|
-| wheat_seed | 2 | 小麦种子 |
-| carrot_seed | 3 | 菜种 |
-| flower_seed | 2 | 花种 |
-| hay | 1 | 干草 |
-| wood_plank | 4 | 木板 |
-| cloth | 5 | 布 |
-| simple_bed | 25 | 简易木床 |
-| fishing_rod | 18 | 钓竿 |
-| wooden_box | 12 | 木箱 |
+| item_code   | base_price | 说明     |
+| ----------- | ---------: | -------- |
+| wheat_seed  |          2 | 小麦种子 |
+| carrot_seed |          3 | 菜种     |
+| flower_seed |          2 | 花种     |
+| hay         |          1 | 干草     |
+| wood_plank  |          4 | 木板     |
+| cloth       |          5 | 布       |
+| simple_bed  |         25 | 简易木床 |
+| fishing_rod |         18 | 钓竿     |
+| wooden_box  |         12 | 木箱     |
 
 ## 6. 店铺/经营主体
 

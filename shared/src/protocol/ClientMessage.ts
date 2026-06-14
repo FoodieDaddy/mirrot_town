@@ -1,5 +1,5 @@
 export interface ViewerJoinClientMessage {
-  type: "viewer_join";
+  type: 'viewer_join';
   worldId: string;
   clientSeq: number;
   payload: {
@@ -9,7 +9,7 @@ export interface ViewerJoinClientMessage {
 }
 
 export interface PingClientMessage {
-  type: "ping";
+  type: 'ping';
   worldId: string;
   clientSeq: number;
   payload?: {

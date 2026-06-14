@@ -6,12 +6,8 @@
     "open_layer": "Roof_Open",
     "mode": "click_toggle",
     "default_state": "CLOSED",
-    "closed_visible_layers": [
-      "Roof"
-    ],
-    "open_visible_layers": [
-      "Roof_Open"
-    ],
+    "closed_visible_layers": ["Roof"],
+    "open_visible_layers": ["Roof_Open"],
     "behavior": "client_only"
   },
   {
@@ -21,12 +17,8 @@
     "open_layer": "Roof_Open",
     "mode": "click_toggle",
     "default_state": "CLOSED",
-    "closed_visible_layers": [
-      "Roof"
-    ],
-    "open_visible_layers": [
-      "Roof_Open"
-    ],
+    "closed_visible_layers": ["Roof"],
+    "open_visible_layers": ["Roof_Open"],
     "behavior": "client_only"
   },
   {
@@ -36,12 +28,8 @@
     "open_layer": "Roof_Open",
     "mode": "click_toggle",
     "default_state": "CLOSED",
-    "closed_visible_layers": [
-      "Roof"
-    ],
-    "open_visible_layers": [
-      "Roof_Open"
-    ],
+    "closed_visible_layers": ["Roof"],
+    "open_visible_layers": ["Roof_Open"],
     "behavior": "client_only"
   },
   {
@@ -51,12 +39,8 @@
     "open_layer": "Roof_Open",
     "mode": "click_toggle",
     "default_state": "CLOSED",
-    "closed_visible_layers": [
-      "Roof"
-    ],
-    "open_visible_layers": [
-      "Roof_Open"
-    ],
+    "closed_visible_layers": ["Roof"],
+    "open_visible_layers": ["Roof_Open"],
     "behavior": "client_only"
   },
   {
@@ -66,12 +50,8 @@
     "open_layer": "Roof_Open",
     "mode": "click_toggle",
     "default_state": "CLOSED",
-    "closed_visible_layers": [
-      "Roof"
-    ],
-    "open_visible_layers": [
-      "Roof_Open"
-    ],
+    "closed_visible_layers": ["Roof"],
+    "open_visible_layers": ["Roof_Open"],
     "behavior": "client_only"
   }
 ]

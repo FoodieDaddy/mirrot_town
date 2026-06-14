@@ -1,15 +1,15 @@
 export type {
   ActionPhaseViewState,
   CharacterActionViewState,
-  CharacterViewState
-} from "./characters/CharacterViewState.js";
-export type { Transform } from "./map/Transform.js";
-export type { WorldObject } from "./objects/WorldObject.js";
+  CharacterViewState,
+} from './characters/CharacterViewState.js';
+export type { Transform } from './map/Transform.js';
+export type { WorldObject } from './objects/WorldObject.js';
 export type {
   ClientMessage,
   PingClientMessage,
-  ViewerJoinClientMessage
-} from "./protocol/ClientMessage.js";
+  ViewerJoinClientMessage,
+} from './protocol/ClientMessage.js';
 export type {
   ErrorServerMessage,
   PongServerMessage,
@@ -18,8 +18,8 @@ export type {
   ServerPingMessage,
   WorldDeltaServerMessage,
   WorldSnapshotServerMessage,
-  WorldStatusServerMessage
-} from "./protocol/ServerMessage.js";
+  WorldStatusServerMessage,
+} from './protocol/ServerMessage.js';
 export type {
   CharacterActionStartedChange,
   CharacterMovedChange,
@@ -27,10 +27,7 @@ export type {
   ObjectAddedChange,
   ObjectStateChangedChange,
   WorldDelta,
-  WorldDeltaChange
-} from "./protocol/WorldDelta.js";
-export type {
-  PublicWorldEvent,
-  WorldSnapshot
-} from "./protocol/WorldSnapshot.js";
-export type { GameTime } from "./time/GameTime.js";
+  WorldDeltaChange,
+} from './protocol/WorldDelta.js';
+export type { PublicWorldEvent, WorldSnapshot } from './protocol/WorldSnapshot.js';
+export type { GameTime } from './time/GameTime.js';

@@ -60,8 +60,8 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "80:80"
-      - "443:443"
+      - '80:80'
+      - '443:443'
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - ./public:/usr/share/nginx/html
@@ -72,14 +72,14 @@ services:
     image: jingzhong-biancheng-server:latest
     env_file: .env
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       - redis
       - mysql
 
   agent-worker:
     image: jingzhong-biancheng-server:latest
-    command: ["node", "dist/worker/agent-worker.js"]
+    command: ['node', 'dist/worker/agent-worker.js']
     env_file: .env
     depends_on:
       - redis

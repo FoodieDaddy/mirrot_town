@@ -10,13 +10,7 @@
   },
   "source_map": "../source/jiangnan_village_v0_1.tmj",
   "tileset": "../tilesets/jiangnan_v0_1_tileset.tsj",
-  "style_tags": [
-    "三国时期",
-    "江南",
-    "远离战火",
-    "生活模拟",
-    "模块化地图"
-  ],
+  "style_tags": ["三国时期", "江南", "远离战火", "生活模拟", "模块化地图"],
   "compiled_files": {
     "regions": "regions.json",
     "interaction_points": "interaction_points.json",

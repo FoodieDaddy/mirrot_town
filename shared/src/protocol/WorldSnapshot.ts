@@ -1,9 +1,9 @@
-import type { CharacterViewState } from "../characters/CharacterViewState.js";
-import type { WorldObject } from "../objects/WorldObject.js";
-import type { GameTime } from "../time/GameTime.js";
+import type { CharacterViewState } from '../characters/CharacterViewState.js';
+import type { WorldObject } from '../objects/WorldObject.js';
+import type { GameTime } from '../time/GameTime.js';
 
 export interface WorldSnapshot {
-  type: "world_snapshot";
+  type: 'world_snapshot';
   worldId: string;
   snapshotVersion: number;
   seq: number;

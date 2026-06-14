@@ -10,7 +10,15 @@ export interface MapPackage {
   initialObjects: any[];
 }
 export const activeMapPackage: MapPackage | null = null;
-export function mapDimension(map: any, dim: string, defaultVal: number): number { return defaultVal; }
-export function mapRectangleStyle(house: MapHouse, mapPackage: MapPackage): string { return ''; }
-export function roofClipStyle(house: MapHouse, mapPackage: MapPackage): string { return ''; }
-export function mapPointStyle(x: number, y: number, w: number, h: number): string { return ''; }
+export function mapDimension(map: any, dim: string, defaultVal: number): number {
+  return defaultVal;
+}
+export function mapRectangleStyle(house: MapHouse, mapPackage: MapPackage): string {
+  return '';
+}
+export function roofClipStyle(house: MapHouse, mapPackage: MapPackage): string {
+  return '';
+}
+export function mapPointStyle(x: number, y: number, w: number, h: number): string {
+  return '';
+}

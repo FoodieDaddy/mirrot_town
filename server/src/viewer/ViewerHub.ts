@@ -1,13 +1,7 @@
-import type {
-  ServerMessage,
-  WorldDelta,
-} from "@jingzhong-biancheng/shared";
-import type { WebSocket } from "ws";
+import type { ServerMessage, WorldDelta } from '@jingzhong-biancheng/shared';
+import type { WebSocket } from 'ws';
 
-import type {
-  WorldRuntime,
-  WorldRuntimeStatus,
-} from "../engine/WorldRuntime.js";
+import type { WorldRuntime, WorldRuntimeStatus } from '../engine/WorldRuntime.js';
 
 const OPEN = 1;
 const MAX_BUFFERED_BYTES = 1024 * 1024;
@@ -17,7 +11,7 @@ export class ViewerHub {
 
   constructor(
     private readonly runtime: WorldRuntime,
-    private readonly now: () => number = Date.now,
+    private readonly now: () => number = Date.now
   ) {}
 
   get viewerCount(): number {
@@ -38,25 +32,25 @@ export class ViewerHub {
     const status = this.runtime.getStatus();
     this.send(
       client,
-      this.createMessage("world_status", {
+      this.createMessage('world_status', {
         simulationMode: status.simulationMode,
         viewerCount: status.viewerCount,
         gameTime: status.gameTime,
-      }),
+      })
     );
   }
 
   sendPong(client: WebSocket, clientSeq: number): void {
-    this.send(client, this.createMessage("pong", { clientSeq }));
+    this.send(client, this.createMessage('pong', { clientSeq }));
   }
 
   sendError(client: WebSocket, code: string, message: string): void {
-    this.send(client, this.createMessage("error", { code, message }));
+    this.send(client, this.createMessage('error', { code, message }));
   }
 
   broadcastDelta(delta: WorldDelta): void {
     this.broadcast({
-      type: "world_delta",
+      type: 'world_delta',
       worldId: delta.worldId,
       seq: delta.seq,
       serverTime: delta.serverTime,
@@ -70,11 +64,11 @@ export class ViewerHub {
   broadcastStatus(): void {
     const status: WorldRuntimeStatus = this.runtime.getStatus();
     this.broadcast(
-      this.createMessage("world_status", {
+      this.createMessage('world_status', {
         simulationMode: status.simulationMode,
         viewerCount: status.viewerCount,
         gameTime: status.gameTime,
-      }),
+      })
     );
   }
 
@@ -98,10 +92,7 @@ export class ViewerHub {
     const text = JSON.stringify(message);
 
     for (const client of this.clients) {
-      if (
-        client.readyState !== OPEN ||
-        client.bufferedAmount > MAX_BUFFERED_BYTES
-      ) {
+      if (client.readyState !== OPEN || client.bufferedAmount > MAX_BUFFERED_BYTES) {
         continue;
       }
       client.send(text);

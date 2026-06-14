@@ -6,11 +6,7 @@
       "id": "building_house_wood_001",
       "type": "building",
       "path": "/assets/glb/buildings/building_house_wood_001.glb",
-      "tags": [
-        "house",
-        "residential",
-        "q-style"
-      ],
+      "tags": ["house", "residential", "q-style"],
       "size": {
         "width": 2,
         "height": 2,
@@ -49,11 +45,7 @@
       "id": "building_house_wood_002",
       "type": "building",
       "path": "/assets/glb/buildings/building_house_wood_002.glb",
-      "tags": [
-        "house",
-        "residential",
-        "q-style"
-      ],
+      "tags": ["house", "residential", "q-style"],
       "size": {
         "width": 2,
         "height": 2,
@@ -92,11 +84,7 @@
       "id": "building_house_wood_003",
       "type": "building",
       "path": "/assets/glb/buildings/building_house_wood_003.glb",
-      "tags": [
-        "house",
-        "residential",
-        "q-style"
-      ],
+      "tags": ["house", "residential", "q-style"],
       "size": {
         "width": 2,
         "height": 2,
@@ -135,11 +123,7 @@
       "id": "building_house_wood_004",
       "type": "building",
       "path": "/assets/glb/buildings/building_house_wood_004.glb",
-      "tags": [
-        "house",
-        "residential",
-        "q-style"
-      ],
+      "tags": ["house", "residential", "q-style"],
       "size": {
         "width": 2,
         "height": 2,
@@ -178,11 +162,7 @@
       "id": "building_shop_001",
       "type": "building",
       "path": "/assets/glb/buildings/building_shop_001.glb",
-      "tags": [
-        "shop",
-        "commercial",
-        "q-style"
-      ],
+      "tags": ["shop", "commercial", "q-style"],
       "size": {
         "width": 2,
         "height": 2,
@@ -217,10 +197,7 @@
       "id": "building_workshop_001",
       "type": "building",
       "path": "/assets/glb/buildings/building_workshop_001.glb",
-      "tags": [
-        "workshop",
-        "production"
-      ],
+      "tags": ["workshop", "production"],
       "size": {
         "width": 2,
         "height": 2,
@@ -255,10 +232,7 @@
       "id": "building_warehouse_001",
       "type": "building",
       "path": "/assets/glb/buildings/building_warehouse_001.glb",
-      "tags": [
-        "warehouse",
-        "storage"
-      ],
+      "tags": ["warehouse", "storage"],
       "size": {
         "width": 2,
         "height": 2,
@@ -293,10 +267,7 @@
       "id": "building_townhall_001",
       "type": "building",
       "path": "/assets/glb/buildings/building_townhall_001.glb",
-      "tags": [
-        "townhall",
-        "public"
-      ],
+      "tags": ["townhall", "public"],
       "size": {
         "width": 2,
         "height": 2,
@@ -331,10 +302,7 @@
       "id": "road_straight_001",
       "type": "road",
       "path": "/assets/glb/roads/road_straight_001.glb",
-      "tags": [
-        "road",
-        "straight"
-      ],
+      "tags": ["road", "straight"],
       "size": {
         "width": 2,
         "height": 2,
@@ -369,10 +337,7 @@
       "id": "road_corner_001",
       "type": "road",
       "path": "/assets/glb/roads/road_corner_001.glb",
-      "tags": [
-        "road",
-        "corner"
-      ],
+      "tags": ["road", "corner"],
       "size": {
         "width": 2,
         "height": 2,
@@ -407,10 +372,7 @@
       "id": "road_t_001",
       "type": "road",
       "path": "/assets/glb/roads/road_t_001.glb",
-      "tags": [
-        "road",
-        "t-junction"
-      ],
+      "tags": ["road", "t-junction"],
       "size": {
         "width": 2,
         "height": 2,
@@ -445,10 +407,7 @@
       "id": "road_plaza_tile_001",
       "type": "road",
       "path": "/assets/glb/roads/road_plaza_tile_001.glb",
-      "tags": [
-        "road",
-        "plaza"
-      ],
+      "tags": ["road", "plaza"],
       "size": {
         "width": 2,
         "height": 2,
@@ -483,11 +442,7 @@
       "id": "nature_tree_round_001",
       "type": "nature",
       "path": "/assets/glb/nature/nature_tree_round_001.glb",
-      "tags": [
-        "nature",
-        "tree",
-        "round"
-      ],
+      "tags": ["nature", "tree", "round"],
       "size": {
         "width": 2,
         "height": 2,
@@ -522,11 +477,7 @@
       "id": "nature_tree_round_002",
       "type": "nature",
       "path": "/assets/glb/nature/nature_tree_round_002.glb",
-      "tags": [
-        "nature",
-        "tree",
-        "round"
-      ],
+      "tags": ["nature", "tree", "round"],
       "size": {
         "width": 2,
         "height": 2,
@@ -561,11 +512,7 @@
       "id": "nature_tree_round_003",
       "type": "nature",
       "path": "/assets/glb/nature/nature_tree_round_003.glb",
-      "tags": [
-        "nature",
-        "tree",
-        "round"
-      ],
+      "tags": ["nature", "tree", "round"],
       "size": {
         "width": 2,
         "height": 2,
@@ -600,11 +547,7 @@
       "id": "nature_tree_pine_001",
       "type": "nature",
       "path": "/assets/glb/nature/nature_tree_pine_001.glb",
-      "tags": [
-        "nature",
-        "tree",
-        "pine"
-      ],
+      "tags": ["nature", "tree", "pine"],
       "size": {
         "width": 2,
         "height": 2,
@@ -639,11 +582,7 @@
       "id": "nature_tree_pine_002",
       "type": "nature",
       "path": "/assets/glb/nature/nature_tree_pine_002.glb",
-      "tags": [
-        "nature",
-        "tree",
-        "pine"
-      ],
+      "tags": ["nature", "tree", "pine"],
       "size": {
         "width": 2,
         "height": 2,
@@ -678,10 +617,7 @@
       "id": "nature_bush_001",
       "type": "nature",
       "path": "/assets/glb/nature/nature_bush_001.glb",
-      "tags": [
-        "nature",
-        "bush"
-      ],
+      "tags": ["nature", "bush"],
       "size": {
         "width": 2,
         "height": 2,
@@ -716,10 +652,7 @@
       "id": "nature_bush_002",
       "type": "nature",
       "path": "/assets/glb/nature/nature_bush_002.glb",
-      "tags": [
-        "nature",
-        "bush"
-      ],
+      "tags": ["nature", "bush"],
       "size": {
         "width": 2,
         "height": 2,
@@ -754,10 +687,7 @@
       "id": "nature_rock_small_001",
       "type": "nature",
       "path": "/assets/glb/nature/nature_rock_small_001.glb",
-      "tags": [
-        "nature",
-        "rock"
-      ],
+      "tags": ["nature", "rock"],
       "size": {
         "width": 2,
         "height": 2,
@@ -792,10 +722,7 @@
       "id": "nature_rock_small_002",
       "type": "nature",
       "path": "/assets/glb/nature/nature_rock_small_002.glb",
-      "tags": [
-        "nature",
-        "rock"
-      ],
+      "tags": ["nature", "rock"],
       "size": {
         "width": 2,
         "height": 2,
@@ -830,10 +757,7 @@
       "id": "nature_rock_small_003",
       "type": "nature",
       "path": "/assets/glb/nature/nature_rock_small_003.glb",
-      "tags": [
-        "nature",
-        "rock"
-      ],
+      "tags": ["nature", "rock"],
       "size": {
         "width": 2,
         "height": 2,
@@ -868,10 +792,7 @@
       "id": "npc_player_001",
       "type": "character",
       "path": "/assets/glb/characters/npc_player_001.glb",
-      "tags": [
-        "character",
-        "player"
-      ],
+      "tags": ["character", "player"],
       "size": {
         "width": 2,
         "height": 2,
@@ -906,10 +827,7 @@
       "id": "npc_base_001",
       "type": "character",
       "path": "/assets/glb/characters/npc_base_001.glb",
-      "tags": [
-        "character",
-        "npc"
-      ],
+      "tags": ["character", "npc"],
       "size": {
         "width": 2,
         "height": 2,
@@ -944,10 +862,7 @@
       "id": "npc_base_002",
       "type": "character",
       "path": "/assets/glb/characters/npc_base_002.glb",
-      "tags": [
-        "character",
-        "npc"
-      ],
+      "tags": ["character", "npc"],
       "size": {
         "width": 2,
         "height": 2,
@@ -982,10 +897,7 @@
       "id": "npc_base_003",
       "type": "character",
       "path": "/assets/glb/characters/npc_base_003.glb",
-      "tags": [
-        "character",
-        "npc"
-      ],
+      "tags": ["character", "npc"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1020,10 +932,7 @@
       "id": "prop_table_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_table_001.glb",
-      "tags": [
-        "prop",
-        "furniture"
-      ],
+      "tags": ["prop", "furniture"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1058,10 +967,7 @@
       "id": "prop_chair_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_chair_001.glb",
-      "tags": [
-        "prop",
-        "furniture"
-      ],
+      "tags": ["prop", "furniture"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1096,10 +1002,7 @@
       "id": "prop_barrel_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_barrel_001.glb",
-      "tags": [
-        "prop",
-        "container"
-      ],
+      "tags": ["prop", "container"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1134,10 +1037,7 @@
       "id": "prop_crate_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_crate_001.glb",
-      "tags": [
-        "prop",
-        "container"
-      ],
+      "tags": ["prop", "container"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1172,10 +1072,7 @@
       "id": "prop_bed_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_bed_001.glb",
-      "tags": [
-        "prop",
-        "furniture"
-      ],
+      "tags": ["prop", "furniture"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1210,10 +1107,7 @@
       "id": "prop_wood_stack_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_wood_stack_001.glb",
-      "tags": [
-        "prop",
-        "resource"
-      ],
+      "tags": ["prop", "resource"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1248,11 +1142,7 @@
       "id": "prop_bench_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_bench_001.glb",
-      "tags": [
-        "prop",
-        "furniture",
-        "exterior"
-      ],
+      "tags": ["prop", "furniture", "exterior"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1287,11 +1177,7 @@
       "id": "prop_stall_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_stall_001.glb",
-      "tags": [
-        "prop",
-        "market",
-        "exterior"
-      ],
+      "tags": ["prop", "market", "exterior"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1326,11 +1212,7 @@
       "id": "prop_stall_002",
       "type": "prop",
       "path": "/assets/glb/props/prop_stall_002.glb",
-      "tags": [
-        "prop",
-        "market",
-        "exterior"
-      ],
+      "tags": ["prop", "market", "exterior"],
       "size": {
         "width": 2,
         "height": 2,
@@ -1365,11 +1247,7 @@
       "id": "prop_fence_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_fence_001.glb",
-      "tags": [
-        "prop",
-        "structure",
-        "exterior"
-      ],
+      "tags": ["prop", "structure", "exterior"],
       "size": {
         "width": 2,
         "height": 2,

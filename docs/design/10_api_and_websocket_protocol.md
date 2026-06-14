@@ -90,10 +90,7 @@ GET /api/worlds/default/digest?hours=6
 {
   "worldId": "default",
   "range": "last_6_hours",
-  "items": [
-    "阿衡完成了马棚喂草，得 3 钱。",
-    "林娘在门前种下两盆野花。"
-  ]
+  "items": ["阿衡完成了马棚喂草，得 3 钱。", "林娘在门前种下两盆野花。"]
 }
 ```
 

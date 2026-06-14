@@ -39,7 +39,7 @@ describe('buildMapPackage', () => {
           position: { x: 12, y: 23 },
           state: { condition: 90 },
         },
-      ],
+      ]
     );
 
     expect(map).toMatchObject({
@@ -89,8 +89,8 @@ describe('buildMapPackage', () => {
         },
         [],
         [],
-        [],
-      ),
+        []
+      )
     ).toThrow('does not match');
   });
 });

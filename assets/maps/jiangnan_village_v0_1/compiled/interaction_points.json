@@ -10,10 +10,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lie_down",
-      "sleep"
-    ],
+    "required_actions": ["lie_down", "sleep"],
     "fallback_icon": "sleep"
   },
   {
@@ -27,9 +24,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -43,9 +38,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "move_to"
-    ],
+    "required_actions": ["move_to"],
     "fallback_icon": "door"
   },
   {
@@ -59,10 +52,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lie_down",
-      "sleep"
-    ],
+    "required_actions": ["lie_down", "sleep"],
     "fallback_icon": "sleep"
   },
   {
@@ -76,9 +66,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -92,9 +80,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "move_to"
-    ],
+    "required_actions": ["move_to"],
     "fallback_icon": "door"
   },
   {
@@ -108,10 +94,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lie_down",
-      "sleep"
-    ],
+    "required_actions": ["lie_down", "sleep"],
     "fallback_icon": "sleep"
   },
   {
@@ -125,9 +108,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -141,9 +122,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "move_to"
-    ],
+    "required_actions": ["move_to"],
     "fallback_icon": "door"
   },
   {
@@ -157,10 +136,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lie_down",
-      "sleep"
-    ],
+    "required_actions": ["lie_down", "sleep"],
     "fallback_icon": "sleep"
   },
   {
@@ -174,9 +150,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -190,9 +164,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "move_to"
-    ],
+    "required_actions": ["move_to"],
     "fallback_icon": "door"
   },
   {
@@ -206,10 +178,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lie_down",
-      "sleep"
-    ],
+    "required_actions": ["lie_down", "sleep"],
     "fallback_icon": "sleep"
   },
   {
@@ -223,9 +192,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -239,9 +206,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "move_to"
-    ],
+    "required_actions": ["move_to"],
     "fallback_icon": "door"
   },
   {
@@ -255,11 +220,7 @@
     },
     "direction": "west",
     "capacity": 1,
-    "required_actions": [
-      "sit",
-      "fish_cast",
-      "fish_wait"
-    ],
+    "required_actions": ["sit", "fish_cast", "fish_wait"],
     "fallback_icon": "fishing"
   },
   {
@@ -273,11 +234,7 @@
     },
     "direction": "west",
     "capacity": 1,
-    "required_actions": [
-      "sit",
-      "fish_cast",
-      "fish_wait"
-    ],
+    "required_actions": ["sit", "fish_cast", "fish_wait"],
     "fallback_icon": "fishing"
   },
   {
@@ -291,11 +248,7 @@
     },
     "direction": "west",
     "capacity": 1,
-    "required_actions": [
-      "sit",
-      "fish_cast",
-      "fish_wait"
-    ],
+    "required_actions": ["sit", "fish_cast", "fish_wait"],
     "fallback_icon": "fishing"
   },
   {
@@ -309,11 +262,7 @@
     },
     "direction": "west",
     "capacity": 1,
-    "required_actions": [
-      "sit",
-      "fish_cast",
-      "fish_wait"
-    ],
+    "required_actions": ["sit", "fish_cast", "fish_wait"],
     "fallback_icon": "fishing"
   },
   {
@@ -327,9 +276,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "fetch_water"
-    ],
+    "required_actions": ["fetch_water"],
     "fallback_icon": "water"
   },
   {
@@ -343,9 +290,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "fetch_water"
-    ],
+    "required_actions": ["fetch_water"],
     "fallback_icon": "water"
   },
   {
@@ -359,9 +304,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "fetch_water"
-    ],
+    "required_actions": ["fetch_water"],
     "fallback_icon": "water"
   },
   {
@@ -375,9 +318,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "fetch_water"
-    ],
+    "required_actions": ["fetch_water"],
     "fallback_icon": "water"
   },
   {
@@ -391,9 +332,7 @@
     },
     "direction": "south",
     "capacity": 2,
-    "required_actions": [
-      "read_notice"
-    ],
+    "required_actions": ["read_notice"],
     "fallback_icon": "notice"
   },
   {
@@ -407,9 +346,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -423,9 +360,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -439,9 +374,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -455,9 +388,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "sit"
-    ],
+    "required_actions": ["sit"],
     "fallback_icon": "sit"
   },
   {
@@ -471,11 +402,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "hoe_soil",
-      "water_crop",
-      "harvest_crop"
-    ],
+    "required_actions": ["hoe_soil", "water_crop", "harvest_crop"],
     "fallback_icon": "farm"
   },
   {
@@ -489,11 +416,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "hoe_soil",
-      "water_crop",
-      "harvest_crop"
-    ],
+    "required_actions": ["hoe_soil", "water_crop", "harvest_crop"],
     "fallback_icon": "farm"
   },
   {
@@ -507,11 +430,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "hoe_soil",
-      "water_crop",
-      "harvest_crop"
-    ],
+    "required_actions": ["hoe_soil", "water_crop", "harvest_crop"],
     "fallback_icon": "farm"
   },
   {
@@ -525,11 +444,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "hoe_soil",
-      "water_crop",
-      "harvest_crop"
-    ],
+    "required_actions": ["hoe_soil", "water_crop", "harvest_crop"],
     "fallback_icon": "farm"
   },
   {
@@ -543,9 +458,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "feed_horse"
-    ],
+    "required_actions": ["feed_horse"],
     "fallback_icon": "horse"
   },
   {
@@ -559,9 +472,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "water_horse"
-    ],
+    "required_actions": ["water_horse"],
     "fallback_icon": "horse"
   },
   {
@@ -575,9 +486,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "groom_horse"
-    ],
+    "required_actions": ["groom_horse"],
     "fallback_icon": "horse"
   },
   {
@@ -591,9 +500,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "lead_horse"
-    ],
+    "required_actions": ["lead_horse"],
     "fallback_icon": "horse"
   },
   {
@@ -607,9 +514,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "make_plank"
-    ],
+    "required_actions": ["make_plank"],
     "fallback_icon": "work"
   },
   {
@@ -623,9 +528,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "repair_tool"
-    ],
+    "required_actions": ["repair_tool"],
     "fallback_icon": "work"
   },
   {
@@ -639,9 +542,7 @@
     },
     "direction": "south",
     "capacity": 1,
-    "required_actions": [
-      "store_wood"
-    ],
+    "required_actions": ["store_wood"],
     "fallback_icon": "work"
   },
   {
@@ -655,9 +556,7 @@
     },
     "direction": "south",
     "capacity": 2,
-    "required_actions": [
-      "talk"
-    ],
+    "required_actions": ["talk"],
     "fallback_icon": "talk"
   },
   {
@@ -671,9 +570,7 @@
     },
     "direction": "south",
     "capacity": 2,
-    "required_actions": [
-      "talk"
-    ],
+    "required_actions": ["talk"],
     "fallback_icon": "talk"
   },
   {
@@ -687,9 +584,7 @@
     },
     "direction": "south",
     "capacity": 2,
-    "required_actions": [
-      "talk"
-    ],
+    "required_actions": ["talk"],
     "fallback_icon": "talk"
   },
   {
@@ -703,9 +598,7 @@
     },
     "direction": "south",
     "capacity": 2,
-    "required_actions": [
-      "talk"
-    ],
+    "required_actions": ["talk"],
     "fallback_icon": "talk"
   }
 ]

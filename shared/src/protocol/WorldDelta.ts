@@ -1,10 +1,10 @@
-import type { ActionPhaseViewState } from "../characters/CharacterViewState.js";
-import type { Transform } from "../map/Transform.js";
-import type { GameTime } from "../time/GameTime.js";
-import type { PublicWorldEvent } from "./WorldSnapshot.js";
+import type { ActionPhaseViewState } from '../characters/CharacterViewState.js';
+import type { Transform } from '../map/Transform.js';
+import type { GameTime } from '../time/GameTime.js';
+import type { PublicWorldEvent } from './WorldSnapshot.js';
 
 export interface CharacterMovedChange {
-  type: "character_moved";
+  type: 'character_moved';
   characterId: string;
   from: Transform;
   to: Transform;
@@ -12,7 +12,7 @@ export interface CharacterMovedChange {
 }
 
 export interface CharacterActionStartedChange {
-  type: "character_action_started";
+  type: 'character_action_started';
   characterId: string;
   actionCode: string;
   durationMs?: number;
@@ -23,7 +23,7 @@ export interface CharacterActionStartedChange {
 }
 
 export interface ObjectAddedChange {
-  type: "object_added";
+  type: 'object_added';
   objectId: string;
   templateId: string;
   regionId: string;
@@ -33,13 +33,13 @@ export interface ObjectAddedChange {
 }
 
 export interface ObjectStateChangedChange {
-  type: "object_state_changed";
+  type: 'object_state_changed';
   objectId: string;
   patch: Readonly<Record<string, unknown>>;
 }
 
 export interface EventCreatedChange {
-  type: "event_created";
+  type: 'event_created';
   event: PublicWorldEvent;
 }
 
@@ -51,7 +51,7 @@ export type WorldDeltaChange =
   | EventCreatedChange;
 
 export interface WorldDelta {
-  type: "world_delta";
+  type: 'world_delta';
   worldId: string;
   seq: number;
   serverTime: number;

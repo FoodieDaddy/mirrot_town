@@ -174,12 +174,12 @@ MAINTENANCE
 
 规则：
 
-| 模式 | 触发条件 | 作用 |
-|---|---|---|
-| ONLINE_REALTIME | 有浏览者在线 | 正常 Tick 和推送 |
-| OFFLINE_LOW_FREQ | 无浏览者在线 | 降低 Tick 和 LLM 频率 |
-| SUMMARY_ADVANCE | 长时间无人 | 抽象推进生活事件 |
-| MAINTENANCE | 异常/运维 | 玩家侧不可见，系统冻结 |
+| 模式             | 触发条件     | 作用                   |
+| ---------------- | ------------ | ---------------------- |
+| ONLINE_REALTIME  | 有浏览者在线 | 正常 Tick 和推送       |
+| OFFLINE_LOW_FREQ | 无浏览者在线 | 降低 Tick 和 LLM 频率  |
+| SUMMARY_ADVANCE  | 长时间无人   | 抽象推进生活事件       |
+| MAINTENANCE      | 异常/运维    | 玩家侧不可见，系统冻结 |
 
 注意：玩家侧“不暂停”，但系统侧必须有维护冻结能力。
 
