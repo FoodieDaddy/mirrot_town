@@ -69,29 +69,6 @@
     ]
   },
   {
-    "actionCode": "talk",
-    "name": "交谈",
-    "category": "social",
-    "description": "与另一名角色进行简短交谈。",
-    "targetType": "character",
-    "requiredTags": [],
-    "preconditions": {},
-    "effects": {},
-    "fallbackMode": "icon",
-    "interruptible": true,
-    "enabled": true,
-    "phases": [
-      {
-        "phaseCode": "speak",
-        "durationMs": 4000,
-        "requiredAnimationCode": "talk",
-        "fallbackAnimationCode": "idle",
-        "fallbackIcon": "talk",
-        "canInterrupt": true
-      }
-    ]
-  },
-  {
     "actionCode": "fetch_water",
     "name": "取水",
     "category": "work",
@@ -105,11 +82,316 @@
     "enabled": true,
     "phases": [
       {
+        "phaseCode": "move_to_source",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
         "phaseCode": "draw_water",
         "durationMs": 3500,
         "requiredAnimationCode": "fetch_water",
         "fallbackAnimationCode": "work",
         "fallbackIcon": "water",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "drink",
+        "durationMs": 2000,
+        "requiredAnimationCode": "drink",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "drink",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "eat",
+    "name": "吃饭",
+    "category": "life",
+    "description": "拿取食物并进食。",
+    "targetType": "object",
+    "requiredTags": ["food"],
+    "preconditions": {},
+    "effects": { "needs": { "hunger": -30 } },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "take_food",
+        "durationMs": 1500,
+        "requiredAnimationCode": "pick_up",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "hand",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "consume",
+        "durationMs": 4000,
+        "requiredAnimationCode": "eat",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "eat",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "sleep",
+    "name": "睡觉",
+    "category": "life",
+    "description": "在床上躺下休息，恢复精力。",
+    "targetType": "object",
+    "requiredTags": ["bed"],
+    "preconditions": { "timeOfDay": "night" },
+    "effects": { "needs": { "energy": 80 } },
+    "fallbackMode": "icon",
+    "interruptible": false,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "lie_down",
+        "durationMs": 2000,
+        "requiredAnimationCode": "lie_down",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "bed",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "sleep",
+        "durationMs": 8000,
+        "requiredAnimationCode": "sleep",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "sleep",
+        "canInterrupt": false
+      },
+      {
+        "phaseCode": "wake",
+        "durationMs": 2000,
+        "requiredAnimationCode": "wake_up",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "wake",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "fish",
+    "name": "钓鱼",
+    "category": "work",
+    "description": "在河边或湖边垂钓。",
+    "targetType": "object",
+    "requiredTags": ["fishing_spot"],
+    "preconditions": {},
+    "effects": { "inventoryItem": "fish" },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "approach_spot",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "cast_line",
+        "durationMs": 2000,
+        "requiredAnimationCode": "cast",
+        "fallbackAnimationCode": "work",
+        "fallbackIcon": "fish",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "wait_bite",
+        "durationMs": 6000,
+        "requiredAnimationCode": "idle_fishing",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "fish",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "reel_in",
+        "durationMs": 3000,
+        "requiredAnimationCode": "reel",
+        "fallbackAnimationCode": "work",
+        "fallbackIcon": "fish",
+        "canInterrupt": false
+      }
+    ]
+  },
+  {
+    "actionCode": "feed_horse",
+    "name": "喂马",
+    "category": "work",
+    "description": "取干草并倒入马槽喂马。",
+    "targetType": "object",
+    "requiredTags": ["horse_trough"],
+    "preconditions": {},
+    "effects": { "needs": { "horse_hunger": -50 } },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "get_hay",
+        "durationMs": 2000,
+        "requiredAnimationCode": "pick_up",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "hand",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "move_to_trough",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "fill_trough",
+        "durationMs": 3000,
+        "requiredAnimationCode": "work",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "feed",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "water_crop",
+    "name": "浇水",
+    "category": "work",
+    "description": "取水后前往农田浇灌作物。",
+    "targetType": "object",
+    "requiredTags": ["crop_plot"],
+    "preconditions": { "inventoryItem": "water_bucket" },
+    "effects": { "needs": { "crop_water": 100 } },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "get_water",
+        "durationMs": 2000,
+        "requiredAnimationCode": "fetch_water",
+        "fallbackAnimationCode": "work",
+        "fallbackIcon": "water",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "move_to_plot",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "water",
+        "durationMs": 3000,
+        "requiredAnimationCode": "water_crop",
+        "fallbackAnimationCode": "work",
+        "fallbackIcon": "water",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "buy_item",
+    "name": "购买",
+    "category": "trade",
+    "description": "前往店铺挑选并购买商品。",
+    "targetType": "object",
+    "requiredTags": ["shop"],
+    "preconditions": {},
+    "effects": { "inventoryItem": "purchased_item" },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "move_to_shop",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "browse",
+        "durationMs": 3000,
+        "requiredAnimationCode": "look",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "shop",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "pay",
+        "durationMs": 2000,
+        "requiredAnimationCode": "pay",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "coin",
+        "canInterrupt": false
+      },
+      {
+        "phaseCode": "take_item",
+        "durationMs": 1500,
+        "requiredAnimationCode": "pick_up",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "hand",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "talk",
+    "name": "交谈",
+    "category": "social",
+    "description": "与另一名角色进行对话。",
+    "targetType": "character",
+    "requiredTags": [],
+    "preconditions": {},
+    "effects": { "needs": { "social": 20 } },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "approach",
+        "durationMs": 1500,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "greet",
+        "durationMs": 2000,
+        "requiredAnimationCode": "wave",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "wave",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "chat",
+        "durationMs": 5000,
+        "requiredAnimationCode": "talk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "talk",
+        "canInterrupt": true
+      },
+      {
+        "phaseCode": "farewell",
+        "durationMs": 1500,
+        "requiredAnimationCode": "wave",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "wave",
         "canInterrupt": true
       }
     ]
