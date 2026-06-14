@@ -1,0 +1,138 @@
+[
+  {
+    "itemCode": "food",
+    "name": "食物",
+    "category": "food",
+    "buyPrice": 3,
+    "sellPrice": 1,
+    "description": "基本食物，恢复饱腹。"
+  },
+  {
+    "itemCode": "water_bucket",
+    "name": "水桶",
+    "category": "tool",
+    "buyPrice": 2,
+    "sellPrice": 1,
+    "description": "装满水的桶，用于饮用和浇灌。"
+  },
+  {
+    "itemCode": "seed",
+    "name": "种子",
+    "category": "seed",
+    "buyPrice": 2,
+    "sellPrice": 1,
+    "description": "农作物种子，可播种。"
+  },
+  {
+    "itemCode": "flower_seed",
+    "name": "花种",
+    "category": "seed",
+    "buyPrice": 3,
+    "sellPrice": 1,
+    "description": "花卉种子，可种在花盆里。"
+  },
+  {
+    "itemCode": "hay",
+    "name": "干草",
+    "category": "animal_product",
+    "buyPrice": 2,
+    "sellPrice": 1,
+    "description": "干草，可喂马。"
+  },
+  {
+    "itemCode": "crop",
+    "name": "收成",
+    "category": "food",
+    "buyPrice": 0,
+    "sellPrice": 4,
+    "description": "收割的农作物，可出售。"
+  },
+  {
+    "itemCode": "fish",
+    "name": "鱼",
+    "category": "food",
+    "buyPrice": 0,
+    "sellPrice": 5,
+    "description": "钓到的鱼，可出售或食用。"
+  },
+  {
+    "itemCode": "hoe",
+    "name": "锄头",
+    "category": "tool",
+    "buyPrice": 8,
+    "sellPrice": 3,
+    "description": "农具，用于翻土。"
+  },
+  {
+    "itemCode": "fishing_rod",
+    "name": "鱼竿",
+    "category": "tool",
+    "buyPrice": 10,
+    "sellPrice": 4,
+    "description": "钓鱼工具。"
+  },
+  {
+    "itemCode": "simple_bed",
+    "name": "简易床",
+    "category": "furniture",
+    "buyPrice": 15,
+    "sellPrice": 5,
+    "description": "简易木床，可放在家里。"
+  },
+  {
+    "itemCode": "flower_pot",
+    "name": "花盆",
+    "category": "furniture",
+    "buyPrice": 5,
+    "sellPrice": 2,
+    "description": "陶制花盆，可种花装饰。"
+  },
+  {
+    "itemCode": "oil_lamp",
+    "name": "油灯",
+    "category": "furniture",
+    "buyPrice": 6,
+    "sellPrice": 2,
+    "description": "照明用油灯。"
+  },
+  {
+    "itemCode": "wheat_seed",
+    "name": "小麦种子",
+    "category": "seed",
+    "buyPrice": 2,
+    "sellPrice": 1,
+    "description": "小麦种子，可播种。"
+  },
+  {
+    "itemCode": "carrot_seed",
+    "name": "菜种",
+    "category": "seed",
+    "buyPrice": 3,
+    "sellPrice": 1,
+    "description": "胡萝卜种子。"
+  },
+  {
+    "itemCode": "wood_plank",
+    "name": "木板",
+    "category": "material",
+    "buyPrice": 4,
+    "sellPrice": 2,
+    "description": "木工材料。"
+  },
+  {
+    "itemCode": "cloth",
+    "name": "布",
+    "category": "material",
+    "buyPrice": 5,
+    "sellPrice": 2,
+    "description": "纺织品。"
+  },
+  {
+    "itemCode": "wooden_box",
+    "name": "木箱",
+    "category": "furniture",
+    "buyPrice": 12,
+    "sellPrice": 5,
+    "description": "收纳用木箱。"
+  }
+]
