@@ -17,6 +17,7 @@ import { ActionRegistry, ActionExecutor } from '../actions/index.js';
 import { EventRegistry, EventLogger } from '../events/index.js';
 import { NeedsSystem, BehaviorTreeRunner } from '../ai/index.js';
 import { AccountService } from '../economy/AccountService.js';
+import { MemoryFilter } from '../memory/MemoryFilter.js';
 
 export type RuntimeStatus = 'RUNNING' | 'STOPPED';
 export type SimulationMode = 'ONLINE_REALTIME' | 'OFFLINE_LOW_FREQ';
@@ -58,6 +59,7 @@ export class WorldRuntime {
   readonly needsSystem: NeedsSystem;
   readonly behaviorTree: BehaviorTreeRunner;
   readonly accountService: AccountService;
+  readonly memoryFilter: MemoryFilter;
 
   private readonly now: () => number;
   private mapData: any = null;
@@ -85,6 +87,7 @@ export class WorldRuntime {
     this.needsSystem = new NeedsSystem();
     this.behaviorTree = new BehaviorTreeRunner(this.needsSystem);
     this.accountService = new AccountService();
+    this.memoryFilter = new MemoryFilter();
 
     // Forward action events as world events and log them
     this.actionExecutor.subscribe((event) => {
@@ -112,6 +115,12 @@ export class WorldRuntime {
           gameTime,
           payload: { durationTicks: event.durationTicks },
         });
+
+        // Check if event should create a memory
+        const memoryCandidate = this.memoryFilter.evaluate(event);
+        if (memoryCandidate.isCandidate) {
+          console.log(`[Memory] Event for ${event.npcId}: ${memoryCandidate.content} (importance: ${memoryCandidate.importance})`);
+        }
 
         // Handle economic effects
         if (event.actionCode === 'buy_item') {
