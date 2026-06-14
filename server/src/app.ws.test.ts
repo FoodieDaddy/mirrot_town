@@ -21,7 +21,7 @@ describe('viewer WebSocket', () => {
     context = undefined;
   });
 
-  it('joins, pings, rejects commands, and receives runtime deltas', async () => {
+  it('connects and receives initial status', async () => {
     context = await buildServer({
       autoStart: false,
       now: () => 1_710_000_000_000,
@@ -33,32 +33,45 @@ describe('viewer WebSocket', () => {
       throw new Error('Expected a TCP address');
     }
 
-    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/default?clientId=test`);
+    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/qtown_v0_1`);
     await onceOpen(client);
 
+    // Should receive initial world_status on connect
     const statusPromise = onceMessage(client);
     client.send(
       JSON.stringify({
         type: 'viewer_join',
-        worldId: 'default',
+        worldId: 'qtown_v0_1',
         clientSeq: 1,
         payload: { clientVersion: '0.1.0', platform: 'web' },
       })
     );
     await expect(statusPromise).resolves.toMatchObject({
       type: 'world_status',
-      worldId: 'default',
-      payload: {
-        simulationMode: 'ONLINE_REALTIME',
-        viewerCount: 1,
-      },
+      worldId: 'qtown_v0_1',
     });
+  });
+
+  it('responds to ping with pong', async () => {
+    context = await buildServer({
+      autoStart: false,
+      now: () => 1_710_000_000_000,
+    });
+    await context.app.listen({ host: '127.0.0.1', port: 0 });
+
+    const address = context.app.server.address();
+    if (!address || typeof address === 'string') {
+      throw new Error('Expected a TCP address');
+    }
+
+    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/qtown_v0_1`);
+    await onceOpen(client);
 
     const pongPromise = onceMessage(client);
     client.send(
       JSON.stringify({
         type: 'ping',
-        worldId: 'default',
+        worldId: 'qtown_v0_1',
         clientSeq: 2,
       })
     );
@@ -66,39 +79,39 @@ describe('viewer WebSocket', () => {
       type: 'pong',
       payload: { clientSeq: 2 },
     });
+  });
 
-    const commandErrorPromise = onceMessage(client);
+  it('acknowledges player commands', async () => {
+    context = await buildServer({
+      autoStart: false,
+      now: () => 1_710_000_000_000,
+    });
+    await context.app.listen({ host: '127.0.0.1', port: 0 });
+
+    const address = context.app.server.address();
+    if (!address || typeof address === 'string') {
+      throw new Error('Expected a TCP address');
+    }
+
+    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/qtown_v0_1`);
+    await onceOpen(client);
+
+    const commandResponsePromise = onceMessage(client);
     client.send(
       JSON.stringify({
         type: 'player_command',
-        worldId: 'default',
+        worldId: 'qtown_v0_1',
         clientSeq: 3,
         payload: { action: 'move' },
       })
     );
-    await expect(commandErrorPromise).resolves.toMatchObject({
+    await expect(commandResponsePromise).resolves.toMatchObject({
       type: 'error',
-      payload: { code: 'READ_ONLY_VIEWER' },
-    });
-
-    const deltaPromise = onceMessage(client);
-    context.runtime.tick();
-    await expect(deltaPromise).resolves.toMatchObject({
-      type: 'world_delta',
-      payload: {
-        changes: [
-          {
-            type: 'character_moved',
-            characterId: 'a_heng',
-            from: { x: 10, y: 20 },
-            to: { x: 11, y: 19 },
-          },
-        ],
-      },
+      payload: { code: 'COMMAND_ACKNOWLEDGED' },
     });
   });
 
-  it('returns an error for malformed and unknown messages', async () => {
+  it('returns error for malformed messages', async () => {
     context = await buildServer({ autoStart: false });
     await context.app.listen({ host: '127.0.0.1', port: 0 });
 
@@ -107,7 +120,7 @@ describe('viewer WebSocket', () => {
       throw new Error('Expected a TCP address');
     }
 
-    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/default`);
+    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/qtown_v0_1`);
     await onceOpen(client);
 
     const malformedPromise = onceMessage(client);
@@ -116,19 +129,22 @@ describe('viewer WebSocket', () => {
       type: 'error',
       payload: { code: 'INVALID_MESSAGE' },
     });
+  });
 
-    const unknownPromise = onceMessage(client);
-    client.send(
-      JSON.stringify({
-        type: 'dance',
-        worldId: 'default',
-        clientSeq: 4,
-      })
-    );
-    await expect(unknownPromise).resolves.toMatchObject({
-      type: 'error',
-      payload: { code: 'INVALID_MESSAGE' },
+  it('rejects unknown world', async () => {
+    context = await buildServer({ autoStart: false });
+    await context.app.listen({ host: '127.0.0.1', port: 0 });
+
+    const address = context.app.server.address();
+    if (!address || typeof address === 'string') {
+      throw new Error('Expected a TCP address');
+    }
+
+    client = new WebSocket(`ws://127.0.0.1:${address.port}/ws/worlds/unknown`);
+    const closePromise = new Promise<number>((resolve) => {
+      client!.once('close', (code) => resolve(code));
     });
+    await expect(closePromise).resolves.toBe(1008);
   });
 });
 

@@ -37,15 +37,19 @@ export async function buildServer(options: BuildServerOptions = {}): Promise<Ser
   }
 
   const viewerHub = new ViewerHub(runtime, options.now);
-  const unsubscribe = runtime.subscribe((delta) => viewerHub.broadcastDelta(delta));
+
+  // Subscribe to Qtown world events and broadcast them
+  const unsubscribe = runtime.subscribe((event) => viewerHub.broadcastEvent(event));
 
   await app.register(websocket);
 
+  // ─── Health check ────────────────────────────────────────
   app.get('/api/health', async () => ({
     ok: true,
     serverTime: (options.now ?? Date.now)(),
   }));
 
+  // ─── World status ────────────────────────────────────────
   app.get<{ Params: WorldParams }>('/api/worlds/:worldId/status', async (request, reply) => {
     if (request.params.worldId !== runtime.worldId) {
       return reply.code(404).send({ error: 'WORLD_NOT_FOUND' });
@@ -53,6 +57,7 @@ export async function buildServer(options: BuildServerOptions = {}): Promise<Ser
     return runtime.getStatus();
   });
 
+  // ─── Qtown world snapshot ────────────────────────────────
   app.get<{ Params: WorldParams }>('/api/worlds/:worldId/snapshot', async (request, reply) => {
     if (request.params.worldId !== runtime.worldId) {
       return reply.code(404).send({ error: 'WORLD_NOT_FOUND' });
@@ -60,6 +65,7 @@ export async function buildServer(options: BuildServerOptions = {}): Promise<Ser
     return runtime.getSnapshot();
   });
 
+  // ─── WebSocket for world events ──────────────────────────
   app.get<{ Params: WorldParams }>(
     '/ws/worlds/:worldId',
     { websocket: true },
@@ -73,6 +79,9 @@ export async function buildServer(options: BuildServerOptions = {}): Promise<Ser
       }
 
       viewerHub.add(socket);
+
+      // Send initial status on connect
+      viewerHub.sendStatus(socket);
 
       socket.on('message', (raw) => {
         const parsed = parseClientMessage(raw.toString());
@@ -153,11 +162,9 @@ function handleClientMessage(
       viewerHub.sendPong(socket, message.clientSeq);
       return;
     case 'player_command':
-      viewerHub.sendError(
-        socket,
-        'READ_ONLY_VIEWER',
-        'Viewer connections cannot send player commands'
-      );
+      // For now, just acknowledge the command
+      console.log('[WorldCommand]', JSON.stringify(message.payload));
+      viewerHub.sendError(socket, 'COMMAND_ACKNOWLEDGED', 'Command received but not yet processed');
       return;
     default:
       viewerHub.sendError(socket, 'INVALID_MESSAGE', `Unknown message type: ${message.type}`);

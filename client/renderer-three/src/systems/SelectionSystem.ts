@@ -1,19 +1,27 @@
 import * as THREE from 'three';
 import type { AssetRegistry } from '../core/AssetRegistry.js';
+import type { WorldCommandAdapter } from '../protocol/WorldCommandAdapter.js';
 
 export class SelectionSystem {
   private scene: THREE.Scene;
   private camera: THREE.Camera;
   private registry: AssetRegistry;
+  private commandAdapter: WorldCommandAdapter;
   private raycaster = new THREE.Raycaster();
   private mouse = new THREE.Vector2();
   private hoveredObject: THREE.Object3D | null = null;
   private originalEmissive = new Map<string, THREE.Color>();
 
-  constructor(scene: THREE.Scene, camera: THREE.Camera, registry: AssetRegistry) {
+  constructor(
+    scene: THREE.Scene,
+    camera: THREE.Camera,
+    registry: AssetRegistry,
+    commandAdapter: WorldCommandAdapter
+  ) {
     this.scene = scene;
     this.camera = camera;
     this.registry = registry;
+    this.commandAdapter = commandAdapter;
 
     window.addEventListener('mousemove', this.onMouseMove.bind(this));
     window.addEventListener('click', this.onClick.bind(this));
@@ -63,7 +71,7 @@ export class SelectionSystem {
           if (!this.originalEmissive.has(id)) {
             this.originalEmissive.set(id, mat.emissive.clone());
           }
-          mat.emissive.setHex(0x333333); // Slightly stronger highlight
+          mat.emissive.setHex(0x333333);
         }
       }
     });
@@ -89,13 +97,19 @@ export class SelectionSystem {
 
     const data = this.hoveredObject.userData;
     const debugEl = document.getElementById('debug-selection');
+    const name = data.name || data.displayName || data.id;
+
     if (debugEl) {
-      const name = data.name || data.displayName || data.id;
       debugEl.innerText = `Selected: ${name} (${data.type})`;
     }
 
     if (data.type === 'building') {
+      // Emit select_building command
+      this.commandAdapter.selectBuilding(data.id);
       this.toggleRoof(this.hoveredObject);
+    } else if (data.type === 'character') {
+      // Emit interact command
+      this.commandAdapter.interact(data.id, 'talk');
     }
   }
 
@@ -109,6 +123,12 @@ export class SelectionSystem {
           found = true;
         }
       });
+      if (found) {
+        // Emit set_roof_mode command
+        const roofVisible = object.userData.allRoofsHidden ?? true;
+        object.userData.allRoofsHidden = !roofVisible;
+        this.commandAdapter.setRoofMode(object.userData.id, roofVisible ? 'normal' : 'hidden');
+      }
       if (!found) {
         const debugEl = document.getElementById('debug-selection');
         if (debugEl) debugEl.innerText += ' [Roof node not found]';
@@ -137,6 +157,8 @@ export class SelectionSystem {
           child.visible = targetVisible;
         }
       });
+      // Emit command for each building
+      this.commandAdapter.setRoofMode(b.userData.id, targetVisible ? 'normal' : 'hidden');
     });
 
     const debugEl = document.getElementById('debug-selection');

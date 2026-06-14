@@ -1,13 +1,17 @@
 import fs from 'node:fs/promises';
-import path from 'node:path';
 import type {
-  CharacterMovedChange,
-  CharacterViewState,
-  WorldDelta,
-  WorldSnapshot,
+  BuildingState,
+  BuildingUpdatedEvent,
+  NpcMovedEvent,
+  NpcState,
+  QtownWorldSnapshot,
+  ResourceUpdatedEvent,
+  Vec3,
+  WorldTime,
 } from '@jingzhong-biancheng/shared';
 
 import { WorldClock, type GameTime } from './WorldClock.js';
+import { buildSnapshot } from './QtownSnapshotBuilder.js';
 
 export type RuntimeStatus = 'RUNNING' | 'STOPPED';
 export type SimulationMode = 'ONLINE_REALTIME' | 'OFFLINE_LOW_FREQ';
@@ -27,82 +31,76 @@ export interface WorldRuntimeOptions {
   seedPath?: string;
 }
 
-type RuntimeCharacter = CharacterViewState;
+// Event type that the runtime emits
+export type QtownWorldEvent =
+  | NpcMovedEvent
+  | { type: 'npc_action_changed'; npcId: string; currentAction: string; status: NpcState['status'] }
+  | BuildingUpdatedEvent
+  | ResourceUpdatedEvent;
 
-type DeltaListener = (delta: WorldDelta) => void;
+type DeltaListener = (event: QtownWorldEvent) => void;
 
-interface WorldSeed {
-  worldId: string;
-  name: string;
-  renderMode: string;
-  map: {
-    metadata: string;
-    assets: string;
-    navGrid: string;
-    regions: string;
-    elements: string;
-  };
-  characters: string;
-  characterAssets: string;
-}
+// Walkable area bounds for NPC movement (plaza + roads area)
+const WALK_BOUNDS = { minX: -6, maxX: 6, minZ: -6, maxZ: 6 };
 
 export class WorldRuntime {
   readonly worldId: string;
   readonly clock: WorldClock;
 
   private readonly now: () => number;
-  private characters: RuntimeCharacter[] = [];
-  private mapMetadata: any = null;
-  private navGrid: any = null;
-  private regions: any[] = [];
-  private elements: any[] = [];
-  private characterAssets: any[] = [];
-  private assetManifest: any = null;
+  private mapData: any = null;
+  private npcs: NpcState[] = [];
+  private buildings: BuildingState[] = [];
+  private tick = 0;
   private readonly deltaListeners = new Set<DeltaListener>();
   private runtimeStatus: RuntimeStatus = 'STOPPED';
-  private snapshotVersion = 1;
-  private sequence = 0;
   private viewerCount = 0;
 
+  // NPC movement tracking
+  private npcMoveTimers = new Map<string, { nextMoveTick: number; targetIdx: number }>();
+  private moveWaypoints: Vec3[] = [];
+
   constructor(options: WorldRuntimeOptions = {}) {
-    this.worldId = options.worldId ?? 'default';
+    this.worldId = options.worldId ?? 'qtown_v0_1';
     this.clock = options.clock ?? new WorldClock();
     this.now = options.now ?? Date.now;
   }
 
   async load(seedPath: string): Promise<void> {
-    const mapData = JSON.parse(await fs.readFile(seedPath, 'utf-8'));
-    this.mapMetadata = mapData;
+    const raw = await fs.readFile(seedPath, 'utf-8');
+    this.mapData = JSON.parse(raw);
 
-    const spawnPositions = mapData.npcSpawns || [];
+    const time = this.clockToGameTime();
+    const snapshot = buildSnapshot(this.mapData, this.tick, time);
+    this.npcs = [...snapshot.npcs];
+    this.buildings = [...snapshot.buildings];
 
-    // Initialize characters from npcSpawns
-    this.characters = spawnPositions.map((spawn: any, index: number) => {
-      return {
-        characterId: spawn.id,
-        name: `NPC ${index}`,
-        transform: { x: spawn.position?.x || 0, y: spawn.position?.z || 0 }, // Using Z as Y on server logic
-        state: { mood: '平常' },
-      };
-    });
+    // Define waypoints around plaza and roads for NPC wandering
+    this.moveWaypoints = this.buildWaypoints();
+  }
 
-    if (this.characters.length === 0) {
-      this.characters.push({
-        characterId: 'npc_fallback',
-        name: 'Fallback NPC',
-        transform: { x: 0, y: 0 },
-        state: { mood: '平常' },
-      });
+  private buildWaypoints(): Vec3[] {
+    const points: Vec3[] = [];
+    // Plaza area waypoints
+    for (let x = -4; x <= 4; x += 2) {
+      for (let z = -4; z <= 4; z += 2) {
+        points.push({ x, y: 0, z });
+      }
     }
+    // Road waypoints (N, S, E, W)
+    for (let z = -9; z <= -6; z += 1.5) points.push({ x: 0, y: 0, z });
+    for (let z = 6; z <= 11; z += 1.5) points.push({ x: 0, y: 0, z });
+    for (let x = -9; x <= -6; x += 1.5) points.push({ x, y: 0, z: -2 });
+    for (let x = 6; x <= 9; x += 1.5) points.push({ x, y: 0, z: -2 });
+    return points;
   }
 
   start(): void {
     if (this.runtimeStatus === 'RUNNING') {
       return;
     }
-
     this.runtimeStatus = 'RUNNING';
-    this.clock.start(() => this.tick());
+    this.clock.start(() => this.onTick());
   }
 
   stop(): void {
@@ -110,99 +108,71 @@ export class WorldRuntime {
     this.runtimeStatus = 'STOPPED';
   }
 
-  get currentSeq(): number {
-    return this.sequence;
+  get currentTick(): number {
+    return this.tick;
   }
 
-  tick(): CharacterMovedChange {
-    if (this.characters.length === 0) {
-      // Return a dummy change if no characters
-      return {
-        type: 'character_moved',
-        characterId: 'none',
-        from: { x: 0, y: 0 },
-        to: { x: 0, y: 0 },
-        durationMs: 0,
-      };
-    }
-    const characterIndex = this.clock.currentTick % this.characters.length;
-    const character = this.characters[characterIndex];
-
-    if (!character) {
-      throw new Error('WorldRuntime requires at least one character');
-    }
-
-    const from = { ...character.transform };
-
-    // Simple random walk within bounds
-    let dx = Math.floor(Math.random() * 3) - 1; // -1, 0, 1
-    let dy = Math.floor(Math.random() * 3) - 1;
-
-    // Try to stay walkable
-    let toX = Math.max(0, Math.min(this.mapMetadata?.gridWidth - 1 || 40, from.x + dx));
-    let toY = Math.max(0, Math.min(this.mapMetadata?.gridHeight - 1 || 40, from.y + dy));
-
-    if (this.navGrid && this.navGrid.walkable) {
-      if (this.navGrid.walkable[toY]?.[toX] !== 1) {
-        // If next step is not walkable, try other directions or just stay
-        toX = from.x;
-        toY = from.y;
-        dx = 0;
-        dy = 0;
-      }
-    }
-
-    const to = { x: toX, y: toY };
-
-    // Determine direction
-    let direction = (character.state as any)?.direction || 'down';
-    if (dx < 0) direction = 'left';
-    else if (dx > 0) direction = 'right';
-    else if (dy < 0) direction = 'up';
-    else if (dy > 0) direction = 'down';
-
-    // Randomly assign statusIcon
-    let statusIcon = (character.state as any)?.statusIcon;
-    if (Math.random() < 0.05) {
-      const icons = ['💭', '😊', '💤', '📍', '🔥', '🍵'];
-      statusIcon = icons[Math.floor(Math.random() * icons.length)];
-    } else if (Math.random() < 0.1) {
-      statusIcon = null;
-    }
-
-    character.transform = to;
-    character.state = {
-      ...character.state,
-      direction,
-      isMoving: dx !== 0 || dy !== 0,
-      statusIcon,
-    };
+  private onTick(): void {
     this.clock.advance();
-    this.snapshotVersion += 1;
-    this.sequence += 1;
+    this.tick += 1;
 
-    const delta: CharacterMovedChange = {
-      type: 'character_moved',
-      characterId: character.characterId,
-      from,
-      to,
-      durationMs: this.clock.tickIntervalMs,
-    };
-
-    const worldDelta: WorldDelta = {
-      type: 'world_delta',
-      worldId: this.worldId,
-      seq: this.sequence,
-      serverTime: this.now(),
-      gameTime: this.clock.gameTime,
-      changes: [delta],
-    };
-
-    for (const listener of this.deltaListeners) {
-      listener(worldDelta);
+    // Every ~30 ticks (6 seconds at 5 tps), move a non-player NPC
+    if (this.tick % 5 === 0) {
+      this.moveOneNpc();
     }
+  }
 
-    return delta;
+  private moveOneNpc(): void {
+    // Pick a random non-player NPC
+    const movableNpcs = this.npcs.filter((n) => n.role !== 'player');
+    if (movableNpcs.length === 0) return;
+
+    const npc = movableNpcs[Math.floor(Math.random() * movableNpcs.length)];
+    if (!npc) return;
+
+    // Pick a random waypoint as target
+    const target = this.moveWaypoints[Math.floor(Math.random() * this.moveWaypoints.length)];
+    if (!target) return;
+
+    const from = { ...npc.position };
+    npc.targetPosition = { ...target };
+    npc.status = 'walking';
+
+    const event: NpcMovedEvent = {
+      type: 'npc_moved',
+      npcId: npc.id,
+      position: from,
+      targetPosition: { ...target },
+      status: 'walking',
+    };
+
+    this.emit(event);
+
+    // Schedule arrival after a delay (simulated by next check)
+    // In a real system we'd track animation time; for now set idle after a few ticks
+    const distance = Math.sqrt((target.x - from.x) ** 2 + (target.z - from.z) ** 2);
+    const ticksToArrive = Math.max(3, Math.round(distance * 2));
+
+    // Use setTimeout to simulate arrival
+    setTimeout(() => {
+      npc.position = { ...target };
+      delete (npc as any).targetPosition;
+      npc.status = 'idle';
+      npc.facing = Math.atan2(target.x - from.x, target.z - from.z);
+
+      this.emit({
+        type: 'npc_moved',
+        npcId: npc.id,
+        position: { ...target },
+        status: 'idle',
+      });
+    }, ticksToArrive * this.clock.tickIntervalMs);
+  }
+
+  private emit(event: QtownWorldEvent): void {
+    for (const listener of this.deltaListeners) {
+      listener(event);
+    }
   }
 
   subscribe(listener: DeltaListener): () => void {
@@ -210,8 +180,8 @@ export class WorldRuntime {
     return () => this.deltaListeners.delete(listener);
   }
 
-  setViewerCount(viewerCount: number): void {
-    this.viewerCount = viewerCount;
+  setViewerCount(count: number): void {
+    this.viewerCount = count;
   }
 
   getStatus(): WorldRuntimeStatus {
@@ -224,25 +194,38 @@ export class WorldRuntime {
     };
   }
 
-  getSnapshot(): WorldSnapshot {
+  getSnapshot(): QtownWorldSnapshot {
+    const time = this.clockToGameTime();
     return {
-      type: 'world_snapshot',
       worldId: this.worldId,
-      snapshotVersion: this.snapshotVersion,
-      seq: this.sequence,
-      serverTime: this.now(),
-      gameTime: this.clock.gameTime,
-      map: {
-        id: this.mapMetadata?.id || 'qtown_v0_1',
-      },
-      regions: [],
-      objects: [],
-      characters: this.characters.map((character) => ({
-        ...character,
-        transform: { ...character.transform },
-      })),
-      animals: [],
-      publicEvents: [],
+      mapId: this.mapData?.id ?? 'qtown_v0_1',
+      tick: this.tick,
+      time,
+      npcs: this.npcs.map((n) => ({ ...n, position: { ...n.position } })),
+      buildings: this.buildings.map((b) => {
+        const copy: BuildingState = {
+          id: b.id,
+          assetId: b.assetId,
+          buildingType: b.buildingType,
+          displayName: b.displayName,
+          position: { ...b.position },
+          status: b.status,
+        };
+        if (b.rotation) copy.rotation = { ...b.rotation };
+        if (b.roofMode) copy.roofMode = b.roofMode;
+        return copy;
+      }),
+      resourceNodes: buildSnapshot(this.mapData, this.tick, time).resourceNodes,
+      props: buildSnapshot(this.mapData, this.tick, time).props,
+    };
+  }
+
+  private clockToGameTime(): WorldTime {
+    const gt = this.clock.gameTime;
+    return {
+      day: gt.day,
+      hour: gt.hour,
+      minute: gt.minute,
     };
   }
 }

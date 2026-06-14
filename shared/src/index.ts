@@ -30,4 +30,23 @@ export type {
   WorldDeltaChange,
 } from './protocol/WorldDelta.js';
 export type { PublicWorldEvent, WorldSnapshot } from './protocol/WorldSnapshot.js';
+export type {
+  BuildingState,
+  BuildingUpdatedEvent,
+  InteractCommand,
+  MovePlayerCommand,
+  NpcActionChangedEvent,
+  NpcMovedEvent,
+  NpcState,
+  PropState,
+  ResourceNodeState,
+  ResourceUpdatedEvent,
+  SelectBuildingCommand,
+  SetRoofModeCommand,
+  Vec3,
+  WorldCommand,
+  WorldEvent,
+  WorldSnapshot as QtownWorldSnapshot,
+  WorldTime,
+} from './protocol/QtownWorld.js';
 export type { GameTime } from './time/GameTime.js';

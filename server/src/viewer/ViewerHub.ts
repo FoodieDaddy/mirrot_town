@@ -1,7 +1,7 @@
-import type { ServerMessage, WorldDelta } from '@jingzhong-biancheng/shared';
+import type { NpcMovedEvent, ServerMessage } from '@jingzhong-biancheng/shared';
 import type { WebSocket } from 'ws';
 
-import type { WorldRuntime, WorldRuntimeStatus } from '../engine/WorldRuntime.js';
+import type { QtownWorldEvent, WorldRuntime } from '../engine/WorldRuntime.js';
 
 const OPEN = 1;
 const MAX_BUFFERED_BYTES = 1024 * 1024;
@@ -48,21 +48,17 @@ export class ViewerHub {
     this.send(client, this.createMessage('error', { code, message }));
   }
 
-  broadcastDelta(delta: WorldDelta): void {
-    this.broadcast({
-      type: 'world_delta',
-      worldId: delta.worldId,
-      seq: delta.seq,
-      serverTime: delta.serverTime,
-      payload: {
-        changes: delta.changes,
-        ...(delta.gameTime === undefined ? {} : { gameTime: delta.gameTime }),
-      },
-    });
+  /**
+   * Broadcast a QtownWorldEvent to all connected viewers.
+   * Wraps the event in the standard ServerMessage envelope.
+   */
+  broadcastEvent(event: QtownWorldEvent): void {
+    const message = this.createMessage('qtown_event', event);
+    this.broadcast(message);
   }
 
   broadcastStatus(): void {
-    const status: WorldRuntimeStatus = this.runtime.getStatus();
+    const status = this.runtime.getStatus();
     this.broadcast(
       this.createMessage('world_status', {
         simulationMode: status.simulationMode,
@@ -76,7 +72,7 @@ export class ViewerHub {
     return {
       type,
       worldId: this.runtime.worldId,
-      seq: this.runtime.currentSeq,
+      seq: this.runtime.currentTick,
       serverTime: this.now(),
       payload,
     } as ServerMessage;
