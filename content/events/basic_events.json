@@ -1,0 +1,102 @@
+[
+  {
+    "eventCode": "water_fetched",
+    "name": "取水完成",
+    "category": "life",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 2,
+    "memoryCandidate": false,
+    "enabled": true
+  },
+  {
+    "eventCode": "ate_food",
+    "name": "吃饭完成",
+    "category": "life",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 2,
+    "memoryCandidate": false,
+    "enabled": true
+  },
+  {
+    "eventCode": "slept",
+    "name": "睡觉完成",
+    "category": "life",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 2,
+    "memoryCandidate": false,
+    "enabled": true
+  },
+  {
+    "eventCode": "fish_caught",
+    "name": "钓到鱼",
+    "category": "farming",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 5,
+    "memoryCandidate": true,
+    "enabled": true
+  },
+  {
+    "eventCode": "horse_fed",
+    "name": "喂马完成",
+    "category": "farming",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 3,
+    "memoryCandidate": false,
+    "enabled": true
+  },
+  {
+    "eventCode": "crop_watered",
+    "name": "浇水完成",
+    "category": "farming",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 2,
+    "memoryCandidate": false,
+    "enabled": true
+  },
+  {
+    "eventCode": "item_purchased",
+    "name": "购买物品",
+    "category": "commerce",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 5,
+    "memoryCandidate": true,
+    "enabled": true
+  },
+  {
+    "eventCode": "conversation_held",
+    "name": "交谈完成",
+    "category": "social",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 4,
+    "memoryCandidate": true,
+    "enabled": true
+  },
+  {
+    "eventCode": "wage_paid",
+    "name": "发放工资",
+    "category": "work",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 6,
+    "memoryCandidate": true,
+    "enabled": true
+  },
+  {
+    "eventCode": "work_task_completed",
+    "name": "工作任务完成",
+    "category": "work",
+    "triggerType": "action_complete",
+    "visibility": "public",
+    "importance": 5,
+    "memoryCandidate": true,
+    "enabled": true
+  }
+]
