@@ -43,7 +43,7 @@ export class EntityFactory {
             const currentHeight = size.y * scaleFactor;
             if (currentHeight > profile.maxHeight) {
                 scaleFactor = scaleFactor * (profile.maxHeight / currentHeight);
-                console.log(`[Scale Normalization] ${assetId}: height ${currentHeight.toFixed(2)} exceeds ${profile.maxHeight}, scaling down to ${scaleFactor.toFixed(2)}`);
+                console.debug(`[Scale Normalization] ${assetId}: height ${currentHeight.toFixed(2)} exceeds ${profile.maxHeight}, scaling down to ${scaleFactor.toFixed(2)}`);
             }
 
             clone.scale.set(scaleFactor, scaleFactor, scaleFactor);

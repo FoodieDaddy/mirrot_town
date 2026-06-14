@@ -5,7 +5,6 @@ import { MapLoader } from './core/MapLoader.js';
 import { NpcRenderSystem } from './systems/NpcRenderSystem.js';
 import { GroundSystem } from './systems/GroundSystem.js';
 import { SelectionSystem } from './systems/SelectionSystem.js';
-import { WorldStateStore } from '@jingzhong-biancheng/client-core';
 
 async function bootstrap() {
     const app = new RendererApp('app');
@@ -47,34 +46,7 @@ async function bootstrap() {
         npcSystem.update(delta);
     });
 
-    // 4. Connect Backend Socket
-    const store = new WorldStateStore();
-    const socket = new WebSocket(`ws://localhost:3000/ws/worlds/default`);
-
-    socket.onopen = () => {
-        console.log('Connected to backend simulation');
-        socket.send(JSON.stringify({
-            type: 'viewer_join',
-            worldId: 'default',
-            clientSeq: 0,
-            payload: { clientVersion: '0.1.0', platform: 'web' }
-        }));
-    };
-
-    socket.onmessage = (event) => {
-        try {
-            const msg = JSON.parse(event.data);
-            if (msg.type === 'world_snapshot') {
-                store.applySnapshot(msg.payload);
-                npcSystem.sync(store.getState());
-            } else if (msg.type === 'world_delta') {
-                store.applyDelta(msg.payload);
-                npcSystem.sync(store.getState());
-            }
-        } catch(e) {
-            console.error('WebSocket msg error:', e);
-        }
-    };
+    // 4. Backend Socket connection deferred — will be handled when server is running
 }
 
 bootstrap().catch(console.error);
