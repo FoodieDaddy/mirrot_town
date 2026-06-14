@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 import type { WorldState } from '@jingzhong-biancheng/client-core';
 import type { EntityFactory } from '../core/EntityFactory.js';
 
@@ -12,7 +13,6 @@ export class NpcRenderSystem {
         this.scene = scene;
         this.factory = factory;
         
-        // Register existing map spawned npcs
         scene.children.forEach(child => {
             if (child.userData.type === 'character') {
                 this.registerInstance(child.userData.id, child);
@@ -23,10 +23,9 @@ export class NpcRenderSystem {
     private registerInstance(id: string, instance: THREE.Object3D) {
         this.instances.set(id, instance);
         
-        // Find if any root has animations (cached by AssetRegistry)
         let anims: THREE.AnimationClip[] | undefined;
         instance.traverse(c => {
-            if (c.userData && c.userData.animations) anims = c.userData.animations;
+            if (c.userData.animations) anims = c.userData.animations;
         });
 
         if (anims && anims.length > 0) {
@@ -36,6 +35,22 @@ export class NpcRenderSystem {
             instance.userData.mixer = mixer;
             instance.userData.anims = anims;
         }
+
+        // Add Label
+        const name = instance.userData.name || id;
+        const div = document.createElement('div');
+        div.className = 'npc-label';
+        div.textContent = name;
+        div.style.color = '#fff';
+        div.style.padding = '2px 8px';
+        div.style.background = 'rgba(0,0,0,0.5)';
+        div.style.borderRadius = '10px';
+        div.style.fontSize = '12px';
+        div.style.whiteSpace = 'nowrap';
+        
+        const label = new CSS2DObject(div);
+        label.position.set(0, 1.8, 0); // Position above head
+        instance.add(label);
     }
 
     public update(delta: number) {
@@ -45,50 +60,45 @@ export class NpcRenderSystem {
     }
 
     public sync(state: WorldState) {
-        if (!state || !state.characters) {
-            return;
-        }
+        if (!state || !state.characters) return;
 
         state.characters.forEach((charState, charId) => {
             let instance = this.instances.get(charId);
             
             if (!instance) {
-                // Spawn dynamically
                 instance = this.factory.createEntity({ 
                     id: charId, 
                     assetId: 'npc_base_001', 
+                    name: charState.name,
                     position: { x: charState.transform.x - 20, y: 0, z: charState.transform.y - 20 } 
                 }, 'character');
                 this.scene.add(instance);
                 this.registerInstance(charId, instance);
             }
 
-            // Sync position
             const targetX = charState.transform.x - 20; 
             const targetZ = charState.transform.y - 20;
             instance.position.x = targetX;
             instance.position.z = targetZ;
 
-            // Sync direction
             const dir = (charState.state as any)?.direction;
             if (dir === 'left') instance.rotation.y = -Math.PI / 2;
             else if (dir === 'right') instance.rotation.y = Math.PI / 2;
             else if (dir === 'up') instance.rotation.y = Math.PI;
             else if (dir === 'down') instance.rotation.y = 0;
 
-            // Animation
             const isMoving = (charState.state as any)?.isMoving;
             const mixer = instance.userData.mixer as THREE.AnimationMixer | undefined;
             const anims = instance.userData.anims as THREE.AnimationClip[] | undefined;
             
             if (mixer && anims && anims.length > 1) {
-                const targetAnimIndex = isMoving ? 1 : 0; // Simple assume 1=walk, 0=idle
+                const targetAnimIndex = isMoving ? 1 : 0;
                 if (targetAnimIndex < anims.length) {
-                    // Try to avoid restarting the same animation if it's already playing
-                    // A simple check is to look at existing actions
-                    // For this simple demo, we just stop all and play
-                    mixer.stopAllAction();
-                    mixer.clipAction(anims[targetAnimIndex]).play();
+                    const action = mixer.clipAction(anims[targetAnimIndex]);
+                    if (!action.isRunning()) {
+                        mixer.stopAllAction();
+                        action.play();
+                    }
                 }
             }
         });

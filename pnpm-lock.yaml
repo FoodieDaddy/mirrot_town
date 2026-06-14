@@ -42,6 +42,9 @@ importers:
       three:
         specifier: ^0.160.0
         version: 0.160.1
+      three-css2drender:
+        specifier: ^1.0.0
+        version: 1.0.0(three@0.160.1)
     devDependencies:
       '@types/three':
         specifier: ^0.160.0
@@ -1880,6 +1883,11 @@ packages:
   thread-stream@4.2.0:
     resolution: {integrity: sha512-e2zZ96wSChazBsbENf/Pcm/4swHt2cEKQ92rhUjkL9GCKiTDJIaTBenjE/m9DXi0QBmTMDkFDdOomUy20A1tDQ==}
     engines: {node: '>=20'}
+
+  three-css2drender@1.0.0:
+    resolution: {integrity: sha512-redDCSBDvgxiJIm6EDT8WO5WJTVg5gUEy/vjtAgJa/zX4peEUnZ8K+mXo6v94EudbnuI5h48/hQo9NExf04ENg==}
+    peerDependencies:
+      three: '>= 0.91'
 
   three@0.160.1:
     resolution: {integrity: sha512-Bgl2wPJypDOZ1stAxwfWAcJ0WQf7QzlptsxkjYiURPz+n5k4RBDLsq+6f9Y75TYxn6aHLcWz+JNmwTOXWrQTBQ==}
@@ -3745,6 +3753,10 @@ snapshots:
   thread-stream@4.2.0:
     dependencies:
       real-require: 1.0.0
+
+  three-css2drender@1.0.0(three@0.160.1):
+    dependencies:
+      three: 0.160.1
 
   three@0.160.1: {}
 

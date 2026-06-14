@@ -2,9 +2,9 @@ import { RendererApp } from './core/RendererApp.js';
 import { AssetRegistry } from './core/AssetRegistry.js';
 import { EntityFactory } from './core/EntityFactory.js';
 import { MapLoader } from './core/MapLoader.js';
-import { RoofVisibilitySystem } from './systems/RoofVisibilitySystem.js';
 import { NpcRenderSystem } from './systems/NpcRenderSystem.js';
 import { GroundSystem } from './systems/GroundSystem.js';
+import { SelectionSystem } from './systems/SelectionSystem.js';
 import { WorldStateStore } from '@jingzhong-biancheng/client-core';
 
 async function bootstrap() {
@@ -40,7 +40,7 @@ async function bootstrap() {
     }
 
     // 3. Initialize systems
-    new RoofVisibilitySystem(app.scene, app.camera, registry);
+    new SelectionSystem(app.scene, app.camera, registry);
     const npcSystem = new NpcRenderSystem(app.scene, factory);
 
     app.addUpdatable((delta) => {

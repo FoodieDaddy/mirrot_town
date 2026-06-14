@@ -11,6 +11,7 @@
     "dev:web": "pnpm --filter @jingzhong-biancheng/web-shell dev",
     "dev:renderer-three": "pnpm --filter @jingzhong-biancheng/renderer-three dev",
     "import:qtown-assets": "tsx scripts/import_qtown_assets.ts",
+    "generate:qtown-layout": "tsx scripts/generate_qtown_layout.ts",
     "validate:qtown-assets": "tsx scripts/validate_qtown_assets.ts",
     "sync:qtown-runtime": "tsx scripts/sync_qtown_runtime_assets.ts",
     "update:qtown-bounds": "tsx scripts/update_asset_bounds.ts",

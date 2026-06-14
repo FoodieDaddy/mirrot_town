@@ -1,3 +1,4 @@
 # Asset Bounds Report
-- Heuristic-based bounds applied to 31 assets.
-- Real GLB parsing should be performed in-engine for precision.
+- Heuristic-based normalization applied to 31 assets.
+- Integrated recommendedScale to maintain town proportions.
+- Collision boxes synchronized with visual normalization.
