@@ -1,0 +1,47 @@
+[
+  {
+    "id": "click_house_liu_001",
+    "house_id": "house_liu_001",
+    "roof_group_id": "roof_house_liu_001",
+    "x": 85,
+    "y": 28,
+    "w": 16,
+    "h": 11
+  },
+  {
+    "id": "click_house_miao_001",
+    "house_id": "house_miao_001",
+    "roof_group_id": "roof_house_miao_001",
+    "x": 94,
+    "y": 51,
+    "w": 16,
+    "h": 11
+  },
+  {
+    "id": "click_house_chen_001",
+    "house_id": "house_chen_001",
+    "roof_group_id": "roof_house_chen_001",
+    "x": 46,
+    "y": 19,
+    "w": 15,
+    "h": 10
+  },
+  {
+    "id": "click_house_wu_001",
+    "house_id": "house_wu_001",
+    "roof_group_id": "roof_house_wu_001",
+    "x": 31,
+    "y": 49,
+    "w": 14,
+    "h": 9
+  },
+  {
+    "id": "click_tavern_small_001",
+    "house_id": "tavern_small_001",
+    "roof_group_id": "roof_tavern_small_001",
+    "x": 57,
+    "y": 56,
+    "w": 16,
+    "h": 9
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "assetKey": "icon_move",
+    "type": "icon",
+    "path": "icons/actions/move.png",
+    "tags": ["action", "movement"]
+  },
+  {
+    "assetKey": "icon_talk",
+    "type": "icon",
+    "path": "icons/actions/talk.png",
+    "tags": ["action", "social"]
+  },
+  {
+    "assetKey": "icon_water",
+    "type": "icon",
+    "path": "icons/actions/water.png",
+    "tags": ["action", "work", "water"]
+  },
+  {
+    "assetKey": "icon_fishing",
+    "type": "icon",
+    "path": "icons/actions/fishing.png",
+    "tags": ["action", "leisure", "water"]
+  }
+]

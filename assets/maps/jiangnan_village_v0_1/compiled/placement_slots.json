@@ -1,0 +1,3972 @@
+[
+  {
+    "id": "slot_house_liu_001_bed_01",
+    "region_id": "house_liu_001",
+    "slot_type": "bed_slot",
+    "position": {
+      "x": 89,
+      "y": 33
+    },
+    "size": {
+      "w": 2,
+      "h": 3
+    },
+    "allowed_tags": [
+      "bed",
+      "sleep"
+    ],
+    "owner_id": "char_liu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_liu_001_storage_01",
+    "region_id": "house_liu_001",
+    "slot_type": "storage_slot",
+    "position": {
+      "x": 96,
+      "y": 33
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "chest",
+      "storage"
+    ],
+    "owner_id": "char_liu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_liu_001_table_01",
+    "region_id": "house_liu_001",
+    "slot_type": "table_slot",
+    "position": {
+      "x": 90,
+      "y": 37
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "table",
+      "dining"
+    ],
+    "owner_id": "char_liu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_liu_001_decor_01",
+    "region_id": "house_liu_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 102,
+      "y": 41
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "plant"
+    ],
+    "owner_id": "char_liu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_liu_001_decor_02",
+    "region_id": "house_liu_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 85,
+      "y": 41
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "water_jar"
+    ],
+    "owner_id": "char_liu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_miao_001_bed_01",
+    "region_id": "house_miao_001",
+    "slot_type": "bed_slot",
+    "position": {
+      "x": 98,
+      "y": 56
+    },
+    "size": {
+      "w": 2,
+      "h": 3
+    },
+    "allowed_tags": [
+      "bed",
+      "sleep"
+    ],
+    "owner_id": "char_miao",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_miao_001_storage_01",
+    "region_id": "house_miao_001",
+    "slot_type": "storage_slot",
+    "position": {
+      "x": 105,
+      "y": 56
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "chest",
+      "storage"
+    ],
+    "owner_id": "char_miao",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_miao_001_table_01",
+    "region_id": "house_miao_001",
+    "slot_type": "table_slot",
+    "position": {
+      "x": 99,
+      "y": 60
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "table",
+      "dining"
+    ],
+    "owner_id": "char_miao",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_miao_001_decor_01",
+    "region_id": "house_miao_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 113,
+      "y": 64
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "plant"
+    ],
+    "owner_id": "char_miao",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_miao_001_decor_02",
+    "region_id": "house_miao_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 94,
+      "y": 64
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "water_jar"
+    ],
+    "owner_id": "char_miao",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_chen_001_bed_01",
+    "region_id": "house_chen_001",
+    "slot_type": "bed_slot",
+    "position": {
+      "x": 50,
+      "y": 24
+    },
+    "size": {
+      "w": 2,
+      "h": 3
+    },
+    "allowed_tags": [
+      "bed",
+      "sleep"
+    ],
+    "owner_id": "char_chen",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_chen_001_storage_01",
+    "region_id": "house_chen_001",
+    "slot_type": "storage_slot",
+    "position": {
+      "x": 56,
+      "y": 24
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "chest",
+      "storage"
+    ],
+    "owner_id": "char_chen",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_chen_001_table_01",
+    "region_id": "house_chen_001",
+    "slot_type": "table_slot",
+    "position": {
+      "x": 51,
+      "y": 27
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "table",
+      "dining"
+    ],
+    "owner_id": "char_chen",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_chen_001_decor_01",
+    "region_id": "house_chen_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 61,
+      "y": 31
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "plant"
+    ],
+    "owner_id": "char_chen",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_chen_001_decor_02",
+    "region_id": "house_chen_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 46,
+      "y": 31
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "water_jar"
+    ],
+    "owner_id": "char_chen",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_wu_001_bed_01",
+    "region_id": "house_wu_001",
+    "slot_type": "bed_slot",
+    "position": {
+      "x": 35,
+      "y": 54
+    },
+    "size": {
+      "w": 2,
+      "h": 3
+    },
+    "allowed_tags": [
+      "bed",
+      "sleep"
+    ],
+    "owner_id": "char_wu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_wu_001_storage_01",
+    "region_id": "house_wu_001",
+    "slot_type": "storage_slot",
+    "position": {
+      "x": 40,
+      "y": 54
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "chest",
+      "storage"
+    ],
+    "owner_id": "char_wu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_wu_001_table_01",
+    "region_id": "house_wu_001",
+    "slot_type": "table_slot",
+    "position": {
+      "x": 36,
+      "y": 56
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "table",
+      "dining"
+    ],
+    "owner_id": "char_wu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_wu_001_decor_01",
+    "region_id": "house_wu_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 45,
+      "y": 60
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "plant"
+    ],
+    "owner_id": "char_wu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_house_wu_001_decor_02",
+    "region_id": "house_wu_001",
+    "slot_type": "decor_slot",
+    "position": {
+      "x": 32,
+      "y": 60
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "flower",
+      "decor",
+      "water_jar"
+    ],
+    "owner_id": "char_wu",
+    "access": "private",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_01",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_02",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_03",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_04",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_05",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_06",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_07",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_08",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 68
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_09",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_10",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_11",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_12",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_13",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_14",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_15",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_16",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 70
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_17",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_18",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_19",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_20",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_21",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_22",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_23",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_24",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 72
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_25",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_26",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_27",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_28",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_29",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_30",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_31",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_32",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 74
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_33",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_34",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_35",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_36",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_37",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_38",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_39",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_40",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 76
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_41",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_42",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_43",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_44",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_45",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_46",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_47",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_48",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 78
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_49",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_50",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_51",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_52",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_53",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_54",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_55",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_56",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 80
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_57",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 41,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_58",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 43,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_59",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 45,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_60",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 47,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_61",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 49,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_62",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 51,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_63",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 53,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_1_64",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 55,
+      "y": 82
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_01",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_02",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_03",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_04",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_05",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_06",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_07",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_08",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 69
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_09",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_10",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_11",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_12",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_13",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_14",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_15",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_16",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_17",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_18",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_19",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_20",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_21",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_22",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_23",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_24",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_25",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_26",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_27",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_28",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_29",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_30",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_31",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_32",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_33",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_34",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_35",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_36",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_37",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_38",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_39",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_40",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_41",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_42",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_43",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_44",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_45",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_46",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_47",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_48",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_49",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 61,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_50",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 63,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_51",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 65,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_52",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 67,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_53",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 69,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_54",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 71,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_55",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 73,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_rice_field_south_001_crop_2_56",
+    "region_id": "rice_field_south_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 75,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "rice"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_01",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_02",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_03",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_04",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_05",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_06",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_07",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 71
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_08",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_09",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_10",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_11",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_12",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_13",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_14",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 73
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_15",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_16",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_17",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_18",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_19",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_20",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_21",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 75
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_22",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_23",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_24",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_25",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_26",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_27",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_28",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 77
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_29",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_30",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_31",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_32",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_33",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_34",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_35",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 79
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_36",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 22,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_37",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 24,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_38",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 26,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_39",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 28,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_40",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 30,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_41",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 32,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_herb_garden_west_001_crop_3_42",
+    "region_id": "herb_garden_west_001",
+    "slot_type": "crop_slot",
+    "position": {
+      "x": 34,
+      "y": 81
+    },
+    "size": {
+      "w": 1,
+      "h": 1
+    },
+    "allowed_tags": [
+      "crop",
+      "seed",
+      "vegetable"
+    ],
+    "owner_id": "",
+    "access": "public_work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_stable_feed_trough_slot_1",
+    "region_id": "stable_001",
+    "slot_type": "feed_trough_slot",
+    "position": {
+      "x": 94,
+      "y": 78
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "trough",
+      "horse_feed"
+    ],
+    "owner_id": "business_stable",
+    "access": "work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_stable_water_trough_slot_2",
+    "region_id": "stable_001",
+    "slot_type": "water_trough_slot",
+    "position": {
+      "x": 99,
+      "y": 78
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "trough",
+      "horse_water"
+    ],
+    "owner_id": "business_stable",
+    "access": "work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_stable_hay_storage_slot_3",
+    "region_id": "stable_001",
+    "slot_type": "hay_storage_slot",
+    "position": {
+      "x": 104,
+      "y": 78
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "hay",
+      "storage"
+    ],
+    "owner_id": "business_stable",
+    "access": "work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_stable_horse_stall_slot_4",
+    "region_id": "stable_001",
+    "slot_type": "horse_stall_slot",
+    "position": {
+      "x": 100,
+      "y": 85
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "horse",
+      "stall"
+    ],
+    "owner_id": "business_stable",
+    "access": "work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_stable_horse_stall_slot_5",
+    "region_id": "stable_001",
+    "slot_type": "horse_stall_slot",
+    "position": {
+      "x": 106,
+      "y": 85
+    },
+    "size": {
+      "w": 2,
+      "h": 1
+    },
+    "allowed_tags": [
+      "horse",
+      "stall"
+    ],
+    "owner_id": "business_stable",
+    "access": "work",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_plaza_market_1",
+    "region_id": "plaza_001",
+    "slot_type": "market_slot",
+    "position": {
+      "x": 58,
+      "y": 52
+    },
+    "size": {
+      "w": 2,
+      "h": 2
+    },
+    "allowed_tags": [
+      "stall",
+      "trade"
+    ],
+    "owner_id": "town",
+    "access": "public",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_plaza_market_2",
+    "region_id": "plaza_001",
+    "slot_type": "market_slot",
+    "position": {
+      "x": 72,
+      "y": 52
+    },
+    "size": {
+      "w": 2,
+      "h": 2
+    },
+    "allowed_tags": [
+      "stall",
+      "trade"
+    ],
+    "owner_id": "town",
+    "access": "public",
+    "occupied_by": null
+  },
+  {
+    "id": "slot_plaza_market_3",
+    "region_id": "plaza_001",
+    "slot_type": "market_slot",
+    "position": {
+      "x": 64,
+      "y": 54
+    },
+    "size": {
+      "w": 2,
+      "h": 2
+    },
+    "allowed_tags": [
+      "stall",
+      "trade"
+    ],
+    "owner_id": "town",
+    "access": "public",
+    "occupied_by": null
+  }
+]

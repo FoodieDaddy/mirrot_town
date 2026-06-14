@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "map_id": "jiangnan_village_v0_1",
+  "world_id": "demo_jiangnan_village",
+  "title": "三国江南小村落 v0.1",
+  "tile_size": 32,
+  "size": {
+    "width": 128,
+    "height": 96
+  },
+  "source_map": "../source/jiangnan_village_v0_1.tmj",
+  "tileset": "../tilesets/jiangnan_v0_1_tileset.tsj",
+  "style_tags": [
+    "三国时期",
+    "江南",
+    "远离战火",
+    "生活模拟",
+    "模块化地图"
+  ],
+  "compiled_files": {
+    "regions": "regions.json",
+    "interaction_points": "interaction_points.json",
+    "placement_slots": "placement_slots.json",
+    "roof_groups": "roof_groups.json",
+    "house_click_areas": "house_click_areas.json",
+    "collision": "collision.json",
+    "nav_grid": "nav_grid.json",
+    "object_templates": "object_templates.json",
+    "initial_world_objects": "initial_world_objects.json"
+  },
+  "runtime_rules": {
+    "roof_visibility": "client_side_click_toggle",
+    "default_roof_state": "shown",
+    "supports_hide_all_roofs": true,
+    "ai_does_not_auto_hide_roof": true,
+    "dynamic_objects_loaded_from_db": true
+  }
+}

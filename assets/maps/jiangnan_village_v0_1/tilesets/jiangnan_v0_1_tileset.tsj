@@ -1,0 +1,820 @@
+{
+  "type": "tileset",
+  "version": "1.10",
+  "tiledversion": "1.10.2",
+  "name": "jiangnan_v0_1_tileset",
+  "tilewidth": 32,
+  "tileheight": 32,
+  "spacing": 0,
+  "margin": 0,
+  "columns": 8,
+  "tilecount": 80,
+  "image": "jiangnan_v0_1_tileset.png",
+  "imagewidth": 256,
+  "imageheight": 320,
+  "tiles": [
+    {
+      "id": 0,
+      "type": "grass",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "grass"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "grass_dark",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "grass_dark"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "grass_light",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "grass_light"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "mud",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "mud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "road",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "road"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "road_edge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "road_edge"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "stone_path",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "stone_path"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "shadow",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "shadow"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "water_deep",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "water_deep"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "water_mid",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "water_mid"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "water_shallow",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "water_shallow"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "riverbank",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "riverbank"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "paddy_water",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "paddy_water"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "paddy_young",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "paddy_young"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "paddy_mature",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "paddy_mature"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "field_dirt",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "field_dirt"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "field_ridge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "field_ridge"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "canal",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "canal"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "wood_floor",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "wood_floor"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "interior_floor",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "interior_floor"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "clay_wall",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "clay_wall"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "wood_wall",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "wood_wall"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "door",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "door"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "window",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "window"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "roof_gray",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_gray"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "roof_gray_edge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_gray_edge"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "roof_straw",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_straw"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "roof_straw_edge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_straw_edge"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "roof_ridge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_ridge"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "roof_cut_edge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_cut_edge"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "fence",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "fence"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "bridge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "bridge"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "bamboo",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "bamboo"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "tree_canopy",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "tree_canopy"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "tree_trunk",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "tree_trunk"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "type": "bush",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "bush"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "flower",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "flower"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "water_jar",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "water_jar"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "barrel",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "barrel"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "woodpile",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "woodpile"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "haystack",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "haystack"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "toolrack",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "toolrack"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "type": "notice_board",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "notice_board"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "bench",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "bench"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "feed_trough",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "feed_trough"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "water_trough",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "water_trough"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "workbench",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "workbench"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "market_stall",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "market_stall"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "lamp",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "lamp"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "type": "laundry",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "laundry"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "pier",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "pier"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "boat",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "boat"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "type": "crop_seedling",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "crop_seedling"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "type": "crop_mature",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "crop_mature"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "type": "horse_marker",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "horse_marker"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "type": "fishing_marker",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "fishing_marker"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "type": "well",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "well"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "type": "stove",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "stove"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "type": "chest",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "chest"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "type": "bed",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "bed"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "type": "table",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "table"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "type": "mat",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "mat"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "type": "small_bridge",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "small_bridge"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "type": "gate",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "gate"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "type": "roof_dark",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_dark"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "type": "roof_light",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "roof_light"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "type": "eave_shadow",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "eave_shadow"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "type": "decor_noise",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "decor_noise"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "type": "stone",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "type": "reed",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "reed"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "type": "lotus",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "lotus"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "type": "soil_wet",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "soil_wet"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "type": "tile_placeholder",
+      "properties": [
+        {
+          "name": "code",
+          "type": "string",
+          "value": "tile_placeholder"
+        }
+      ]
+    }
+  ]
+}

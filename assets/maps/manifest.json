@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "activeMapId": "jiangnan_village_v0_1",
+  "maps": [
+    {
+      "id": "jiangnan_village_v0_1",
+      "version": "0.1.0",
+      "title": "三国江南小村落 v0.1",
+      "packagePath": "jiangnan_village_v0_1",
+      "source": "source/jiangnan_village_v0_1.tmj",
+      "worldSeed": "compiled/world_seed.json",
+      "preview": "preview/map_preview.png",
+      "roofsHiddenPreview": "preview/roofs_hidden_preview.png"
+    }
+  ]
+}

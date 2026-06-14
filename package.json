@@ -1,0 +1,25 @@
+{
+  "name": "jingzhong-biancheng",
+  "version": "0.1.0",
+  "private": true,
+  "description": "镜中边城：AI 驱动的常驻江南小镇模拟器",
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --parallel --filter @jingzhong-biancheng/server --filter @jingzhong-biancheng/web-shell dev",
+    "dev:server": "pnpm --filter @jingzhong-biancheng/server dev",
+    "dev:web": "pnpm --filter @jingzhong-biancheng/web-shell dev",
+    "dev:renderer-three": "pnpm --filter @jingzhong-biancheng/renderer-three dev",
+    "import:qtown-assets": "tsx scripts/import_qtown_assets.ts",
+    "validate:qtown-assets": "tsx scripts/validate_qtown_assets.ts",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "glob": "^13.0.6",
+    "tsx": "^4.22.4"
+  }
+}

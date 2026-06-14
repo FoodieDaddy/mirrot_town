@@ -1,0 +1,20 @@
+[
+  {
+    "assetKey": "jiangnan_village_base",
+    "type": "sprite",
+    "path": "sprites/maps/jiangnan_village_base.png",
+    "tags": ["map", "jiangnan", "paper-ink", "low-saturation"]
+  },
+  {
+    "assetKey": "villager_common_a",
+    "type": "sprite",
+    "path": "sprites/characters/villager_common_a.png",
+    "tags": ["character", "villager", "jiangnan", "cloth"]
+  },
+  {
+    "assetKey": "town_objects_basic",
+    "type": "sprite",
+    "path": "sprites/objects/town_objects_basic.png",
+    "tags": ["object", "bridge", "well", "stable", "decor"]
+  }
+]

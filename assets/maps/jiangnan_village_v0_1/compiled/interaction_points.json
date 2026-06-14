@@ -1,0 +1,711 @@
+[
+  {
+    "id": "ip_house_liu_001_sleep",
+    "region_id": "house_liu_001",
+    "object_id": "bed",
+    "point_type": "sleep",
+    "position": {
+      "x": 89,
+      "y": 33
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lie_down",
+      "sleep"
+    ],
+    "fallback_icon": "sleep"
+  },
+  {
+    "id": "ip_house_liu_001_sit_table",
+    "region_id": "house_liu_001",
+    "object_id": "table",
+    "point_type": "sit",
+    "position": {
+      "x": 91,
+      "y": 37
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_house_liu_001_door",
+    "region_id": "house_liu_001",
+    "object_id": null,
+    "point_type": "enter_house",
+    "position": {
+      "x": 93,
+      "y": 40
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "move_to"
+    ],
+    "fallback_icon": "door"
+  },
+  {
+    "id": "ip_house_miao_001_sleep",
+    "region_id": "house_miao_001",
+    "object_id": "bed",
+    "point_type": "sleep",
+    "position": {
+      "x": 98,
+      "y": 56
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lie_down",
+      "sleep"
+    ],
+    "fallback_icon": "sleep"
+  },
+  {
+    "id": "ip_house_miao_001_sit_table",
+    "region_id": "house_miao_001",
+    "object_id": "table",
+    "point_type": "sit",
+    "position": {
+      "x": 100,
+      "y": 60
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_house_miao_001_door",
+    "region_id": "house_miao_001",
+    "object_id": null,
+    "point_type": "enter_house",
+    "position": {
+      "x": 102,
+      "y": 63
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "move_to"
+    ],
+    "fallback_icon": "door"
+  },
+  {
+    "id": "ip_house_chen_001_sleep",
+    "region_id": "house_chen_001",
+    "object_id": "bed",
+    "point_type": "sleep",
+    "position": {
+      "x": 50,
+      "y": 24
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lie_down",
+      "sleep"
+    ],
+    "fallback_icon": "sleep"
+  },
+  {
+    "id": "ip_house_chen_001_sit_table",
+    "region_id": "house_chen_001",
+    "object_id": "table",
+    "point_type": "sit",
+    "position": {
+      "x": 52,
+      "y": 27
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_house_chen_001_door",
+    "region_id": "house_chen_001",
+    "object_id": null,
+    "point_type": "enter_house",
+    "position": {
+      "x": 53,
+      "y": 30
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "move_to"
+    ],
+    "fallback_icon": "door"
+  },
+  {
+    "id": "ip_house_wu_001_sleep",
+    "region_id": "house_wu_001",
+    "object_id": "bed",
+    "point_type": "sleep",
+    "position": {
+      "x": 35,
+      "y": 54
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lie_down",
+      "sleep"
+    ],
+    "fallback_icon": "sleep"
+  },
+  {
+    "id": "ip_house_wu_001_sit_table",
+    "region_id": "house_wu_001",
+    "object_id": "table",
+    "point_type": "sit",
+    "position": {
+      "x": 37,
+      "y": 56
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_house_wu_001_door",
+    "region_id": "house_wu_001",
+    "object_id": null,
+    "point_type": "enter_house",
+    "position": {
+      "x": 38,
+      "y": 59
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "move_to"
+    ],
+    "fallback_icon": "door"
+  },
+  {
+    "id": "ip_tavern_small_001_sleep",
+    "region_id": "tavern_small_001",
+    "object_id": "bed",
+    "point_type": "sleep",
+    "position": {
+      "x": 61,
+      "y": 61
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lie_down",
+      "sleep"
+    ],
+    "fallback_icon": "sleep"
+  },
+  {
+    "id": "ip_tavern_small_001_sit_table",
+    "region_id": "tavern_small_001",
+    "object_id": "table",
+    "point_type": "sit",
+    "position": {
+      "x": 63,
+      "y": 63
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_tavern_small_001_door",
+    "region_id": "tavern_small_001",
+    "object_id": null,
+    "point_type": "enter_house",
+    "position": {
+      "x": 65,
+      "y": 66
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "move_to"
+    ],
+    "fallback_icon": "door"
+  },
+  {
+    "id": "ip_fishing_1",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fish",
+    "position": {
+      "x": 17,
+      "y": 40
+    },
+    "direction": "west",
+    "capacity": 1,
+    "required_actions": [
+      "sit",
+      "fish_cast",
+      "fish_wait"
+    ],
+    "fallback_icon": "fishing"
+  },
+  {
+    "id": "ip_fishing_2",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fish",
+    "position": {
+      "x": 20,
+      "y": 48
+    },
+    "direction": "west",
+    "capacity": 1,
+    "required_actions": [
+      "sit",
+      "fish_cast",
+      "fish_wait"
+    ],
+    "fallback_icon": "fishing"
+  },
+  {
+    "id": "ip_fishing_3",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fish",
+    "position": {
+      "x": 15,
+      "y": 58
+    },
+    "direction": "west",
+    "capacity": 1,
+    "required_actions": [
+      "sit",
+      "fish_cast",
+      "fish_wait"
+    ],
+    "fallback_icon": "fishing"
+  },
+  {
+    "id": "ip_fishing_4",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fish",
+    "position": {
+      "x": 23,
+      "y": 44
+    },
+    "direction": "west",
+    "capacity": 1,
+    "required_actions": [
+      "sit",
+      "fish_cast",
+      "fish_wait"
+    ],
+    "fallback_icon": "fishing"
+  },
+  {
+    "id": "ip_fetch_water_1",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fetch_water",
+    "position": {
+      "x": 17,
+      "y": 36
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "fetch_water"
+    ],
+    "fallback_icon": "water"
+  },
+  {
+    "id": "ip_fetch_water_2",
+    "region_id": "riverbank_west_001",
+    "object_id": null,
+    "point_type": "fetch_water",
+    "position": {
+      "x": 19,
+      "y": 52
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "fetch_water"
+    ],
+    "fallback_icon": "water"
+  },
+  {
+    "id": "ip_fetch_water_3",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "fetch_water",
+    "position": {
+      "x": 63,
+      "y": 47
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "fetch_water"
+    ],
+    "fallback_icon": "water"
+  },
+  {
+    "id": "ip_fetch_water_4",
+    "region_id": "pond_small_001",
+    "object_id": null,
+    "point_type": "fetch_water",
+    "position": {
+      "x": 76,
+      "y": 59
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "fetch_water"
+    ],
+    "fallback_icon": "water"
+  },
+  {
+    "id": "ip_notice_board_001",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "read_notice",
+    "position": {
+      "x": 57,
+      "y": 45
+    },
+    "direction": "south",
+    "capacity": 2,
+    "required_actions": [
+      "read_notice"
+    ],
+    "fallback_icon": "notice"
+  },
+  {
+    "id": "ip_plaza_sit_1",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "sit",
+    "position": {
+      "x": 70,
+      "y": 45
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_plaza_sit_2",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "sit",
+    "position": {
+      "x": 73,
+      "y": 45
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_plaza_sit_3",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "sit",
+    "position": {
+      "x": 60,
+      "y": 52
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_plaza_sit_4",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "sit",
+    "position": {
+      "x": 72,
+      "y": 52
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "sit"
+    ],
+    "fallback_icon": "sit"
+  },
+  {
+    "id": "ip_farm_work_1",
+    "region_id": "rice_field_south_001",
+    "object_id": null,
+    "point_type": "farm_work",
+    "position": {
+      "x": 47,
+      "y": 73
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "hoe_soil",
+      "water_crop",
+      "harvest_crop"
+    ],
+    "fallback_icon": "farm"
+  },
+  {
+    "id": "ip_farm_work_2",
+    "region_id": "rice_field_south_001",
+    "object_id": null,
+    "point_type": "farm_work",
+    "position": {
+      "x": 67,
+      "y": 72
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "hoe_soil",
+      "water_crop",
+      "harvest_crop"
+    ],
+    "fallback_icon": "farm"
+  },
+  {
+    "id": "ip_farm_work_3",
+    "region_id": "rice_field_south_001",
+    "object_id": null,
+    "point_type": "farm_work",
+    "position": {
+      "x": 49,
+      "y": 82
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "hoe_soil",
+      "water_crop",
+      "harvest_crop"
+    ],
+    "fallback_icon": "farm"
+  },
+  {
+    "id": "ip_farm_work_4",
+    "region_id": "rice_field_south_001",
+    "object_id": null,
+    "point_type": "farm_work",
+    "position": {
+      "x": 69,
+      "y": 82
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "hoe_soil",
+      "water_crop",
+      "harvest_crop"
+    ],
+    "fallback_icon": "farm"
+  },
+  {
+    "id": "ip_stable_feed_horse_1",
+    "region_id": "stable_001",
+    "object_id": null,
+    "point_type": "feed_horse",
+    "position": {
+      "x": 94,
+      "y": 80
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "feed_horse"
+    ],
+    "fallback_icon": "horse"
+  },
+  {
+    "id": "ip_stable_water_horse_2",
+    "region_id": "stable_001",
+    "object_id": null,
+    "point_type": "water_horse",
+    "position": {
+      "x": 99,
+      "y": 80
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "water_horse"
+    ],
+    "fallback_icon": "horse"
+  },
+  {
+    "id": "ip_stable_groom_horse_3",
+    "region_id": "stable_001",
+    "object_id": null,
+    "point_type": "groom_horse",
+    "position": {
+      "x": 104,
+      "y": 80
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "groom_horse"
+    ],
+    "fallback_icon": "horse"
+  },
+  {
+    "id": "ip_stable_lead_horse_4",
+    "region_id": "stable_001",
+    "object_id": null,
+    "point_type": "lead_horse",
+    "position": {
+      "x": 100,
+      "y": 86
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "lead_horse"
+    ],
+    "fallback_icon": "horse"
+  },
+  {
+    "id": "ip_workshop_make_plank_1",
+    "region_id": "workshop_001",
+    "object_id": null,
+    "point_type": "make_plank",
+    "position": {
+      "x": 29,
+      "y": 43
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "make_plank"
+    ],
+    "fallback_icon": "work"
+  },
+  {
+    "id": "ip_workshop_repair_tool_2",
+    "region_id": "workshop_001",
+    "object_id": null,
+    "point_type": "repair_tool",
+    "position": {
+      "x": 34,
+      "y": 44
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "repair_tool"
+    ],
+    "fallback_icon": "work"
+  },
+  {
+    "id": "ip_workshop_store_wood_3",
+    "region_id": "workshop_001",
+    "object_id": null,
+    "point_type": "store_wood",
+    "position": {
+      "x": 39,
+      "y": 46
+    },
+    "direction": "south",
+    "capacity": 1,
+    "required_actions": [
+      "store_wood"
+    ],
+    "fallback_icon": "work"
+  },
+  {
+    "id": "ip_plaza_talk_1",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "talk",
+    "position": {
+      "x": 63,
+      "y": 47
+    },
+    "direction": "south",
+    "capacity": 2,
+    "required_actions": [
+      "talk"
+    ],
+    "fallback_icon": "talk"
+  },
+  {
+    "id": "ip_plaza_talk_2",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "talk",
+    "position": {
+      "x": 57,
+      "y": 45
+    },
+    "direction": "south",
+    "capacity": 2,
+    "required_actions": [
+      "talk"
+    ],
+    "fallback_icon": "talk"
+  },
+  {
+    "id": "ip_plaza_talk_3",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "talk",
+    "position": {
+      "x": 64,
+      "y": 49
+    },
+    "direction": "south",
+    "capacity": 2,
+    "required_actions": [
+      "talk"
+    ],
+    "fallback_icon": "talk"
+  },
+  {
+    "id": "ip_plaza_talk_4",
+    "region_id": "plaza_001",
+    "object_id": null,
+    "point_type": "talk",
+    "position": {
+      "x": 66,
+      "y": 41
+    },
+    "direction": "south",
+    "capacity": 2,
+    "required_actions": [
+      "talk"
+    ],
+    "fallback_icon": "talk"
+  }
+]

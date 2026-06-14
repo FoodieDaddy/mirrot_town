@@ -1,0 +1,196 @@
+[
+  {
+    "id": "col_river_8",
+    "type": "water_collision",
+    "x": 6.0,
+    "y": 8.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_16",
+    "type": "water_collision",
+    "x": 6.0,
+    "y": 16.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_24",
+    "type": "water_collision",
+    "x": 4.0,
+    "y": 24.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_32",
+    "type": "water_collision",
+    "x": 2.0,
+    "y": 32.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_40",
+    "type": "water_collision",
+    "x": 3.0,
+    "y": 40.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_48",
+    "type": "water_collision",
+    "x": 5.0,
+    "y": 48.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_56",
+    "type": "water_collision",
+    "x": 7.0,
+    "y": 56.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_64",
+    "type": "water_collision",
+    "x": 5.0,
+    "y": 64.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_72",
+    "type": "water_collision",
+    "x": 3.0,
+    "y": 72.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_river_80",
+    "type": "water_collision",
+    "x": 3.0,
+    "y": 80.0,
+    "w": 14.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true"
+    }
+  },
+  {
+    "id": "col_house_liu_001_walls",
+    "type": "wall_collision",
+    "x": 87.0,
+    "y": 31.0,
+    "w": 12.0,
+    "h": 9.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_house_miao_001_walls",
+    "type": "wall_collision",
+    "x": 96.0,
+    "y": 54.0,
+    "w": 12.0,
+    "h": 9.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_house_chen_001_walls",
+    "type": "wall_collision",
+    "x": 48.0,
+    "y": 22.0,
+    "w": 11.0,
+    "h": 8.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_house_wu_001_walls",
+    "type": "wall_collision",
+    "x": 33.0,
+    "y": 52.0,
+    "w": 10.0,
+    "h": 7.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_tavern_small_001_walls",
+    "type": "wall_collision",
+    "x": 59.0,
+    "y": 59.0,
+    "w": 12.0,
+    "h": 7.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_workshop_walls",
+    "type": "wall_collision",
+    "x": 24.0,
+    "y": 38.0,
+    "w": 18.0,
+    "h": 11.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  },
+  {
+    "id": "col_stable_walls",
+    "type": "wall_collision",
+    "x": 91.0,
+    "y": 73.0,
+    "w": 21.0,
+    "h": 11.0,
+    "properties": {
+      "blocks": "true",
+      "door_at": "south"
+    }
+  }
+]

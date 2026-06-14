@@ -1,0 +1,64 @@
+{
+  "id": "qtown_v0_1",
+  "name": "Q Town v0.1",
+  "style": "q-low-poly-cartoon",
+  "camera": {
+    "type": "orthographic",
+    "angle": {
+      "x": 60,
+      "y": 0,
+      "z": 45
+    },
+    "zoom": 1
+  },
+  "size": {
+    "width": 64,
+    "depth": 64
+  },
+  "spawn": {
+    "player": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  },
+  "buildings": [
+    { "id": "b_townhall", "assetId": "building_townhall_001", "position": { "x": 0, "y": 0, "z": -10 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "b_shop", "assetId": "building_shop_001", "position": { "x": -10, "y": 0, "z": -5 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "b_workshop", "assetId": "building_workshop_001", "position": { "x": 10, "y": 0, "z": -5 }, "rotation": { "x": 0, "y": -1.57, "z": 0 } },
+    { "id": "b_warehouse", "assetId": "building_warehouse_001", "position": { "x": -10, "y": 0, "z": 5 }, "rotation": { "x": 0, "y": 1.57, "z": 0 } },
+    { "id": "b_house1", "assetId": "building_house_wood_001", "position": { "x": 10, "y": 0, "z": 5 }, "rotation": { "x": 0, "y": -1.57, "z": 0 } },
+    { "id": "b_house2", "assetId": "building_house_wood_002", "position": { "x": -5, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } },
+    { "id": "b_house3", "assetId": "building_house_wood_003", "position": { "x": 5, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } },
+    { "id": "b_house4", "assetId": "building_house_wood_004", "position": { "x": -15, "y": 0, "z": 10 }, "rotation": { "x": 0, "y": 3.14, "z": 0 } }
+  ],
+  "roads": [
+    { "id": "r_plaza1", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "r_plaza2", "assetId": "road_plaza_tile_001", "position": { "x": -2, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "r_plaza3", "assetId": "road_plaza_tile_001", "position": { "x": 2, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "r_plaza4", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": -2 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "r_plaza5", "assetId": "road_plaza_tile_001", "position": { "x": 0, "y": 0, "z": 2 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+  ],
+  "props": [
+    { "id": "p_barrel1", "assetId": "prop_barrel_001", "position": { "x": -8, "y": 0, "z": -3 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "p_crate1", "assetId": "prop_crate_001", "position": { "x": -8, "y": 0, "z": -4 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "p_table1", "assetId": "prop_table_001", "position": { "x": -7, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "p_chair1", "assetId": "prop_chair_001", "position": { "x": -6, "y": 0, "z": -6 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "p_wood1", "assetId": "prop_wood_stack_001", "position": { "x": 8, "y": 0, "z": -3 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+  ],
+  "nature": [
+    { "id": "n_tree1", "assetId": "nature_tree_round_001", "position": { "x": -15, "y": 0, "z": -15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "n_tree2", "assetId": "nature_tree_round_002", "position": { "x": 15, "y": 0, "z": -15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "n_tree3", "assetId": "nature_tree_pine_001", "position": { "x": -15, "y": 0, "z": 15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "n_tree4", "assetId": "nature_tree_pine_002", "position": { "x": 15, "y": 0, "z": 15 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "n_rock1", "assetId": "nature_rock_small_001", "position": { "x": -12, "y": 0, "z": -12 }, "rotation": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "n_bush1", "assetId": "nature_bush_001", "position": { "x": 12, "y": 0, "z": -12 }, "rotation": { "x": 0, "y": 0, "z": 0 } }
+  ],
+  "resourceNodes": [],
+  "npcSpawns": [
+    { "id": "spawn_player", "assetId": "npc_player_001", "position": { "x": 0, "y": 0, "z": 0 } },
+    { "id": "spawn_npc1", "assetId": "npc_base_001", "position": { "x": -5, "y": 0, "z": 0 } },
+    { "id": "spawn_npc2", "assetId": "npc_base_002", "position": { "x": 5, "y": 0, "z": 0 } },
+    { "id": "spawn_npc3", "assetId": "npc_base_003", "position": { "x": 0, "y": 0, "z": 5 } }
+  ]
+}

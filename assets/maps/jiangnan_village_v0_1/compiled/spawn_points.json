@@ -1,0 +1,43 @@
+[
+  {
+    "id": "spawn_viewer_default",
+    "type": "viewer_spawn",
+    "x": 64,
+    "y": 48
+  },
+  {
+    "id": "spawn_char_liu",
+    "type": "character_spawn",
+    "x": 91,
+    "y": 40,
+    "character_id": "char_liu"
+  },
+  {
+    "id": "spawn_char_miao",
+    "type": "character_spawn",
+    "x": 102,
+    "y": 64,
+    "character_id": "char_miao"
+  },
+  {
+    "id": "spawn_char_chen",
+    "type": "character_spawn",
+    "x": 33,
+    "y": 45,
+    "character_id": "char_chen"
+  },
+  {
+    "id": "spawn_char_wu",
+    "type": "character_spawn",
+    "x": 22,
+    "y": 48,
+    "character_id": "char_wu"
+  },
+  {
+    "id": "spawn_horse_001",
+    "type": "animal_spawn",
+    "x": 100,
+    "y": 86,
+    "animal_id": "horse_001"
+  }
+]

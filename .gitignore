@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+.env
+.DS_Store
+*.log
+*.tsbuildinfo
+.pnpm-store/
+
+# Cocos Creator generated directories
+client/cocos/library/
+client/cocos/temp/
+client/cocos/build/
+client/cocos/local/
+client/cocos/profiles/
+*.zip
+
+# Raw asset packages / large local imports
+assets/source/_incoming/
+*.zip

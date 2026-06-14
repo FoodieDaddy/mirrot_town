@@ -1,0 +1,117 @@
+[
+  {
+    "actionCode": "move_to",
+    "name": "前往",
+    "category": "movement",
+    "description": "移动到指定对象、区域或坐标。",
+    "targetType": "point",
+    "requiredTags": [],
+    "preconditions": {},
+    "effects": {},
+    "fallbackMode": "generic",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "walk",
+        "durationMs": 1000,
+        "requiredAnimationCode": "walk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "move",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "wait",
+    "name": "等待",
+    "category": "life",
+    "description": "在当前位置短暂等候。",
+    "targetType": "self",
+    "requiredTags": [],
+    "preconditions": {},
+    "effects": {},
+    "fallbackMode": "generic",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "idle",
+        "durationMs": 3000,
+        "requiredAnimationCode": "idle",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "wait",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "observe",
+    "name": "观察",
+    "category": "life",
+    "description": "留意附近的人、物件或天气。",
+    "targetType": "region",
+    "requiredTags": [],
+    "preconditions": {},
+    "effects": {},
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "look",
+        "durationMs": 2000,
+        "requiredAnimationCode": "look",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "observe",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "talk",
+    "name": "交谈",
+    "category": "social",
+    "description": "与另一名角色进行简短交谈。",
+    "targetType": "character",
+    "requiredTags": [],
+    "preconditions": {},
+    "effects": {},
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "speak",
+        "durationMs": 4000,
+        "requiredAnimationCode": "talk",
+        "fallbackAnimationCode": "idle",
+        "fallbackIcon": "talk",
+        "canInterrupt": true
+      }
+    ]
+  },
+  {
+    "actionCode": "fetch_water",
+    "name": "取水",
+    "category": "work",
+    "description": "在水井或河岸装取生活用水。",
+    "targetType": "object",
+    "requiredTags": ["water_source"],
+    "preconditions": {},
+    "effects": { "inventoryItem": "water_bucket" },
+    "fallbackMode": "icon",
+    "interruptible": true,
+    "enabled": true,
+    "phases": [
+      {
+        "phaseCode": "draw_water",
+        "durationMs": 3500,
+        "requiredAnimationCode": "fetch_water",
+        "fallbackAnimationCode": "work",
+        "fallbackIcon": "water",
+        "canInterrupt": true
+      }
+    ]
+  }
+]

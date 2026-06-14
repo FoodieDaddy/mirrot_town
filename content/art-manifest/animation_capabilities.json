@@ -1,0 +1,30 @@
+[
+  {
+    "modelType": "villager_common_a",
+    "animationCode": "idle",
+    "exists": true,
+    "fallbackAnimation": "idle",
+    "fallbackIcon": "wait"
+  },
+  {
+    "modelType": "villager_common_a",
+    "animationCode": "walk",
+    "exists": true,
+    "fallbackAnimation": "idle",
+    "fallbackIcon": "move"
+  },
+  {
+    "modelType": "villager_common_a",
+    "animationCode": "fetch_water",
+    "exists": false,
+    "fallbackAnimation": "work",
+    "fallbackIcon": "water"
+  },
+  {
+    "modelType": "villager_common_a",
+    "animationCode": "fish_cast",
+    "exists": false,
+    "fallbackAnimation": "idle",
+    "fallbackIcon": "fishing"
+  }
+]

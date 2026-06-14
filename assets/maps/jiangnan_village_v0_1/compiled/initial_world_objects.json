@@ -1,0 +1,923 @@
+[
+  {
+    "id": "obj_house_liu_001_bed",
+    "template_id": "simple_wooden_bed",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_liu_001",
+    "position": {
+      "x": 89,
+      "y": 33
+    },
+    "direction": "south",
+    "state": {
+      "condition": 90
+    },
+    "owner_id": "char_liu"
+  },
+  {
+    "id": "obj_house_liu_001_chest",
+    "template_id": "wooden_chest",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_liu_001",
+    "position": {
+      "x": 96,
+      "y": 33
+    },
+    "direction": "south",
+    "state": {
+      "condition": 80
+    },
+    "owner_id": "char_liu"
+  },
+  {
+    "id": "obj_house_liu_001_table",
+    "template_id": "low_table",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_liu_001",
+    "position": {
+      "x": 90,
+      "y": 37
+    },
+    "direction": "south",
+    "state": {
+      "condition": 75
+    },
+    "owner_id": "char_liu"
+  },
+  {
+    "id": "obj_house_miao_001_bed",
+    "template_id": "simple_wooden_bed",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_miao_001",
+    "position": {
+      "x": 98,
+      "y": 56
+    },
+    "direction": "south",
+    "state": {
+      "condition": 90
+    },
+    "owner_id": "char_miao"
+  },
+  {
+    "id": "obj_house_miao_001_chest",
+    "template_id": "wooden_chest",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_miao_001",
+    "position": {
+      "x": 105,
+      "y": 56
+    },
+    "direction": "south",
+    "state": {
+      "condition": 80
+    },
+    "owner_id": "char_miao"
+  },
+  {
+    "id": "obj_house_miao_001_table",
+    "template_id": "low_table",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_miao_001",
+    "position": {
+      "x": 99,
+      "y": 60
+    },
+    "direction": "south",
+    "state": {
+      "condition": 75
+    },
+    "owner_id": "char_miao"
+  },
+  {
+    "id": "obj_house_chen_001_bed",
+    "template_id": "simple_wooden_bed",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_chen_001",
+    "position": {
+      "x": 50,
+      "y": 24
+    },
+    "direction": "south",
+    "state": {
+      "condition": 90
+    },
+    "owner_id": "char_chen"
+  },
+  {
+    "id": "obj_house_chen_001_chest",
+    "template_id": "wooden_chest",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_chen_001",
+    "position": {
+      "x": 56,
+      "y": 24
+    },
+    "direction": "south",
+    "state": {
+      "condition": 80
+    },
+    "owner_id": "char_chen"
+  },
+  {
+    "id": "obj_house_chen_001_table",
+    "template_id": "low_table",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_chen_001",
+    "position": {
+      "x": 51,
+      "y": 27
+    },
+    "direction": "south",
+    "state": {
+      "condition": 75
+    },
+    "owner_id": "char_chen"
+  },
+  {
+    "id": "obj_house_wu_001_bed",
+    "template_id": "simple_wooden_bed",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_wu_001",
+    "position": {
+      "x": 35,
+      "y": 54
+    },
+    "direction": "south",
+    "state": {
+      "condition": 90
+    },
+    "owner_id": "char_wu"
+  },
+  {
+    "id": "obj_house_wu_001_chest",
+    "template_id": "wooden_chest",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_wu_001",
+    "position": {
+      "x": 40,
+      "y": 54
+    },
+    "direction": "south",
+    "state": {
+      "condition": 80
+    },
+    "owner_id": "char_wu"
+  },
+  {
+    "id": "obj_house_wu_001_table",
+    "template_id": "low_table",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "house_wu_001",
+    "position": {
+      "x": 36,
+      "y": 56
+    },
+    "direction": "south",
+    "state": {
+      "condition": 75
+    },
+    "owner_id": "char_wu"
+  },
+  {
+    "id": "obj_tavern_small_001_bed",
+    "template_id": "simple_wooden_bed",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "tavern_small_001",
+    "position": {
+      "x": 61,
+      "y": 61
+    },
+    "direction": "south",
+    "state": {
+      "condition": 90
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_tavern_small_001_chest",
+    "template_id": "wooden_chest",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "tavern_small_001",
+    "position": {
+      "x": 68,
+      "y": 61
+    },
+    "direction": "south",
+    "state": {
+      "condition": 80
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_tavern_small_001_table",
+    "template_id": "low_table",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "tavern_small_001",
+    "position": {
+      "x": 62,
+      "y": 63
+    },
+    "direction": "south",
+    "state": {
+      "condition": 75
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_01",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 41,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_02",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 43,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_03",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 45,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_04",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 47,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_05",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 49,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_06",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 51,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_07",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 53,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_08",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 55,
+      "y": 68
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_09",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 41,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_10",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 43,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_11",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 45,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_12",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 47,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_13",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 49,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_14",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 51,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_15",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 53,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_16",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 55,
+      "y": 70
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_17",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 41,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_18",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 43,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_19",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 45,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_20",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 47,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_21",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 49,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_22",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 51,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_23",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 53,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_24",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 55,
+      "y": 72
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_25",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 41,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_26",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 43,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_27",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 45,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_28",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 47,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_29",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 49,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_30",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 51,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_31",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 53,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_32",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 55,
+      "y": 74
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_33",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 41,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_34",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 43,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_35",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 45,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_36",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 47,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_37",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 49,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_38",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 51,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_39",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 53,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "growing",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_rice_crop_40",
+    "template_id": "rice_crop",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "rice_field_south_001",
+    "position": {
+      "x": 55,
+      "y": 76
+    },
+    "direction": "south",
+    "state": {
+      "growth": "seedling",
+      "moisture": 60
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_notice_board_001",
+    "template_id": "notice_board",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "plaza_001",
+    "position": {
+      "x": 57,
+      "y": 45
+    },
+    "direction": "south",
+    "state": {},
+    "owner_id": null
+  },
+  {
+    "id": "obj_stable_feed_trough_001",
+    "template_id": "feed_trough",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "stable_001",
+    "position": {
+      "x": 94,
+      "y": 80
+    },
+    "direction": "south",
+    "state": {
+      "fill": "half"
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_stable_water_trough_001",
+    "template_id": "water_trough",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "stable_001",
+    "position": {
+      "x": 99,
+      "y": 80
+    },
+    "direction": "south",
+    "state": {
+      "fill": "full"
+    },
+    "owner_id": null
+  },
+  {
+    "id": "obj_workbench_001",
+    "template_id": "workbench",
+    "world_id": "demo_jiangnan_village",
+    "region_id": "workshop_001",
+    "position": {
+      "x": 29,
+      "y": 43
+    },
+    "direction": "south",
+    "state": {},
+    "owner_id": null
+  }
+]

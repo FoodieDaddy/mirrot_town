@@ -1,0 +1,90 @@
+[
+  {
+    "characterId": "a_heng",
+    "name": "阿衡",
+    "regionId": "stable",
+    "direction": "south",
+    "transform": { "x": 9, "y": 21 },
+    "currentAction": {
+      "actionCode": "feed_horse",
+      "startedAt": 0,
+      "targetObjectId": "horse_trough_01"
+    },
+    "state": {
+      "age": 24,
+      "occupation": "马夫",
+      "mood": "专注",
+      "currentGoal": "照看好马棚里的两匹马"
+    }
+  },
+  {
+    "characterId": "lin_niang",
+    "name": "林娘",
+    "regionId": "home_lin",
+    "direction": "east",
+    "transform": { "x": 17, "y": 13 },
+    "currentAction": {
+      "actionCode": "plant_flower",
+      "startedAt": 0,
+      "targetObjectId": "flower_pot_01"
+    },
+    "state": {
+      "age": 31,
+      "occupation": "织户",
+      "mood": "安宁",
+      "currentGoal": "把门前的小院收拾妥当"
+    }
+  },
+  {
+    "characterId": "zhou_mujiang",
+    "name": "周木匠",
+    "regionId": "workshop",
+    "direction": "west",
+    "transform": { "x": 27, "y": 17 },
+    "currentAction": {
+      "actionCode": "make_furniture",
+      "startedAt": 0
+    },
+    "state": {
+      "age": 43,
+      "occupation": "木匠",
+      "mood": "沉稳",
+      "currentGoal": "赶在日落前做好一只木箱"
+    }
+  },
+  {
+    "characterId": "shen_yifu",
+    "name": "沈医夫",
+    "regionId": "home_shen",
+    "direction": "north",
+    "transform": { "x": 14, "y": 29 },
+    "currentAction": {
+      "actionCode": "practice_medicine",
+      "startedAt": 0
+    },
+    "state": {
+      "age": 38,
+      "occupation": "医者",
+      "mood": "平和",
+      "currentGoal": "整理新采回的草药"
+    }
+  },
+  {
+    "characterId": "xiao_man",
+    "name": "小满",
+    "regionId": "riverbank",
+    "direction": "south",
+    "transform": { "x": 31, "y": 23 },
+    "currentAction": {
+      "actionCode": "fetch_water",
+      "startedAt": 0,
+      "targetRegionId": "riverbank"
+    },
+    "state": {
+      "age": 16,
+      "occupation": "帮工",
+      "mood": "轻快",
+      "currentGoal": "替家里打满今日用水"
+    }
+  }
+]

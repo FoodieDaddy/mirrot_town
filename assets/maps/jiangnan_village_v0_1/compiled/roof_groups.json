@@ -1,0 +1,77 @@
+[
+  {
+    "id": "roof_house_liu_001",
+    "house_id": "house_liu_001",
+    "full_layer": "Roof",
+    "open_layer": "Roof_Open",
+    "mode": "click_toggle",
+    "default_state": "CLOSED",
+    "closed_visible_layers": [
+      "Roof"
+    ],
+    "open_visible_layers": [
+      "Roof_Open"
+    ],
+    "behavior": "client_only"
+  },
+  {
+    "id": "roof_house_miao_001",
+    "house_id": "house_miao_001",
+    "full_layer": "Roof",
+    "open_layer": "Roof_Open",
+    "mode": "click_toggle",
+    "default_state": "CLOSED",
+    "closed_visible_layers": [
+      "Roof"
+    ],
+    "open_visible_layers": [
+      "Roof_Open"
+    ],
+    "behavior": "client_only"
+  },
+  {
+    "id": "roof_house_chen_001",
+    "house_id": "house_chen_001",
+    "full_layer": "Roof",
+    "open_layer": "Roof_Open",
+    "mode": "click_toggle",
+    "default_state": "CLOSED",
+    "closed_visible_layers": [
+      "Roof"
+    ],
+    "open_visible_layers": [
+      "Roof_Open"
+    ],
+    "behavior": "client_only"
+  },
+  {
+    "id": "roof_house_wu_001",
+    "house_id": "house_wu_001",
+    "full_layer": "Roof",
+    "open_layer": "Roof_Open",
+    "mode": "click_toggle",
+    "default_state": "CLOSED",
+    "closed_visible_layers": [
+      "Roof"
+    ],
+    "open_visible_layers": [
+      "Roof_Open"
+    ],
+    "behavior": "client_only"
+  },
+  {
+    "id": "roof_tavern_small_001",
+    "house_id": "tavern_small_001",
+    "full_layer": "Roof",
+    "open_layer": "Roof_Open",
+    "mode": "click_toggle",
+    "default_state": "CLOSED",
+    "closed_visible_layers": [
+      "Roof"
+    ],
+    "open_visible_layers": [
+      "Roof_Open"
+    ],
+    "behavior": "client_only"
+  }
+]
