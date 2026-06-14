@@ -37,19 +37,16 @@ export class NpcRenderSystem {
         }
 
         // Add Label
-        const name = instance.userData.name || id;
+        const name = instance.userData.name || instance.userData.displayName || id;
         const div = document.createElement('div');
         div.className = 'npc-label';
         div.textContent = name;
-        div.style.color = '#fff';
-        div.style.padding = '2px 8px';
-        div.style.background = 'rgba(0,0,0,0.5)';
-        div.style.borderRadius = '10px';
-        div.style.fontSize = '12px';
-        div.style.whiteSpace = 'nowrap';
         
         const label = new CSS2DObject(div);
-        label.position.set(0, 1.8, 0); // Position above head
+        // Position relative to scaled model height
+        const box = new THREE.Box3().setFromObject(instance);
+        const height = box.max.y - box.min.y;
+        label.position.set(0, height + 0.2, 0); 
         instance.add(label);
     }
 

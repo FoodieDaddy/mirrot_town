@@ -1,7 +1,7 @@
 export const ASSET_SCALE_PROFILE = {
     building: {
         defaultScale: 2.5,
-        maxHeight: 3.8, // Lowered from 4.5
+        maxHeight: 3.5, // Further lowered from 3.8
         footprintScale: 1
     },
     road: {
@@ -10,11 +10,11 @@ export const ASSET_SCALE_PROFILE = {
     },
     nature: {
         defaultScale: 1,
-        maxHeight: 4.0 // Lowered from 5.0
+        maxHeight: 4.0
     },
     character: {
-        defaultScale: 0.8, // Increased from 0.7
-        maxHeight: 1.5 // Increased from 1.4
+        defaultScale: 1.0, // Increased from 0.8
+        maxHeight: 1.6 // Increased from 1.5
     },
     prop: {
         defaultScale: 1,

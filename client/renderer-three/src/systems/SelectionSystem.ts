@@ -56,7 +56,7 @@ export class SelectionSystem {
                     if (!this.originalEmissive.has(id)) {
                         this.originalEmissive.set(id, mat.emissive.clone());
                     }
-                    mat.emissive.setHex(0x222222);
+                    mat.emissive.setHex(0x333333); // Slightly stronger highlight
                 }
             }
         });
@@ -83,7 +83,8 @@ export class SelectionSystem {
         const data = this.hoveredObject.userData;
         const debugEl = document.getElementById('debug-selection');
         if (debugEl) {
-            debugEl.innerText = `Selected: ${data.displayName || data.id} (${data.type})`;
+            const name = data.name || data.displayName || data.id;
+            debugEl.innerText = `Selected: ${name} (${data.type})`;
         }
 
         if (data.type === 'building') {
@@ -101,7 +102,10 @@ export class SelectionSystem {
                     found = true;
                 }
             });
-            if (!found) console.warn('Roof node not found for', object.userData.id);
+            if (!found) {
+                const debugEl = document.getElementById('debug-selection');
+                if (debugEl) debugEl.innerText += ' [Roof node not found]';
+            }
         }
     }
 
@@ -113,11 +117,9 @@ export class SelectionSystem {
 
     private cycleRoofMode() {
         const buildings = this.scene.children.filter(c => c.userData.type === 'building');
-        // Simple global cycle: normal -> all-hidden -> normal
-        // This is a placeholder for more complex mode logic.
-        const firstBuilding = buildings[0];
-        if (!firstBuilding) return;
+        if (buildings.length === 0) return;
         
+        const firstBuilding = buildings[0];
         const isCurrentlyHidden = firstBuilding.userData.allRoofsHidden || false;
         const targetVisible = isCurrentlyHidden;
 
