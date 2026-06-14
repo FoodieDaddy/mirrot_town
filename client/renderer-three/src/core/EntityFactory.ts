@@ -92,6 +92,8 @@ export class EntityFactory {
 
         clone.userData = { 
             id: entityData.id || `temp_${Math.random()}`, 
+            name: entityData.name || entityData.displayName,
+            displayName: entityData.displayName || entityData.name,
             type, 
             assetId 
         };
