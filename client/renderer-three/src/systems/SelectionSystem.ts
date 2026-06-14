@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import type { AssetRegistry } from '../core/AssetRegistry.js';
 import type { WorldCommandAdapter } from '../protocol/WorldCommandAdapter.js';
+import { NpcStatusPanel } from '../ui/NpcStatusPanel.js';
 
 export class SelectionSystem {
   private scene: THREE.Scene;
@@ -11,6 +12,7 @@ export class SelectionSystem {
   private mouse = new THREE.Vector2();
   private hoveredObject: THREE.Object3D | null = null;
   private originalEmissive = new Map<string, THREE.Color>();
+  private statusPanel: NpcStatusPanel;
 
   constructor(
     scene: THREE.Scene,
@@ -22,6 +24,7 @@ export class SelectionSystem {
     this.camera = camera;
     this.registry = registry;
     this.commandAdapter = commandAdapter;
+    this.statusPanel = new NpcStatusPanel();
 
     window.addEventListener('mousemove', this.onMouseMove.bind(this));
     window.addEventListener('click', this.onClick.bind(this));
@@ -108,6 +111,18 @@ export class SelectionSystem {
       this.commandAdapter.selectBuilding(data.id);
       this.toggleRoof(this.hoveredObject);
     } else if (data.type === 'character') {
+      // Show NPC status panel
+      this.statusPanel.show({
+        npc: {
+          id: data.id,
+          displayName: data.displayName || data.name || '未知',
+          assetId: data.assetId || '',
+          role: data.role,
+          position: { x: 0, y: 0, z: 0 },
+          status: data.status,
+          currentAction: data.currentAction,
+        },
+      });
       // Emit interact command
       this.commandAdapter.interact(data.id, 'talk');
     }
