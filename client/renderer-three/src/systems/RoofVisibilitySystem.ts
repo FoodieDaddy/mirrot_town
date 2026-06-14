@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import type { AssetRegistry } from '../core/AssetRegistry';
+import type { AssetRegistry } from '../core/AssetRegistry.js';
 
 export class RoofVisibilitySystem {
     private scene: THREE.Scene;

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import type { AssetRegistry } from './AssetRegistry';
+import * as SkeletonUtils from 'three/examples/jsm/utils/SkeletonUtils.js';
+import type { AssetRegistry } from './AssetRegistry.js';
 
 export class EntityFactory {
     private registry: AssetRegistry;
@@ -15,10 +16,16 @@ export class EntityFactory {
         let clone: THREE.Object3D;
 
         if (model) {
-            clone = model.clone();
-            // Scale Kaykit characters
             if (type === 'character') {
+                // Use SkeletonUtils to correctly clone skinned meshes and bones
+                clone = SkeletonUtils.clone(model);
                 clone.scale.set(0.5, 0.5, 0.5);
+                // Also copy animations over manually as SkeletonUtils doesn't clone userdata deeply
+                if (model.userData && model.userData.animations) {
+                    clone.userData.animations = model.userData.animations;
+                }
+            } else {
+                clone = model.clone();
             }
         } else {
             console.warn(`Model not found for ${assetId}, creating placeholder.`);

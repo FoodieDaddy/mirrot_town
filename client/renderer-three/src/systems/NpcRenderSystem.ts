@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type { WorldState } from '@jingzhong-biancheng/client-core';
-import type { EntityFactory } from '../core/EntityFactory';
+import type { EntityFactory } from '../core/EntityFactory.js';
 
 export class NpcRenderSystem {
     private scene: THREE.Scene;
@@ -26,7 +26,7 @@ export class NpcRenderSystem {
         // Find if any root has animations (cached by AssetRegistry)
         let anims: THREE.AnimationClip[] | undefined;
         instance.traverse(c => {
-            if (c.userData.animations) anims = c.userData.animations;
+            if (c.userData && c.userData.animations) anims = c.userData.animations;
         });
 
         if (anims && anims.length > 0) {
@@ -45,6 +45,10 @@ export class NpcRenderSystem {
     }
 
     public sync(state: WorldState) {
+        if (!state || !state.characters) {
+            return;
+        }
+
         state.characters.forEach((charState, charId) => {
             let instance = this.instances.get(charId);
             
@@ -74,12 +78,15 @@ export class NpcRenderSystem {
 
             // Animation
             const isMoving = (charState.state as any)?.isMoving;
-            const mixer = instance.userData.mixer as THREE.AnimationMixer;
-            const anims = instance.userData.anims as THREE.AnimationClip[];
+            const mixer = instance.userData.mixer as THREE.AnimationMixer | undefined;
+            const anims = instance.userData.anims as THREE.AnimationClip[] | undefined;
             
             if (mixer && anims && anims.length > 1) {
                 const targetAnimIndex = isMoving ? 1 : 0; // Simple assume 1=walk, 0=idle
                 if (targetAnimIndex < anims.length) {
+                    // Try to avoid restarting the same animation if it's already playing
+                    // A simple check is to look at existing actions
+                    // For this simple demo, we just stop all and play
                     mixer.stopAllAction();
                     mixer.clipAction(anims[targetAnimIndex]).play();
                 }

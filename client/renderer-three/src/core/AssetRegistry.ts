@@ -13,6 +13,7 @@ export class AssetRegistry {
     public manifest: any = {};
     private cache = new Map<string, THREE.Group>();
     private loader = new GLTFLoader();
+    public failedAssets: Array<{ assetId: string, path: string, error: string }> = [];
 
     async loadManifest(url: string) {
         const res = await fetch(url);
@@ -33,8 +34,13 @@ export class AssetRegistry {
                         resolve();
                     },
                     undefined,
-                    (error) => {
+                    (error: any) => {
                         console.warn(`WARNING: Failed to load asset ${assetDef.id} from ${assetDef.path}`, error);
+                        this.failedAssets.push({
+                            assetId: assetDef.id,
+                            path: assetDef.path,
+                            error: error.message || String(error)
+                        });
                         resolve(); // Resolve anyway, we handle missing models in Factory
                     }
                 );
@@ -42,7 +48,16 @@ export class AssetRegistry {
         });
         
         await Promise.all(promises);
-        console.log('All available assets loaded.');
+        
+        if (this.failedAssets.length > 0) {
+            console.error('--- Failed to load the following assets ---');
+            this.failedAssets.forEach(fail => {
+                console.error(`ID: ${fail.assetId} | Path: ${fail.path} | Error: ${fail.error}`);
+            });
+            console.error('-------------------------------------------');
+        } else {
+            console.log('All available assets loaded successfully.');
+        }
     }
 
     getModel(assetId: string): THREE.Group | undefined {

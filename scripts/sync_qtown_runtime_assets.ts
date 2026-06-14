@@ -1,6 +1,8 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+let copiedGlbCount = 0;
+
 async function copyDir(src: string, dest: string) {
     await fs.mkdir(dest, { recursive: true });
     const entries = await fs.readdir(src, { withFileTypes: true });
@@ -11,6 +13,9 @@ async function copyDir(src: string, dest: string) {
             await copyDir(srcPath, destPath);
         } else {
             await fs.copyFile(srcPath, destPath);
+            if (path.extname(srcPath).toLowerCase() === '.glb') {
+                copiedGlbCount++;
+            }
         }
     }
 }
@@ -53,8 +58,18 @@ async function main() {
     await fs.copyFile(path.resolve('assets/manifest/license-manifest.json'), path.join(publicDir, 'assets/manifest/license-manifest.json'));
     await fs.copyFile(path.resolve('maps/qtown_v0_1.json'), path.join(publicDir, 'maps/qtown_v0_1.json'));
 
-    console.log('✅ Sync complete.');
-    console.log(`Copied assets to: ${publicDir}`);
+    console.log('\n✅ Sync complete.');
+    console.log(`   - Copied ${copiedGlbCount} GLB files.`);
+    console.log(`   - Copied map: maps/qtown_v0_1.json`);
+    console.log(`   - Copied manifests: asset-manifest.json, license-manifest.json`);
+    
+    // Verify manifest existence in public
+    try {
+        await fs.access(path.join(publicDir, 'assets/manifest/asset-manifest.json'));
+        console.log(`   - Verified: /assets/manifest/asset-manifest.json exists in public directory.`);
+    } catch {
+        console.error(`   - ERROR: /assets/manifest/asset-manifest.json is MISSING in public directory!`);
+    }
 }
 
 main().catch(console.error);

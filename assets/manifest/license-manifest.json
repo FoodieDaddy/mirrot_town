@@ -214,7 +214,7 @@
       "license": "CC0",
       "commercialUse": true,
       "devOnly": false,
-      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Duck/gltf/character_duck.gltf",
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Bear/gltf/character_bear.gltf",
       "convertedFile": "/assets/glb/characters/npc_base_001.glb"
     },
     {
@@ -223,7 +223,7 @@
       "license": "CC0",
       "commercialUse": true,
       "devOnly": false,
-      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Bear/gltf/character_bear.gltf",
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Duck/gltf/character_duck.gltf",
       "convertedFile": "/assets/glb/characters/npc_base_002.glb"
     },
     {

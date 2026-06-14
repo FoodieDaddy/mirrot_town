@@ -1,4 +1,4 @@
-import type { EntityFactory } from './EntityFactory';
+import type { EntityFactory } from './EntityFactory.js';
 import type * as THREE from 'three';
 
 export class MapLoader {

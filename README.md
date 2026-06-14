@@ -17,6 +17,8 @@ AI 驱动的常驻江南小镇模拟器。
 
 由于项目仅使用开源免费/CC0低模资产，我们需要通过管线脚本自动提取和验证素材：
 
+> **注意：** 请先人工将下载的素材压缩包（如 `.zip`）解压到 `assets/source/` 对应的来源目录下（例如 `assets/source/kaykit/...`）。目前的 import 脚本不会自动解压 zip 文件。
+
 1. **导入与转换素材**:
    ```bash
    pnpm import:qtown-assets

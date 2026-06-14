@@ -1,10 +1,9 @@
-import { RendererApp } from './core/RendererApp';
-import { AssetRegistry } from './core/AssetRegistry';
-import { EntityFactory } from './core/EntityFactory';
-import { MapLoader } from './core/MapLoader';
-import { RoofVisibilitySystem } from './systems/RoofVisibilitySystem';
-import { NpcRenderSystem } from './systems/NpcRenderSystem';
-
+import { RendererApp } from './core/RendererApp.js';
+import { AssetRegistry } from './core/AssetRegistry.js';
+import { EntityFactory } from './core/EntityFactory.js';
+import { MapLoader } from './core/MapLoader.js';
+import { RoofVisibilitySystem } from './systems/RoofVisibilitySystem.js';
+import { NpcRenderSystem } from './systems/NpcRenderSystem.js';
 import { WorldStateStore } from '@jingzhong-biancheng/client-core';
 
 async function bootstrap() {
