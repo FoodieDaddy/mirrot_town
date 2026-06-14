@@ -281,6 +281,15 @@
       "convertedFile": "/assets/glb/props/prop_bed_001.glb"
     },
     {
+      "assetId": "prop_wood_stack_001",
+      "source": "Kenney",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kenney/retro-fantasy-kit/Models/GLB format/wood-floor.glb",
+      "convertedFile": "/assets/glb/props/prop_wood_stack_001.glb"
+    },
+    {
       "assetId": "prop_bench_001",
       "source": "Quaternius",
       "license": "CC0",

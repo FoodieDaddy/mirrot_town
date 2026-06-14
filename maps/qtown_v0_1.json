@@ -266,571 +266,2300 @@
   ],
   "roads": [
     {
-      "id": "plaza_-4_-4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-5_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-5_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_-4",
+      "kind": "plaza_stone",
       "position": {
         "x": -4,
         "y": 0,
         "z": -4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-4_-2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-4_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_-2",
+      "kind": "plaza_stone",
       "position": {
         "x": -4,
         "y": 0,
         "z": -2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-4_0",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-4_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_0",
+      "kind": "plaza_stone",
       "position": {
         "x": -4,
         "y": 0,
         "z": 0
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-4_2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-4_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_2",
+      "kind": "plaza_stone",
       "position": {
         "x": -4,
         "y": 0,
         "z": 2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-4_4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-4_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-4_4",
+      "kind": "plaza_stone",
       "position": {
         "x": -4,
         "y": 0,
         "z": 4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-2_-4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-4_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-3_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_-4",
+      "kind": "plaza_stone",
       "position": {
         "x": -2,
         "y": 0,
         "z": -4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-2_-2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-2_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_-2",
+      "kind": "plaza_stone",
       "position": {
         "x": -2,
         "y": 0,
         "z": -2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-2_0",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-2_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_0",
+      "kind": "plaza_stone",
       "position": {
         "x": -2,
         "y": 0,
         "z": 0
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-2_2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-2_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_2",
+      "kind": "plaza_stone",
       "position": {
         "x": -2,
         "y": 0,
         "z": 2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_-2_4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-2_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-2_4",
+      "kind": "plaza_stone",
       "position": {
         "x": -2,
         "y": 0,
         "z": 4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_0_-4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_-2_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -2,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_-1_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": -1,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_-4",
+      "kind": "plaza_stone",
       "position": {
         "x": 0,
         "y": 0,
         "z": -4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_0_-2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_0_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_-2",
+      "kind": "plaza_stone",
       "position": {
         "x": 0,
         "y": 0,
         "z": -2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_0_0",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_0_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_0",
+      "kind": "plaza_stone",
       "position": {
         "x": 0,
         "y": 0,
         "z": 0
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_0_2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_0_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_2",
+      "kind": "plaza_stone",
       "position": {
         "x": 0,
         "y": 0,
         "z": 2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_0_4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_0_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_0_4",
+      "kind": "plaza_stone",
       "position": {
         "x": 0,
         "y": 0,
         "z": 4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_2_-4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_0_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_1_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_-4",
+      "kind": "plaza_stone",
       "position": {
         "x": 2,
         "y": 0,
         "z": -4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_2_-2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_2_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_-2",
+      "kind": "plaza_stone",
       "position": {
         "x": 2,
         "y": 0,
         "z": -2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_2_0",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_2_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_0",
+      "kind": "plaza_stone",
       "position": {
         "x": 2,
         "y": 0,
         "z": 0
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_2_2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_2_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_2",
+      "kind": "plaza_stone",
       "position": {
         "x": 2,
         "y": 0,
         "z": 2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_2_4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_2_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_2_4",
+      "kind": "plaza_stone",
       "position": {
         "x": 2,
         "y": 0,
         "z": 4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_4_-4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_2_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_3_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_-4",
+      "kind": "plaza_stone",
       "position": {
         "x": 4,
         "y": 0,
         "z": -4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_4_-2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_4_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_-2",
+      "kind": "plaza_stone",
       "position": {
         "x": 4,
         "y": 0,
         "z": -2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_4_0",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_4_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_0",
+      "kind": "plaza_stone",
       "position": {
         "x": 4,
         "y": 0,
         "z": 0
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_4_2",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_4_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_2",
+      "kind": "plaza_stone",
       "position": {
         "x": 4,
         "y": 0,
         "z": 2
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "plaza_4_4",
-      "assetId": "road_plaza_tile_001",
+      "id": "p_tile_4_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_4_4",
+      "kind": "plaza_stone",
       "position": {
         "x": 4,
         "y": 0,
         "z": 4
-      }
+      },
+      "width": 1.1,
+      "depth": 1.1
     },
     {
-      "id": "road_ns_-14",
-      "assetId": "road_straight_001",
+      "id": "p_tile_4_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_-5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_-4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_-3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_-2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_-1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_0",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 0
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_1",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 1
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_2",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 2
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_3",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 3
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_4",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 4
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "p_tile_5_5",
+      "kind": "plaza_stone",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.1,
+      "depth": 1.1
+    },
+    {
+      "id": "path_0.0_-5.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
-        "z": -14
-      }
+        "z": -5
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_-12",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_-5.5",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
-        "z": -12
-      }
+        "z": -5.5
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_-10",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": -10
-      }
-    },
-    {
-      "id": "road_ns_-8",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": -8
-      }
-    },
-    {
-      "id": "road_ns_-6",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_-6.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
         "z": -6
-      }
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_6",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_-6.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -6.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-7.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -7
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-7.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -7.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-8.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -8
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-8.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -8.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-9.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -9.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_-10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-5.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-5.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-6.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -6,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-6.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-7.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-7.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-8.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-8.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-9.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -9,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-9.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -9.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-10.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -10,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_5.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_5.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_6.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 6,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_6.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_7.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 7,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_7.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_8.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 8,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_8.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_9.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 9,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_9.5_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 9.5,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_10.0_-2.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 10,
+        "y": 0,
+        "z": -2
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-5.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-5.5_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-6.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -6,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-6.5_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-7.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-7.5_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-8.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-8.5_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-9.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -9,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-9.5_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -9.5,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_-10.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": -10,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_5.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_5.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 5.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_6.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
         "z": 6
-      }
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_8",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_6.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 6.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_7.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 7
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_7.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 7.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_8.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
         "z": 8
-      }
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_10",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_8.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 8.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_9.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 9
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_9.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 9.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_10.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
         "z": 10
-      }
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ns_12",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_10.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 10.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_11.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 11
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_11.5",
+      "kind": "dirt_path",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 11.5
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_0.0_12.0",
+      "kind": "dirt_path",
       "position": {
         "x": 0,
         "y": 0,
         "z": 12
-      }
-    },
-    {
-      "id": "road_ns_14",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": 14
-      }
-    },
-    {
-      "id": "road_ew_-14",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": -14,
-        "y": 0,
-        "z": 0
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_-12",
-      "assetId": "road_straight_001",
+      "id": "path_0.0_10.0",
+      "kind": "dirt_path",
       "position": {
-        "x": -12,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
         "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_-10",
-      "assetId": "road_straight_001",
+      "id": "path_0.5_10.0",
+      "kind": "dirt_path",
       "position": {
-        "x": -10,
+        "x": 0.5,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_-8",
-      "assetId": "road_straight_001",
+      "id": "path_1.0_10.0",
+      "kind": "dirt_path",
       "position": {
-        "x": -8,
+        "x": 1,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_-6",
-      "assetId": "road_straight_001",
+      "id": "path_1.5_10.0",
+      "kind": "dirt_path",
       "position": {
-        "x": -6,
+        "x": 1.5,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_6",
-      "assetId": "road_straight_001",
+      "id": "path_2.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_2.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_3.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_3.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_4.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_4.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_5.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_5.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_6.0_10.0",
+      "kind": "dirt_path",
       "position": {
         "x": 6,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_8",
-      "assetId": "road_straight_001",
+      "id": "path_6.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_7.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 7,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_7.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_8.0_10.0",
+      "kind": "dirt_path",
       "position": {
         "x": 8,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_10",
-      "assetId": "road_straight_001",
+      "id": "path_8.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_9.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 9,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_9.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 9.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_10.0_10.0",
+      "kind": "dirt_path",
       "position": {
         "x": 10,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     },
     {
-      "id": "road_ew_12",
-      "assetId": "road_straight_001",
+      "id": "path_10.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 10.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_11.0_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 11,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_11.5_10.0",
+      "kind": "dirt_path",
+      "position": {
+        "x": 11.5,
+        "y": 0,
+        "z": 10
+      },
+      "width": 1.8,
+      "depth": 1.8
+    },
+    {
+      "id": "path_12.0_10.0",
+      "kind": "dirt_path",
       "position": {
         "x": 12,
         "y": 0,
-        "z": 0
+        "z": 10
       },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "road_ew_14",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 14,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_shop",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": -6,
-        "y": 0,
-        "z": -2
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_shop2",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": -8,
-        "y": 0,
-        "z": -2
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_ws",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 6,
-        "y": 0,
-        "z": -2
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_ws2",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": 8,
-        "y": 0,
-        "z": -2
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_wh",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": -6,
-        "y": 0,
-        "z": 9
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
-    },
-    {
-      "id": "to_wh2",
-      "assetId": "road_straight_001",
-      "position": {
-        "x": -8,
-        "y": 0,
-        "z": 9
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
-      }
+      "width": 1.8,
+      "depth": 1.8
     }
   ],
   "props": [
     {
-      "id": "p_plaza_center_stall",
+      "id": "p_landmark_stall",
       "assetId": "prop_stall_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 0
-      },
-      "rotation": {
-        "x": 0,
+      }
+    },
+    {
+      "id": "p_landmark_barrel1",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": 1.5,
         "y": 0,
         "z": 0
+      }
+    },
+    {
+      "id": "p_landmark_crate1",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 1
       }
     },
     {
       "id": "p_plaza_bench1",
       "assetId": "prop_bench_001",
       "position": {
-        "x": -3,
+        "x": 0,
         "y": 0,
-        "z": 0
+        "z": 4
       },
       "rotation": {
         "x": 0,
-        "y": 1.57,
+        "y": 3.14,
         "z": 0
       }
     },
@@ -838,28 +2567,14 @@
       "id": "p_plaza_bench2",
       "assetId": "prop_bench_001",
       "position": {
-        "x": 3,
-        "y": 0,
-        "z": 0
-      },
-      "rotation": {
         "x": 0,
-        "y": -1.57,
-        "z": 0
+        "y": 0,
+        "z": -4
       }
     },
     {
-      "id": "p_plaza_tree",
-      "assetId": "nature_tree_round_001",
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": -3
-      }
-    },
-    {
-      "id": "p_s1",
-      "assetId": "prop_barrel_001",
+      "id": "p_shop_crate1",
+      "assetId": "prop_crate_001",
       "position": {
         "x": -10,
         "y": 0,
@@ -867,26 +2582,26 @@
       }
     },
     {
-      "id": "p_s2",
+      "id": "p_shop_crate2",
       "assetId": "prop_crate_001",
+      "position": {
+        "x": -9.2,
+        "y": 0,
+        "z": -4
+      }
+    },
+    {
+      "id": "p_shop_barrel1",
+      "assetId": "prop_barrel_001",
       "position": {
         "x": -10,
         "y": 0,
-        "z": -5
+        "z": 0
       }
     },
     {
-      "id": "p_s3",
+      "id": "p_shop_table",
       "assetId": "prop_table_001",
-      "position": {
-        "x": -12,
-        "y": 0,
-        "z": -5
-      }
-    },
-    {
-      "id": "p_s4",
-      "assetId": "prop_chair_001",
       "position": {
         "x": -13,
         "y": 0,
@@ -894,8 +2609,8 @@
       }
     },
     {
-      "id": "p_w1",
-      "assetId": "prop_crate_001",
+      "id": "p_ws_table",
+      "assetId": "prop_table_001",
       "position": {
         "x": 10,
         "y": 0,
@@ -903,34 +2618,43 @@
       }
     },
     {
-      "id": "p_w2",
+      "id": "p_ws_barrel1",
       "assetId": "prop_barrel_001",
       "position": {
         "x": 10,
         "y": 0,
-        "z": -5
+        "z": 0
       }
     },
     {
-      "id": "p_w3",
-      "assetId": "prop_wood_stack_001",
-      "position": {
-        "x": 11,
-        "y": 0,
-        "z": -5
-      }
-    },
-    {
-      "id": "p_wh1",
+      "id": "p_wh_c1",
       "assetId": "prop_crate_001",
       "position": {
         "x": -10,
         "y": 0,
-        "z": 10
+        "z": 8
       }
     },
     {
-      "id": "p_wh2",
+      "id": "p_wh_c2",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": -9.2,
+        "y": 0,
+        "z": 8
+      }
+    },
+    {
+      "id": "p_wh_c3",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": -10,
+        "y": 0.6,
+        "z": 8
+      }
+    },
+    {
+      "id": "p_wh_b1",
       "assetId": "prop_barrel_001",
       "position": {
         "x": -10,
@@ -939,31 +2663,21 @@
       }
     },
     {
-      "id": "p_f1",
-      "assetId": "prop_fence_001",
+      "id": "p_h1_chair",
+      "assetId": "prop_chair_001",
       "position": {
-        "x": 4,
+        "x": 5,
         "y": 0,
         "z": 8
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
       }
     },
     {
-      "id": "p_f2",
-      "assetId": "prop_fence_001",
+      "id": "p_h2_barrel",
+      "assetId": "prop_barrel_001",
       "position": {
-        "x": 8,
+        "x": 11,
         "y": 0,
         "z": 8
-      },
-      "rotation": {
-        "x": 0,
-        "y": 1.57,
-        "z": 0
       }
     }
   ],
@@ -983,25 +2697,16 @@
       "position": {
         "x": -20,
         "y": 0,
-        "z": -24
+        "z": -25
       }
     },
     {
-      "id": "n_nw3",
+      "id": "n_nw_b",
       "assetId": "nature_bush_001",
       "position": {
         "x": -24,
         "y": 0,
-        "z": -20
-      }
-    },
-    {
-      "id": "n_nw4",
-      "assetId": "nature_rock_small_001",
-      "position": {
-        "x": -21,
-        "y": 0,
-        "z": -21
+        "z": -24
       }
     },
     {
@@ -1017,18 +2722,18 @@
       "id": "n_ne2",
       "assetId": "nature_tree_pine_002",
       "position": {
-        "x": 24,
+        "x": 25,
         "y": 0,
         "z": -20
       }
     },
     {
-      "id": "n_ne3",
-      "assetId": "nature_bush_002",
+      "id": "n_ne_r",
+      "assetId": "nature_rock_small_001",
       "position": {
-        "x": 20,
+        "x": 23,
         "y": 0,
-        "z": -24
+        "z": -23
       }
     },
     {
@@ -1044,14 +2749,14 @@
       "id": "n_sw2",
       "assetId": "nature_tree_pine_001",
       "position": {
-        "x": -24,
+        "x": -25,
         "y": 0,
-        "z": 24
+        "z": 25
       }
     },
     {
-      "id": "n_sw3",
-      "assetId": "nature_bush_001",
+      "id": "n_sw_b",
+      "assetId": "nature_bush_002",
       "position": {
         "x": -20,
         "y": 0,
@@ -1071,18 +2776,18 @@
       "id": "n_se2",
       "assetId": "nature_tree_round_001",
       "position": {
-        "x": 24,
+        "x": 25,
         "y": 0,
-        "z": 24
+        "z": 25
       }
     },
     {
-      "id": "n_se3",
+      "id": "n_se_r",
       "assetId": "nature_rock_small_002",
       "position": {
-        "x": 20,
+        "x": 23,
         "y": 0,
-        "z": 20
+        "z": 23
       }
     }
   ],
@@ -1094,7 +2799,7 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 1
+        "z": 2
       },
       "name": "玩家"
     },
@@ -1102,37 +2807,37 @@
       "id": "spawn_npc_ammu",
       "assetId": "npc_base_001",
       "position": {
-        "x": -3,
+        "x": -2,
         "y": 0,
-        "z": -2
+        "z": -1
       },
       "name": "阿木"
+    },
+    {
+      "id": "spawn_npc_laozhou",
+      "assetId": "npc_base_003",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 2
+      },
+      "name": "老周"
     },
     {
       "id": "spawn_npc_xiaohe",
       "assetId": "npc_base_002",
       "position": {
-        "x": 3,
+        "x": 2,
         "y": 0,
         "z": 2
       },
       "name": "小禾"
     },
     {
-      "id": "spawn_npc_laozhou",
-      "assetId": "npc_base_003",
-      "position": {
-        "x": -2,
-        "y": 0,
-        "z": 5
-      },
-      "name": "老周"
-    },
-    {
       "id": "spawn_npc_aqing",
       "assetId": "npc_base_001",
       "position": {
-        "x": 4,
+        "x": 3,
         "y": 0,
         "z": -1
       },

@@ -43,7 +43,7 @@ const mappings: AssetMapping[] = [
     { id: 'prop_barrel', type: 'prop', keywords: ['Barrel_Holder', 'Barrel_Big'], count: 1, destDir: 'props', tags: ['prop', 'container'] },
     { id: 'prop_crate', type: 'prop', keywords: ['FarmCrate'], count: 1, destDir: 'props', tags: ['prop', 'container'] },
     { id: 'prop_bed', type: 'prop', keywords: ['Bed_Twin'], count: 1, destDir: 'props', tags: ['prop', 'furniture'] },
-    { id: 'prop_wood_stack', type: 'prop', keywords: ['WoodLog'], count: 1, destDir: 'props', tags: ['prop', 'resource'] },
+    { id: 'prop_wood_stack', type: 'prop', keywords: ['wood-floor', 'WoodLog'], count: 1, destDir: 'props', tags: ['prop', 'resource'] },
     { id: 'prop_bench', type: 'prop', keywords: ['bench', 'Bench'], count: 1, destDir: 'props', tags: ['prop', 'furniture', 'exterior'] },
     { id: 'prop_stall', type: 'prop', keywords: ['Stall_Empty', 'Stall_Cart'], count: 2, destDir: 'props', tags: ['prop', 'market', 'exterior'] },
     { id: 'prop_fence', type: 'prop', keywords: ['fence-wood', 'fence'], count: 1, destDir: 'props', tags: ['prop', 'structure', 'exterior'] }

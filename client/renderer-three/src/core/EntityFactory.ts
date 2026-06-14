@@ -62,7 +62,7 @@ export class EntityFactory {
             }
 
         } else {
-            console.warn(`Model not found for ${assetId}, creating placeholder.`);
+            console.warn(`[EntityFactory] Placeholder created for entity: ${entityData.id}, assetId: ${assetId}, type: ${type}. Reason: Asset not found in registry.`);
             this.placeholderCount++;
             if (type === 'character') {
                 const geom = new THREE.CapsuleGeometry(0.3, 1, 4, 8);

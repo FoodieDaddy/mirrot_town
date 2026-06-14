@@ -2,9 +2,9 @@ import fs from 'fs/promises';
 import path from 'path';
 
 async function main() {
-  console.log('Generating Living Q-Town v0.1 layout (Scene Directing Mode)...');
+  console.log('Generating Lived-in Q-Town v0.1 layout (Town Path System Mode)...');
 
-  const mapData = {
+  const mapData: any = {
     id: "qtown_v0_1",
     name: "Q Town v0.1",
     style: "q-low-poly-cartoon",
@@ -107,98 +107,106 @@ async function main() {
     ],
     roads: [] as any[],
     props: [
-      // Plaza Landmark (Center)
-      { id: "p_plaza_center_stall", assetId: "prop_stall_001", position: { x: 0, y: 0, z: 0 }, rotation: { x: 0, y: 0, z: 0 } },
-      { id: "p_plaza_bench1", assetId: "prop_bench_001", position: { x: -3, y: 0, z: 0 }, rotation: { x: 0, y: 1.57, z: 0 } },
-      { id: "p_plaza_bench2", assetId: "prop_bench_001", position: { x: 3, y: 0, z: 0 }, rotation: { x: 0, y: -1.57, z: 0 } },
-      { id: "p_plaza_tree", assetId: "nature_tree_round_001", position: { x: 0, y: 0, z: -3 } },
-      
-      // Shop Props
-      { id: "p_s1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: -4 } },
-      { id: "p_s2", assetId: "prop_crate_001", position: { x: -10, y: 0, z: -5 } },
-      { id: "p_s3", assetId: "prop_table_001", position: { x: -12, y: 0, z: -5 } },
-      { id: "p_s4", assetId: "prop_chair_001", position: { x: -13, y: 0, z: -5 } },
-      
-      // Workshop Props
-      { id: "p_w1", assetId: "prop_crate_001", position: { x: 10, y: 0, z: -4 } },
-      { id: "p_w2", assetId: "prop_barrel_001", position: { x: 10, y: 0, z: -5 } },
-      { id: "p_w3", assetId: "prop_wood_stack_001", position: { x: 11, y: 0, z: -5 } },
-      
-      // Warehouse Props
-      { id: "p_wh1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: 10 } },
-      { id: "p_wh2", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 11 } },
-      
-      // Residential area fences & deco
-      { id: "p_f1", assetId: "prop_fence_001", position: { x: 4, y: 0, z: 8 }, rotation: { x: 0, y: 1.57, z: 0 } },
-      { id: "p_f2", assetId: "prop_fence_001", position: { x: 8, y: 0, z: 8 }, rotation: { x: 0, y: 1.57, z: 0 } }
+      // Plaza Landmark (Center Market Combo)
+      { id: "p_landmark_stall", assetId: "prop_stall_001", position: { x: 0, y: 0, z: 0 } },
+      { id: "p_landmark_barrel1", assetId: "prop_barrel_001", position: { x: 1.5, y: 0, z: 0 } },
+      { id: "p_landmark_crate1", assetId: "prop_crate_001", position: { x: 1.5, y: 0, z: 1 } },
+      { id: "p_plaza_bench1", assetId: "prop_bench_001", position: { x: 0, y: 0, z: 4 }, rotation: { x: 0, y: 3.14, z: 0 } },
+      { id: "p_plaza_bench2", assetId: "prop_bench_001", position: { x: 0, y: 0, z: -4 } },
+
+      // Shop Entrance
+      { id: "p_shop_crate1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: -4 } },
+      { id: "p_shop_crate2", assetId: "prop_crate_001", position: { x: -9.2, y: 0, z: -4 } },
+      { id: "p_shop_barrel1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 0 } },
+      { id: "p_shop_table", assetId: "prop_table_001", position: { x: -13, y: 0, z: -5 } },
+
+      // Workshop Entrance
+      { id: "p_ws_table", assetId: "prop_table_001", position: { x: 10, y: 0, z: -4 } },
+      { id: "p_ws_barrel1", assetId: "prop_barrel_001", position: { x: 10, y: 0, z: 0 } },
+
+      // Warehouse Entrance
+      { id: "p_wh_c1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: 8 } },
+      { id: "p_wh_c2", assetId: "prop_crate_001", position: { x: -9.2, y: 0, z: 8 } },
+      { id: "p_wh_c3", assetId: "prop_crate_001", position: { x: -10, y: 0.6, z: 8 } },
+      { id: "p_wh_b1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 11 } },
+
+      // Residential
+      { id: "p_h1_chair", assetId: "prop_chair_001", position: { x: 5, y: 0, z: 8 } },
+      { id: "p_h2_barrel", assetId: "prop_barrel_001", position: { x: 11, y: 0, z: 8 } }
     ],
     nature: [
       // Cluster NW
       { id: "n_nw1", assetId: "nature_tree_round_001", position: { x: -22, y: 0, z: -22 } },
-      { id: "n_nw2", assetId: "nature_tree_round_002", position: { x: -20, y: 0, z: -24 } },
-      { id: "n_nw3", assetId: "nature_bush_001", position: { x: -24, y: 0, z: -20 } },
-      { id: "n_nw4", assetId: "nature_rock_small_001", position: { x: -21, y: 0, z: -21 } },
+      { id: "n_nw2", assetId: "nature_tree_round_002", position: { x: -20, y: 0, z: -25 } },
+      { id: "n_nw_b", assetId: "nature_bush_001", position: { x: -24, y: 0, z: -24 } },
 
       // Cluster NE
       { id: "n_ne1", assetId: "nature_tree_pine_001", position: { x: 22, y: 0, z: -22 } },
-      { id: "n_ne2", assetId: "nature_tree_pine_002", position: { x: 24, y: 0, z: -20 } },
-      { id: "n_ne3", assetId: "nature_bush_002", position: { x: 20, y: 0, z: -24 } },
+      { id: "n_ne2", assetId: "nature_tree_pine_002", position: { x: 25, y: 0, z: -20 } },
+      { id: "n_ne_r", assetId: "nature_rock_small_001", position: { x: 23, y: 0, z: -23 } },
 
       // Cluster SW
       { id: "n_sw1", assetId: "nature_tree_round_003", position: { x: -22, y: 0, z: 22 } },
-      { id: "n_sw2", assetId: "nature_tree_pine_001", position: { x: -24, y: 0, z: 24 } },
-      { id: "n_sw3", assetId: "nature_bush_001", position: { x: -20, y: 0, z: 20 } },
+      { id: "n_sw2", assetId: "nature_tree_pine_001", position: { x: -25, y: 0, z: 25 } },
+      { id: "n_sw_b", assetId: "nature_bush_002", position: { x: -20, y: 0, z: 20 } },
 
       // Cluster SE
       { id: "n_se1", assetId: "nature_tree_pine_002", position: { x: 22, y: 0, z: 22 } },
-      { id: "n_se2", assetId: "nature_tree_round_001", position: { x: 24, y: 0, z: 24 } },
-      { id: "n_se3", assetId: "nature_rock_small_002", position: { x: 20, y: 0, z: 20 } }
+      { id: "n_se2", assetId: "nature_tree_round_001", position: { x: 25, y: 0, z: 25 } },
+      { id: "n_se_r", assetId: "nature_rock_small_002", position: { x: 23, y: 0, z: 23 } }
     ],
     resourceNodes: [],
     npcSpawns: [
-      { id: "spawn_player", assetId: "npc_player_001", position: { x: 0, y: 0, z: 1 }, name: "玩家" },
-      { id: "spawn_npc_ammu", assetId: "npc_base_001", position: { x: -3, y: 0, z: -2 }, name: "阿木" },
-      { id: "spawn_npc_xiaohe", assetId: "npc_base_002", position: { x: 3, y: 0, z: 2 }, name: "小禾" },
-      { id: "spawn_npc_laozhou", assetId: "npc_base_003", position: { x: -2, y: 0, z: 5 }, name: "老周" },
-      { id: "spawn_npc_aqing", assetId: "npc_base_001", position: { x: 4, y: 0, z: -1 }, name: "阿青" }
+      { id: "spawn_player", assetId: "npc_player_001", position: { x: 0, y: 0, z: 2 }, name: "玩家" },
+      { id: "spawn_npc_ammu", assetId: "npc_base_001", position: { x: -2, y: 0, z: -1 }, name: "阿木" },
+      { id: "spawn_npc_laozhou", assetId: "npc_base_003", position: { x: -3, y: 0, z: 2 }, name: "老周" },
+      { id: "spawn_npc_xiaohe", assetId: "npc_base_002", position: { x: 2, y: 0, z: 2 }, name: "小禾" },
+      { id: "spawn_npc_aqing", assetId: "npc_base_001", position: { x: 3, y: 0, z: -1 }, name: "阿青" }
     ]
   };
 
-  // 1. Fill Central Plaza (Solid 10x10)
-  for (let x = -4; x <= 4; x += 2) {
-    for (let z = -4; z <= 4; z += 2) {
-      mapData.roads.push({
-        id: `plaza_${x}_${z}`,
-        assetId: "road_plaza_tile_001",
-        position: { x, y: 0, z }
-      });
+  // 1. Central Plaza (Solid 10x10 stone_path)
+  for (let x = -5; x <= 5; x++) {
+    for (let z = -5; z <= 5; z++) {
+        mapData.roads.push({
+            id: `p_tile_${x}_${z}`,
+            kind: "plaza_stone",
+            position: { x, y: 0, z },
+            width: 1.1, depth: 1.1
+        });
     }
   }
 
-  // 2. Main Roads (Cross)
-  // NS Main
-  for (let z = -14; z <= 14; z += 2) {
-    if (Math.abs(z) > 4) {
-      mapData.roads.push({ id: `road_ns_${z}`, assetId: "road_straight_001", position: { x: 0, y: 0, z } });
-    }
-  }
-  // EW Main
-  for (let x = -14; x <= 14; x += 2) {
-    if (Math.abs(x) > 4) {
-      mapData.roads.push({ id: `road_ew_${x}`, assetId: "road_straight_001", position: { x, y: 0, z: 0 }, rotation: { x: 0, y: 1.57, z: 0 } });
-    }
-  }
-  
-  // Connect buildings to main roads
-  mapData.roads.push({ id: "to_shop", assetId: "road_straight_001", position: { x: -6, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
-  mapData.roads.push({ id: "to_shop2", assetId: "road_straight_001", position: { x: -8, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
-  mapData.roads.push({ id: "to_ws", assetId: "road_straight_001", position: { x: 6, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
-  mapData.roads.push({ id: "to_ws2", assetId: "road_straight_001", position: { x: 8, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
-  mapData.roads.push({ id: "to_wh", assetId: "road_straight_001", position: { x: -6, y: 0, z: 9 }, rotation: { x: 0, y: 1.57, z: 0 } });
-  mapData.roads.push({ id: "to_wh2", assetId: "road_straight_001", position: { x: -8, y: 0, z: 9 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  // 2. Continuous Town Paths (dirt_path)
+  // Connect buildings
+  const paths = [
+    { start: {x: 0, z: -5}, end: {x: 0, z: -10}, kind: 'dirt_path' }, // Townhall road
+    { start: {x: -5, z: -2}, end: {x: -10, z: -2}, kind: 'dirt_path' }, // Shop road
+    { start: {x: 5, z: -2}, end: {x: 10, z: -2}, kind: 'dirt_path' }, // Workshop road
+    { start: {x: -5, z: 9}, end: {x: -10, z: 9}, kind: 'dirt_path' }, // Warehouse road
+    { start: {x: 0, z: 5}, end: {x: 0, z: 12}, kind: 'dirt_path' }, // South road
+    { start: {x: 0, z: 10}, end: {x: 12, z: 10}, kind: 'dirt_path' }, // East residential street
+  ];
 
-  await fs.writeFile(path.resolve('maps/qtown_v0_1.json'), JSON.stringify(mapData, null, 2));
-  console.log('✅ maps/qtown_v0_1.json updated with a cozy, dense layout.');
+  for(const p of paths) {
+      const isX = p.start.x !== p.end.x;
+      const dist = isX ? Math.abs(p.end.x - p.start.x) : Math.abs(p.end.z - p.start.z);
+      const step = 0.5;
+      for(let i=0; i<=dist; i+=step) {
+          const x = isX ? (p.start.x + (p.end.x > p.start.x ? i : -i)) : p.start.x;
+          const z = !isX ? (p.start.z + (p.end.z > p.start.z ? i : -i)) : p.start.z;
+          mapData.roads.push({
+              id: `path_${x.toFixed(1)}_${z.toFixed(1)}`,
+              kind: p.kind,
+              position: { x, y: 0, z },
+              width: 1.8, depth: 1.8
+          });
+      }
+  }
+
+  const mapPath = path.resolve('maps/qtown_v0_1.json');
+  await fs.writeFile(mapPath, JSON.stringify(mapData, null, 2));
+  console.log('✅ maps/qtown_v0_1.json updated with procedural Town Paths.');
 }
 
 main().catch(console.error);

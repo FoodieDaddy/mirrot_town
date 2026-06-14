@@ -1207,6 +1207,44 @@
       }
     },
     {
+      "id": "prop_wood_stack_001",
+      "type": "prop",
+      "path": "/assets/glb/props/prop_wood_stack_001.glb",
+      "tags": [
+        "prop",
+        "resource"
+      ],
+      "size": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      },
+      "collision": {
+        "type": "box",
+        "width": 0.5,
+        "height": 0.5,
+        "depth": 0.5
+      },
+      "source": "Kenney",
+      "rawSize": {
+        "width": 0.5,
+        "height": 0.5,
+        "depth": 0.5
+      },
+      "recommendedScale": 1,
+      "normalizedSize": {
+        "width": 0.5,
+        "height": 0.5,
+        "depth": 0.5
+      },
+      "suggestedCollision": {
+        "type": "box",
+        "width": 0.5,
+        "height": 0.5,
+        "depth": 0.5
+      }
+    },
+    {
       "id": "prop_bench_001",
       "type": "prop",
       "path": "/assets/glb/props/prop_bench_001.glb",

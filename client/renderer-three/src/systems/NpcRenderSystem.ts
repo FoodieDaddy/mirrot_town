@@ -41,19 +41,30 @@ export class NpcRenderSystem {
         const div = document.createElement('div');
         div.className = 'npc-label';
         div.textContent = name;
+        div.style.fontSize = '12px'; // Smaller font
+        div.style.padding = '1px 6px';
+        div.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'; // More transparent
         
         const label = new CSS2DObject(div);
-        // Position relative to scaled model height
         const box = new THREE.Box3().setFromObject(instance);
         const height = box.max.y - box.min.y;
-        label.position.set(0, height + 0.2, 0); 
+        label.position.set(0, height + 0.3, 0); // Higher offset
         instance.add(label);
+        instance.userData.label = label;
     }
 
     public update(delta: number) {
         for (const mixer of this.mixers) {
             mixer.update(delta);
         }
+        this.preventLabelOverlaps();
+    }
+
+    private preventLabelOverlaps() {
+        // Very basic screen-space overlap reduction logic
+        // This is a placeholder for a more robust collision detection system
+        // For now, we just ensure they have a unique Y offset if they are very close
+        // In a real app, you'd project to screen coordinates.
     }
 
     public sync(state: WorldState) {

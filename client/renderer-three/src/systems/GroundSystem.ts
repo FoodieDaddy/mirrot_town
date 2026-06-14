@@ -21,10 +21,10 @@ export class GroundSystem {
 
         // 2. Subtle Grid
         this.gridHelper = new THREE.GridHelper(64, 64, 0x000000, 0x000000);
-        this.gridHelper.material.opacity = 0.03; // Even more subtle
+        this.gridHelper.material.opacity = 0.015; // Even more subtle
         this.gridHelper.material.transparent = true;
         this.gridHelper.position.y = 0;
-        this.gridHelper.visible = false; // Off by default as requested
+        this.gridHelper.visible = false; // Off by default
         this.scene.add(this.gridHelper);
 
         window.addEventListener('keydown', (e) => {
