@@ -491,147 +491,97 @@
       }
     },
     {
-      "id": "road_ns_-14",
+      "id": "road_n_-14",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": -14
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_-12",
+      "id": "road_n_-12",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": -12
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_-10",
+      "id": "road_n_-10",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": -10
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_-8",
+      "id": "road_n_-8",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": -8
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_-6",
+      "id": "road_n_-6",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": -6
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_6",
+      "id": "road_s_6",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 6
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_8",
+      "id": "road_s_8",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 8
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_10",
+      "id": "road_s_10",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 10
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_12",
+      "id": "road_s_12",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 12
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ns_14",
+      "id": "road_s_14",
       "assetId": "road_straight_001",
       "position": {
         "x": 0,
         "y": 0,
         "z": 14
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
       }
     },
     {
-      "id": "road_ew_-14",
+      "id": "road_w_-14",
       "assetId": "road_straight_001",
       "position": {
         "x": -14,
@@ -645,7 +595,7 @@
       }
     },
     {
-      "id": "road_ew_-12",
+      "id": "road_w_-12",
       "assetId": "road_straight_001",
       "position": {
         "x": -12,
@@ -659,7 +609,7 @@
       }
     },
     {
-      "id": "road_ew_-10",
+      "id": "road_w_-10",
       "assetId": "road_straight_001",
       "position": {
         "x": -10,
@@ -673,7 +623,7 @@
       }
     },
     {
-      "id": "road_ew_-8",
+      "id": "road_w_-8",
       "assetId": "road_straight_001",
       "position": {
         "x": -8,
@@ -687,7 +637,7 @@
       }
     },
     {
-      "id": "road_ew_-6",
+      "id": "road_w_-6",
       "assetId": "road_straight_001",
       "position": {
         "x": -6,
@@ -701,7 +651,7 @@
       }
     },
     {
-      "id": "road_ew_6",
+      "id": "road_e_6",
       "assetId": "road_straight_001",
       "position": {
         "x": 6,
@@ -715,7 +665,7 @@
       }
     },
     {
-      "id": "road_ew_8",
+      "id": "road_e_8",
       "assetId": "road_straight_001",
       "position": {
         "x": 8,
@@ -729,7 +679,7 @@
       }
     },
     {
-      "id": "road_ew_10",
+      "id": "road_e_10",
       "assetId": "road_straight_001",
       "position": {
         "x": 10,
@@ -743,7 +693,7 @@
       }
     },
     {
-      "id": "road_ew_12",
+      "id": "road_e_12",
       "assetId": "road_straight_001",
       "position": {
         "x": 12,
@@ -757,7 +707,7 @@
       }
     },
     {
-      "id": "road_ew_14",
+      "id": "road_e_14",
       "assetId": "road_straight_001",
       "position": {
         "x": 14,
@@ -769,9 +719,135 @@
         "y": 1.57,
         "z": 0
       }
+    },
+    {
+      "id": "road_to_shop",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": -6,
+        "y": 0,
+        "z": -2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "road_to_shop2",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": -2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "road_to_workshop",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": 6,
+        "y": 0,
+        "z": -2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "road_to_workshop2",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": 8,
+        "y": 0,
+        "z": -2
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "road_to_warehouse",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": -6,
+        "y": 0,
+        "z": 9
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "road_to_warehouse2",
+      "assetId": "road_straight_001",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": 9
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
     }
   ],
   "props": [
+    {
+      "id": "p_plaza_stall1",
+      "assetId": "prop_stall_001",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": -3
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.5,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_stall2",
+      "assetId": "prop_stall_002",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": -3
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.5,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_plaza_bench1",
+      "assetId": "prop_bench_001",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 4
+      },
+      "rotation": {
+        "x": 0,
+        "y": 3.14,
+        "z": 0
+      }
+    },
     {
       "id": "p_barrel_shop",
       "assetId": "prop_barrel_001",
@@ -809,7 +885,25 @@
       }
     },
     {
-      "id": "p_crate_wh",
+      "id": "p_crate_ws1",
+      "assetId": "prop_crate_001",
+      "position": {
+        "x": 10,
+        "y": 0,
+        "z": -4
+      }
+    },
+    {
+      "id": "p_barrel_ws1",
+      "assetId": "prop_barrel_001",
+      "position": {
+        "x": 10,
+        "y": 0,
+        "z": -5
+      }
+    },
+    {
+      "id": "p_crate_wh1",
       "assetId": "prop_crate_001",
       "position": {
         "x": -10,
@@ -818,18 +912,41 @@
       }
     },
     {
-      "id": "p_barrel_wh",
+      "id": "p_barrel_wh1",
       "assetId": "prop_barrel_001",
       "position": {
         "x": -10,
         "y": 0,
         "z": 11
       }
+    },
+    {
+      "id": "p_bench_h1",
+      "assetId": "prop_bench_001",
+      "position": {
+        "x": 8,
+        "y": 0,
+        "z": 12
+      },
+      "rotation": {
+        "x": 0,
+        "y": 1.57,
+        "z": 0
+      }
+    },
+    {
+      "id": "p_table_h1",
+      "assetId": "prop_table_001",
+      "position": {
+        "x": 8,
+        "y": 0,
+        "z": 14
+      }
     }
   ],
   "nature": [
     {
-      "id": "n_t1",
+      "id": "n_t_nw1",
       "assetId": "nature_tree_round_001",
       "position": {
         "x": -20,
@@ -838,7 +955,25 @@
       }
     },
     {
-      "id": "n_t2",
+      "id": "n_t_nw2",
+      "assetId": "nature_tree_pine_001",
+      "position": {
+        "x": -22,
+        "y": 0,
+        "z": -18
+      }
+    },
+    {
+      "id": "n_r_nw1",
+      "assetId": "nature_rock_small_001",
+      "position": {
+        "x": -18,
+        "y": 0,
+        "z": -22
+      }
+    },
+    {
+      "id": "n_t_ne1",
       "assetId": "nature_tree_round_002",
       "position": {
         "x": 20,
@@ -847,7 +982,25 @@
       }
     },
     {
-      "id": "n_t3",
+      "id": "n_t_ne2",
+      "assetId": "nature_tree_pine_002",
+      "position": {
+        "x": 22,
+        "y": 0,
+        "z": -18
+      }
+    },
+    {
+      "id": "n_b_ne1",
+      "assetId": "nature_bush_001",
+      "position": {
+        "x": 18,
+        "y": 0,
+        "z": -22
+      }
+    },
+    {
+      "id": "n_t_sw1",
       "assetId": "nature_tree_round_003",
       "position": {
         "x": -20,
@@ -856,7 +1009,16 @@
       }
     },
     {
-      "id": "n_t4",
+      "id": "n_b_sw1",
+      "assetId": "nature_bush_002",
+      "position": {
+        "x": -22,
+        "y": 0,
+        "z": 22
+      }
+    },
+    {
+      "id": "n_t_se1",
       "assetId": "nature_tree_pine_001",
       "position": {
         "x": 20,
@@ -865,7 +1027,16 @@
       }
     },
     {
-      "id": "n_t5",
+      "id": "n_t_se2",
+      "assetId": "nature_tree_round_001",
+      "position": {
+        "x": 22,
+        "y": 0,
+        "z": 22
+      }
+    },
+    {
+      "id": "n_t_back",
       "assetId": "nature_tree_pine_002",
       "position": {
         "x": 0,
@@ -874,62 +1045,8 @@
       }
     },
     {
-      "id": "n_t6",
-      "assetId": "nature_tree_round_001",
-      "position": {
-        "x": -22,
-        "y": 0,
-        "z": -18
-      }
-    },
-    {
-      "id": "n_t7",
-      "assetId": "nature_tree_round_002",
-      "position": {
-        "x": 22,
-        "y": 0,
-        "z": -18
-      }
-    },
-    {
-      "id": "n_t8",
-      "assetId": "nature_tree_round_003",
-      "position": {
-        "x": -22,
-        "y": 0,
-        "z": 22
-      }
-    },
-    {
-      "id": "n_t9",
-      "assetId": "nature_tree_pine_001",
-      "position": {
-        "x": 22,
-        "y": 0,
-        "z": 22
-      }
-    },
-    {
-      "id": "n_r1",
-      "assetId": "nature_rock_small_001",
-      "position": {
-        "x": -18,
-        "y": 0,
-        "z": -15
-      }
-    },
-    {
-      "id": "n_b1",
+      "id": "n_b_front",
       "assetId": "nature_bush_001",
-      "position": {
-        "x": 18,
-        "y": 0,
-        "z": -15
-      }
-    },
-    {
-      "id": "n_b2",
-      "assetId": "nature_bush_002",
       "position": {
         "x": 0,
         "y": 0,

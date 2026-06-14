@@ -214,7 +214,7 @@
       "license": "CC0",
       "commercialUse": true,
       "devOnly": false,
-      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Bear/gltf/character_bear.gltf",
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Duck/gltf/character_duck.gltf",
       "convertedFile": "/assets/glb/characters/npc_base_001.glb"
     },
     {
@@ -223,7 +223,7 @@
       "license": "CC0",
       "commercialUse": true,
       "devOnly": false,
-      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Duck/gltf/character_duck.gltf",
+      "originalFile": "assets/source/kaykit/mini-game-variety-pack/Models/Characters/Bear/gltf/character_bear.gltf",
       "convertedFile": "/assets/glb/characters/npc_base_002.glb"
     },
     {
@@ -279,6 +279,42 @@
       "devOnly": false,
       "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Bed_Twin2.gltf",
       "convertedFile": "/assets/glb/props/prop_bed_001.glb"
+    },
+    {
+      "assetId": "prop_bench_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Bench.gltf",
+      "convertedFile": "/assets/glb/props/prop_bench_001.glb"
+    },
+    {
+      "assetId": "prop_stall_001",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Stall_Empty.gltf",
+      "convertedFile": "/assets/glb/props/prop_stall_001.glb"
+    },
+    {
+      "assetId": "prop_stall_002",
+      "source": "Quaternius",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/quaternius/fantasy-props/Exports/glTF/Stall_Cart_Empty.gltf",
+      "convertedFile": "/assets/glb/props/prop_stall_002.glb"
+    },
+    {
+      "assetId": "prop_fence_001",
+      "source": "Kenney",
+      "license": "CC0",
+      "commercialUse": true,
+      "devOnly": false,
+      "originalFile": "assets/source/kenney/retro-fantasy-kit/Models/GLB format/fence.glb",
+      "convertedFile": "/assets/glb/props/prop_fence_001.glb"
     }
   ]
 }

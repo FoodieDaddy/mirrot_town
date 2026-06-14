@@ -13,7 +13,8 @@ export class RendererApp {
 
     constructor(containerId: string) {
         this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color('#a8c69f'); // more vibrant grass background
+        this.scene.background = new THREE.Color('#98be9a'); // slightly softer grass background
+        this.scene.fog = new THREE.Fog('#98be9a', 30, 100); // subtle fog
         this.clock = new THREE.Clock();
 
         const aspect = window.innerWidth / window.innerHeight;

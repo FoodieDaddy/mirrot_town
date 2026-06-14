@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 
 async function main() {
-  console.log('Generating compact Q-Town v0.1 layout...');
+  console.log('Generating lived-in Q-Town v0.1 layout...');
 
   const mapData = {
     id: "qtown_v0_1",
@@ -107,26 +107,51 @@ async function main() {
     ],
     roads: [] as any[],
     props: [
+      // Plaza Decorations
+      { id: "p_plaza_stall1", assetId: "prop_stall_001", position: { x: -3, y: 0, z: -3 }, rotation: { x: 0, y: 0.5, z: 0 } },
+      { id: "p_plaza_stall2", assetId: "prop_stall_002", position: { x: 3, y: 0, z: -3 }, rotation: { x: 0, y: -0.5, z: 0 } },
+      { id: "p_plaza_bench1", assetId: "prop_bench_001", position: { x: 0, y: 0, z: 4 }, rotation: { x: 0, y: 3.14, z: 0 } },
+      
+      // Shop Props
       { id: "p_barrel_shop", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: -4 } },
       { id: "p_crate_shop", assetId: "prop_crate_001", position: { x: -10, y: 0, z: -5 } },
       { id: "p_table_shop", assetId: "prop_table_001", position: { x: -12, y: 0, z: -5 } },
       { id: "p_chair_shop", assetId: "prop_chair_001", position: { x: -13, y: 0, z: -5 } },
-      { id: "p_crate_wh", assetId: "prop_crate_001", position: { x: -10, y: 0, z: 10 } },
-      { id: "p_barrel_wh", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 11 } }
+      
+      // Workshop Props
+      { id: "p_crate_ws1", assetId: "prop_crate_001", position: { x: 10, y: 0, z: -4 } },
+      { id: "p_barrel_ws1", assetId: "prop_barrel_001", position: { x: 10, y: 0, z: -5 } },
+      
+      // Warehouse Props
+      { id: "p_crate_wh1", assetId: "prop_crate_001", position: { x: -10, y: 0, z: 10 } },
+      { id: "p_barrel_wh1", assetId: "prop_barrel_001", position: { x: -10, y: 0, z: 11 } },
+      
+      // Residential Props
+      { id: "p_bench_h1", assetId: "prop_bench_001", position: { x: 8, y: 0, z: 12 }, rotation: { x: 0, y: 1.57, z: 0 } },
+      { id: "p_table_h1", assetId: "prop_table_001", position: { x: 8, y: 0, z: 14 } }
     ],
     nature: [
-      { id: "n_t1", assetId: "nature_tree_round_001", position: { x: -20, y: 0, z: -20 } },
-      { id: "n_t2", assetId: "nature_tree_round_002", position: { x: 20, y: 0, z: -20 } },
-      { id: "n_t3", assetId: "nature_tree_round_003", position: { x: -20, y: 0, z: 20 } },
-      { id: "n_t4", assetId: "nature_tree_pine_001", position: { x: 20, y: 0, z: 20 } },
-      { id: "n_t5", assetId: "nature_tree_pine_002", position: { x: 0, y: 0, z: -25 } },
-      { id: "n_t6", assetId: "nature_tree_round_001", position: { x: -22, y: 0, z: -18 } },
-      { id: "n_t7", assetId: "nature_tree_round_002", position: { x: 22, y: 0, z: -18 } },
-      { id: "n_t8", assetId: "nature_tree_round_003", position: { x: -22, y: 0, z: 22 } },
-      { id: "n_t9", assetId: "nature_tree_pine_001", position: { x: 22, y: 0, z: 22 } },
-      { id: "n_r1", assetId: "nature_rock_small_001", position: { x: -18, y: 0, z: -15 } },
-      { id: "n_b1", assetId: "nature_bush_001", position: { x: 18, y: 0, z: -15 } },
-      { id: "n_b2", assetId: "nature_bush_002", position: { x: 0, y: 0, z: 25 } }
+      // Cluster NW
+      { id: "n_t_nw1", assetId: "nature_tree_round_001", position: { x: -20, y: 0, z: -20 } },
+      { id: "n_t_nw2", assetId: "nature_tree_pine_001", position: { x: -22, y: 0, z: -18 } },
+      { id: "n_r_nw1", assetId: "nature_rock_small_001", position: { x: -18, y: 0, z: -22 } },
+      
+      // Cluster NE
+      { id: "n_t_ne1", assetId: "nature_tree_round_002", position: { x: 20, y: 0, z: -20 } },
+      { id: "n_t_ne2", assetId: "nature_tree_pine_002", position: { x: 22, y: 0, z: -18 } },
+      { id: "n_b_ne1", assetId: "nature_bush_001", position: { x: 18, y: 0, z: -22 } },
+      
+      // Cluster SW
+      { id: "n_t_sw1", assetId: "nature_tree_round_003", position: { x: -20, y: 0, z: 20 } },
+      { id: "n_b_sw1", assetId: "nature_bush_002", position: { x: -22, y: 0, z: 22 } },
+      
+      // Cluster SE
+      { id: "n_t_se1", assetId: "nature_tree_pine_001", position: { x: 20, y: 0, z: 20 } },
+      { id: "n_t_se2", assetId: "nature_tree_round_001", position: { x: 22, y: 0, z: 22 } },
+      
+      // Random Fillers
+      { id: "n_t_back", assetId: "nature_tree_pine_002", position: { x: 0, y: 0, z: -25 } },
+      { id: "n_b_front", assetId: "nature_bush_001", position: { x: 0, y: 0, z: 25 } }
     ],
     resourceNodes: [],
     npcSpawns: [
@@ -149,33 +174,35 @@ async function main() {
     }
   }
 
-  // 2. Main Roads
-  // North-South
-  for (let z = -14; z <= 14; z += 2) {
-    if (Math.abs(z) > 4) {
-      mapData.roads.push({
-        id: `road_ns_${z}`,
-        assetId: "road_straight_001",
-        position: { x: 0, y: 0, z },
-        rotation: { x: 0, y: 0, z: 0 }
-      });
-    }
+  // 2. Main Roads (Continuous)
+  // North Main
+  for (let z = -14; z < -4; z += 2) {
+    mapData.roads.push({ id: `road_n_${z}`, assetId: "road_straight_001", position: { x: 0, y: 0, z } });
   }
-  // East-West
-  for (let x = -14; x <= 14; x += 2) {
-    if (Math.abs(x) > 4) {
-      mapData.roads.push({
-        id: `road_ew_${x}`,
-        assetId: "road_straight_001",
-        position: { x, y: 0, z: 0 },
-        rotation: { x: 0, y: 1.57, z: 0 }
-      });
-    }
+  // South Main
+  for (let z = 6; z <= 14; z += 2) {
+    mapData.roads.push({ id: `road_s_${z}`, assetId: "road_straight_001", position: { x: 0, y: 0, z } });
   }
+  // West Main
+  for (let x = -14; x < -4; x += 2) {
+    mapData.roads.push({ id: `road_w_${x}`, assetId: "road_straight_001", position: { x, y: 0, z: 0 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  }
+  // East Main
+  for (let x = 6; x <= 14; x += 2) {
+    mapData.roads.push({ id: `road_e_${x}`, assetId: "road_straight_001", position: { x, y: 0, z: 0 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  }
+  
+  // Connection to buildings
+  mapData.roads.push({ id: "road_to_shop", assetId: "road_straight_001", position: { x: -6, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  mapData.roads.push({ id: "road_to_shop2", assetId: "road_straight_001", position: { x: -8, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  mapData.roads.push({ id: "road_to_workshop", assetId: "road_straight_001", position: { x: 6, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  mapData.roads.push({ id: "road_to_workshop2", assetId: "road_straight_001", position: { x: 8, y: 0, z: -2 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  mapData.roads.push({ id: "road_to_warehouse", assetId: "road_straight_001", position: { x: -6, y: 0, z: 9 }, rotation: { x: 0, y: 1.57, z: 0 } });
+  mapData.roads.push({ id: "road_to_warehouse2", assetId: "road_straight_001", position: { x: -8, y: 0, z: 9 }, rotation: { x: 0, y: 1.57, z: 0 } });
 
   const mapPath = path.resolve('maps/qtown_v0_1.json');
   await fs.writeFile(mapPath, JSON.stringify(mapData, null, 2));
-  console.log('✅ maps/qtown_v0_1.json re-generated with town structure.');
+  console.log('✅ maps/qtown_v0_1.json re-generated with dense town structure.');
 }
 
 main().catch(console.error);

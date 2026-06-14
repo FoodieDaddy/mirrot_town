@@ -107,8 +107,32 @@ export class SelectionSystem {
 
     private onKeyDown(event: KeyboardEvent) {
         if (event.key.toLowerCase() === 'r') {
-            // Cycle roof modes
-            console.log('Roof mode cycling not implemented in data yet, but R key detected.');
+            this.cycleRoofMode();
+        }
+    }
+
+    private cycleRoofMode() {
+        const buildings = this.scene.children.filter(c => c.userData.type === 'building');
+        // Simple global cycle: normal -> all-hidden -> normal
+        // This is a placeholder for more complex mode logic.
+        const firstBuilding = buildings[0];
+        if (!firstBuilding) return;
+        
+        const isCurrentlyHidden = firstBuilding.userData.allRoofsHidden || false;
+        const targetVisible = isCurrentlyHidden;
+
+        buildings.forEach(b => {
+            b.userData.allRoofsHidden = !targetVisible;
+            b.traverse(child => {
+                if (child.name.toLowerCase().includes('roof')) {
+                    child.visible = targetVisible;
+                }
+            });
+        });
+
+        const debugEl = document.getElementById('debug-selection');
+        if (debugEl) {
+            debugEl.innerText = `Roof Mode: ${targetVisible ? 'Normal' : 'All Hidden'}`;
         }
     }
 }
